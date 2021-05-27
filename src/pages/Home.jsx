@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { loadReviews, addReview, removeReview } from '../store/actions/reviewActions.js'
+import { loadStays } from '../store/actions/stayActions.js'
 import { loadUsers } from '../store/actions/userActions.js'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ class _Home extends Component {
     }
   }
   componentDidMount() {
-    this.props.loadReviews()
+    this.props.loadStays()
     this.props.loadUsers()
   }
 
@@ -26,18 +26,7 @@ class _Home extends Component {
     }))
   }
 
-  addReview = async ev => {
-    ev.preventDefault()
-    const { reviewToEdit } = this.state
-    if (!reviewToEdit.txt || !reviewToEdit.aboutUserId) return alert('All fields are required')
-    await this.props.addReview(this.state.reviewToEdit)
-    this.setState({ reviewToEdit: { txt: '', aboutUserId: '' } })
-  }
 
-  onRemove = async reviewId => {
-    await this.props.removeReview(reviewId)
-    // this.props.history.push('/login')
-  }
 
   canRemove = review =>
     (review.byUser._id === this.props.loggedInUser?._id || this.props.loggedInUser?.isAdmin)
@@ -103,10 +92,8 @@ const mapStateToProps = state => {
   }
 }
 const mapDispatchToProps = {
-  loadReviews,
+  loadStays,
   loadUsers,
-  addReview,
-  removeReview
 }
 
 export const Home = connect(mapStateToProps, mapDispatchToProps)(_Home)
