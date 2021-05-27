@@ -5,11 +5,10 @@ const initialState = {
 
 export function stayReducer(state = initialState, action = {}) {
   switch (action.type) {
+    case 'LOAD_STAYS':
+      return {...state, stays: action.stays}
     case 'SET_STAY':
-      return {
-        ...state,
-        currStay: action.stay
-      }
+      return {...state, currStay: action.stay}
     case 'ADD_STAY':
       console.log(state)
       return { ...state, stays: [action.stay, ...state.stays] }
