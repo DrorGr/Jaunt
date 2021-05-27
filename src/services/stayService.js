@@ -17,11 +17,30 @@ export const stayService = {
 // return axios.get('api/toy/?id=1223&balance=13')
 // return axios.get('api/toy/?', {params: {id: 1223, balanse:13}})
 
+// function query(filterBy) {
+//   console.log('filterBy', filterBy)
+//   const { status, txt } = filterBy;
+//     const filterRegex = new RegExp(txt, 'i');
+//     filterRegex = new RegExp(filterBy.txt, 'i')
+//     stays = stays.filter(stay => filterRegex.text(stay.txt))
+
+
+//   // var queryStr = (!filterBy) ? '' : `?name=${filterBy.name}&sort=anaAref`
+//   // return httpService.get(`stay${queryStr}`)
+//  return storageService.query('stay')
+// }
+
 function query(filterBy) {
-  // var queryStr = (!filterBy) ? '' : `?name=${filterBy.name}&sort=anaAref`
-  // return httpService.get(`stay${queryStr}`)
-  return storageService.query('stay')
+  console.log('filterBy', filterBy)
+  let stays = gStays.stays
+  if (filterBy) {
+    const filterRegex = new RegExp(filterBy.search, 'i')
+    stays = stays.filter(stay => filterRegex.test(stay.loc.address))
+    console.log(stays);
+  }
+  return Promise.resolve(stays)
 }
+
 
 function remove(stayId) {
   // return httpService.delete(`stay/${stayId}`)

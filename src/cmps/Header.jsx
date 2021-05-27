@@ -4,20 +4,23 @@ import { connect } from 'react-redux'
 
 class _Header extends Component {
     render() {
-        const {loggedInUser} = this.props;
+        const { loggedInUser } = this.props;
         return <header className="main-header">
+            <div>
+                <NavLink exact to="/"><span role="img" aria-label="logo">LOGO</span></NavLink>
+            </div>
             <nav>
-                <NavLink exact to="/"><span role="img" aria-label="logo">🙏</span></NavLink>
-                <NavLink to="/login">Login</NavLink>
-                <NavLink exact to="/">User Reviews</NavLink>
-                <NavLink to="/chat">Chat Room</NavLink>
+                experience
             </nav>
+            <div>
+                <NavLink to="/login">Login</NavLink>
+            </div>
             {loggedInUser && <span className="loggedin-user">
 
                 <Link to={`user/${loggedInUser._id}`}>
                     {loggedInUser.fullname}
                 </Link>
-                
+
                 <span>{loggedInUser.score || 0}</span>
             </span>}
         </header>
