@@ -2,8 +2,9 @@
 import { storageService } from './asyncStorageService'
 // import userService from './userService'
 // import { utilService } from './utilService'
-
-const gStays = require ('../../data/airbnb.json')
+const KEY_STORAGE = 'stay'
+const gStays = require('../data/airbnb.json')
+localStorage.setItem(KEY_STORAGE, JSON.stringify(gStays))
 
 export const stayService = {
   add,
@@ -17,7 +18,7 @@ export const stayService = {
 // return axios.get('api/toy/?', {params: {id: 1223, balanse:13}})
 
 function query(filterBy) {
-  var queryStr = (!filterBy) ? '' : `?name=${filterBy.name}&sort=anaAref`
+  // var queryStr = (!filterBy) ? '' : `?name=${filterBy.name}&sort=anaAref`
   // return httpService.get(`stay${queryStr}`)
   return storageService.query('stay')
 }
