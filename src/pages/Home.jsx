@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
 // import { loadUsers } from '../store/actions/userActions.js'
-import { StaySearch } from '../cmps/StaySearch'
+import { StayFilter } from '../cmps/StayFilter'
+import { StayList } from '../cmps/StayList'
 import { Link } from 'react-router-dom'
 
 class _Home extends Component {
@@ -29,11 +30,12 @@ class _Home extends Component {
   //   (review.byUser._id === this.props.loggedInUser?._id || this.props.loggedInUser?.isAdmin)
 
   render() {
-   
+   const {stays} = this.props
     return (
-      <div>naama
-        <StaySearch />
-      </div>
+      <section className="search-container">
+        <StayFilter />
+        <StayList stays={stays}/>
+      </section>
 
     )
   }
