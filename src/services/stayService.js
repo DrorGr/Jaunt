@@ -9,7 +9,8 @@ localStorage.setItem(KEY_STORAGE, JSON.stringify(gStays))
 export const stayService = {
   add,
   query,
-  remove
+  remove,
+  getById
 }
 
 
@@ -39,6 +40,9 @@ function query(filterBy) {
     console.log(stays);
   }
   return Promise.resolve(stays)
+}
+function getById(stayId) {
+  return storageService.get('stay', stayId)
 }
 
 
