@@ -72,7 +72,7 @@ class _StayFilter extends Component {
                     <label htmlFor="guetsAmount">Guests</label>
                     <input type="number" name="guetsAmount" min="0" placeholder="guests" value={guetsAmount} onChange={this.handleChange} />
                 </div>
-                <button className="search-btn" onClick={this.onSubmit}>Search</button>
+                <button className="search-btn" onClick={this.onSubmit}><i className="fas fa-search search-icon"></i></button>
             </form>
         )
     }

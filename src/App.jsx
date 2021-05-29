@@ -13,7 +13,7 @@ export function App() {
     <div className="app">
       <Router>
         <Header></Header>
-        <main>
+        <main className="flex justify-center">
           <Switch>
             <Route path="/stay/:id" component={StayDetails} />
             <Route path="/stay" component={Explore} />
