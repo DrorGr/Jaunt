@@ -1,0 +1,20 @@
+.stay-filter{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+    
+        &>*{
+            border-radius: 16px;
+            line-height: 20px;
+            border: none;
+        }
+
+        &>*:hover:not(:last-child),
+        &:nth-child(2)>input:hover{
+            background-color: #EBEBEB
+        }
+}
+
+input{
+    border: none;
+}

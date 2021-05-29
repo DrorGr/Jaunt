@@ -4,7 +4,7 @@ export function StayPreview({ stay, onRemoveStay, loggedInUser }) {
     return (
         <article className="stay-preview">
             <img src={stay.imgUrls[0]} alt=""  />
-            <p className="stay-rank">{stay.reviews[0].rate} (rate)</p>
+            <p className="stay-rate">{stay.reviews[0].rate} (rate)</p>
             <p className="stay-name">{stay.name} </p>
             <p className="stay-summery">{`${stay.capacity} guests`} </p>
             <p className="stay-amenities">{`${stay.amenities.join(' • ')} `} </p>

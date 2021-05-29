@@ -34,6 +34,7 @@ export class StayDetails extends Component {
         <div className="stay-description">
           <div className="host-desc">
             <h5>{`Entire apartment hosted by ${stay.host.fullname}`}</h5>
+            <p>{`${stay.capacity} guests `}</p>
             <span className="host-img"><img src={stay.host.imgUrl} alt="profile" /></span>
           </div>
             <hr />
@@ -46,7 +47,11 @@ export class StayDetails extends Component {
 
         <section className="reviews">
           <div className="review-parameters"></div>
-          <div className="review-users"></div>
+          <div className="review-users">
+            <span className="review-img"></span>
+            <p className="review-name">{stay.render}</p>
+            <p className="review-date"></p>
+          </div>
         </section>
         <div className="location-map"></div>
         <div className="host-details"></div>

@@ -7,14 +7,15 @@ class _Header extends Component {
         const { loggedInUser } = this.props;
         return <header className="main-header">
             <div>
-                <NavLink exact to="/"><span role="img" aria-label="logo">LOGO</span></NavLink>
+                <NavLink exact to="/"><span role="img" aria-label="logo">Jaunt</span></NavLink>
             </div>
-            <nav>
+            {/* <nav>
                 experience
-            </nav>
-            <div>
+            </nav> */}
+            <section className="header-nav flex">
+                <div>explore</div>
+                <div>become a host</div>
                 <NavLink to="/login">Login</NavLink>
-            </div>
             {loggedInUser && <span className="loggedin-user">
 
                 <Link to={`user/${loggedInUser._id}`}>
@@ -23,6 +24,7 @@ class _Header extends Component {
 
                 <span>{loggedInUser.score || 0}</span>
             </span>}
+            </section>
         </header>
     }
 

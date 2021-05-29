@@ -28,9 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 section, main, footer {
     padding: 5px;
 }
-
+//to change
 img {
-    width: 100%;
+    width: 20%;
 }
 
 p {
@@ -45,3 +45,6 @@ a:hover {
     text-decoration: underline;
 }
 
+button{
+    cursor: pointer;
+}
