@@ -7,7 +7,7 @@ export function loadStays(filterBy) {
   return async dispatch => {
     try {
       const stays = await stayService.query(filterBy)
-      console.log('stays', stays)
+      // console.log('stays', stays)
       dispatch({ type: 'LOAD_STAYS', stays })
 
       // socketService.on(SOCKET_EVENT_stay_ADDED, stay =>{

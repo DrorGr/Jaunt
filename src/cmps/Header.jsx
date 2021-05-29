@@ -5,14 +5,14 @@ import { connect } from 'react-redux'
 class _Header extends Component {
     render() {
         const { loggedInUser } = this.props;
-        return <header className="main-header">
+        return <header className="main-header flex align-center">
             <div>
-                <NavLink exact to="/"><span role="img" aria-label="logo">Jaunt</span></NavLink>
+                <NavLink exact to="/"><span className="fs30" role="img" aria-label="logo">Jaunt</span></NavLink>
             </div>
             {/* <nav>
                 experience
             </nav> */}
-            <section className="header-nav flex">
+            <section className="header-nav flex ">
                 <div>explore</div>
                 <div>become a host</div>
                 <NavLink to="/login">Login</NavLink>
