@@ -23,7 +23,7 @@ export function App() {
           </Switch>
         </main>
         <footer>
-          Starter
+          &copy; Copy Rights 2021
         </footer>
       </Router>
     </div>

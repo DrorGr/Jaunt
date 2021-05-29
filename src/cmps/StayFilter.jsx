@@ -1,4 +1,4 @@
-import { Component, useState } from 'react'
+import { Component } from 'react'
 import { loadStays } from '../store/actions/stayActions.js'
 // import { TextField } from '@material-ui/core'
 import { connect } from 'react-redux'
@@ -9,8 +9,10 @@ class _StayFilter extends Component {
 
     state = {
         filterBy: '',
+        location: null,
         startDate: null,
-        endDate: null
+        endDate: null,
+        guetsAmount: null
     }
     onSetFilter = (filterBy) => {
         this.props.loadStays(filterBy)
@@ -18,8 +20,13 @@ class _StayFilter extends Component {
 
     handleChange = ({ target }) => {
         const { name, value } = target
+        // console.log('name - ', name, 'value - ', value);
         const { filterBy } = this.state
-        this.setState({ filterBy: { ...filterBy, [name]: value } }, () => {
+        this.setState({
+            filterBy: { ...filterBy, [name]: value },
+            [name]: value,
+            [name]: value
+        }, () => {
             const { filterBy } = this.state
             this.onSetFilter(filterBy)
         })
@@ -32,27 +39,41 @@ class _StayFilter extends Component {
         })
     }
 
+    onSubmit = (ev) => {
+        ev.preventDefault()
+        console.log('state ', this.state);
+    }
 
     render() {
+        const { location, startDate, endDate, guetsAmount } = this.state
         return (
-            <section className="stay-filter flex justify-center align-center">
-                <input type="text" name="search" placeholder="Where are you going ?" onChange={this.handleChange} />
-                <DatePicker
-                    className="date-picker"
-                    placeholderText="Choose dates"
-                    selected={this.state.startDate}
-                    startDate={this.state.startDate}
-                    endDate={this.state.endDate}
-                    onChange={date => this.setDates(date)}
-                    monthsShown={2}
-                    dateFormat="dd/MM/yyyy"
-                    minDate={new Date()}
-                    selectsRange
-                    shouldCloseOnSelect={false}
-                />
-                <input type="number" name="guests" min="0" placeholder="guests" />
-                <button className="search-btn" >Search</button>
-            </section>
+            <form className="stay-filter flex justify-center align-center" >
+                <div>
+                <label htmlFor="location">Location</label>
+                <input type="text" name="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} />
+                </div>
+                <div>
+                    Dates
+                    <DatePicker
+                        className="date-picker"
+                        placeholderText="Choose dates"
+                        selected={startDate}
+                        startDate={startDate}
+                        endDate={endDate}
+                        onChange={date => this.setDates(date)}
+                        monthsShown={2}
+                        dateFormat="dd/MM/yyyy"
+                        minDate={new Date()}
+                        selectsRange
+                        shouldCloseOnSelect={true}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="guetsAmount">Guests</label>
+                    <input type="number" name="guetsAmount" min="0" placeholder="guests" value={guetsAmount} onChange={this.handleChange} />
+                </div>
+                <button className="search-btn" onClick={this.onSubmit}>Search</button>
+            </form>
         )
     }
 }
