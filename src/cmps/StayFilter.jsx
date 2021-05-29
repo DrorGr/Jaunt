@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import { loadStays } from '../store/actions/stayActions.js'
-// import { TextField } from '@material-ui/core'
 import { connect } from 'react-redux'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,10 +8,10 @@ class _StayFilter extends Component {
 
     state = {
         filterBy: '',
-        location: null,
-        startDate: null,
-        endDate: null,
-        guetsAmount: null
+        location: '',
+        startDate: '',
+        endDate: '',
+        guetsAmount: ''
     }
     onSetFilter = (filterBy) => {
         this.props.loadStays(filterBy)
@@ -41,7 +40,8 @@ class _StayFilter extends Component {
 
     onSubmit = (ev) => {
         ev.preventDefault()
-        console.log('state ', this.state);
+        const {location} = this.state
+        this.props.history.push(`/explore/${location}`)
     }
 
     render() {

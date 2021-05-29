@@ -7,6 +7,8 @@
             border-radius: 16px;
             line-height: 20px;
             border: none;
+            padding: 10px;
+            cursor: pointer;
         }
 
         &>*:hover:not(:last-child),
@@ -17,4 +19,5 @@
 
 input{
     border: none;
+    background-color: transparent;
 }

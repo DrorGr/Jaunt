@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
 // import { loadUsers } from '../store/actions/userActions.js'
 import { StayFilter } from '../cmps/StayFilter'
 import { StayList } from '../cmps/StayList'
-import { Link } from 'react-router-dom'
+import { Route, Switch } from 'react-router'
 
 class _Home extends Component {
 
@@ -24,17 +25,20 @@ class _Home extends Component {
   //   }))
   // }
 
-
-
   // canRemove = review =>
   //   (review.byUser._id === this.props.loggedInUser?._id || this.props.loggedInUser?.isAdmin)
 
+
+
+
   render() {
-   const {stays} = this.props
+    const { stays } = this.props
     return (
       <section className="search-container">
-        <StayFilter />
-        <StayList stays={stays}/>
+        <Switch>
+          <Route component={StayList} path="/explore/:location" />
+          <Route component={StayFilter} path="/" />
+        </Switch>
       </section>
 
     )
