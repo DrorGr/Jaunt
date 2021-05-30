@@ -7,7 +7,8 @@ import { StayList } from '../cmps/StayList'
 class _StayApp extends Component {
 
     componentDidMount() {
-        this.props.loadStays(this.getFilterBy())
+        const filterBy = this.getFilterBy();
+        this.props.loadStays(filterBy)
     }
 
     getFilterBy = () => {
@@ -15,6 +16,7 @@ class _StayApp extends Component {
         let params = new URLSearchParams(search);
         let location = params.get('loc');
         const filterBy = { location }
+        console.log('filterBy ', filterBy);
         return filterBy
     }
 
@@ -24,14 +26,17 @@ class _StayApp extends Component {
 
     render() {
         const { stays } = this.props
+        console.log('in render ', stays);
         if (!stays) return <div>Loading...</div>
         return (
             <section className="stay-app">
                 <section className="search-container flex justify-center">
-                    <StayFilter setUrl={this.setUrl} />
+                    <StayFilter 
+                    setUrl={this.setUrl} 
+                    />
                 </section>
                 <section>
-                <StayList stays={stays} />
+                    <StayList stays={stays} />
                 </section>
             </section>
 

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 
 export function StayPreview({ stay, onRemoveStay, loggedInUser }) {
+    console.log('in preview ', stay);
+
     return (
         <article className="stay-preview">
             <img src={stay.imgUrls[0]} alt=""  />
