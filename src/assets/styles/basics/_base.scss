@@ -9,17 +9,17 @@
 
 html {
     font-family: circular;
-    line-height: 1.6;
+    // line-height: 1.6;
     color: $clr2;
 }
 
 body {
-    font-size: rem(18px);
+    font-size: rem(16px);
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: caveat;
+    font-family: circular;
     margin: 0 0 0.6em;
     line-height: 1;
 }
@@ -38,7 +38,7 @@ img {
 }
 
 p {
-    margin: 0 0 1em;
+    margin: 0 0 0;
     max-width: 40ch;
 }
 
