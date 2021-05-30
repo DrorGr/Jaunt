@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-import { StayFilter } from '../cmps/StayFilter'
+import {StayFilter}  from '../cmps/StayFilter'
 
 
 class _Home extends Component {

@@ -22,12 +22,12 @@ export class StayDetails extends Component {
           <div className="title-primary"><h3>{stay.name}</h3></div>
           <div className="title-secondery flex space-between">
             <div className="left flex space-between">
-            <div><i class='fa fa-star'></i>{stay.reviews[0].rate}</div>
+            <div><i className='fa fa-star'></i>{stay.reviews[0].rate}</div>
             <div>{stay.loc.address}</div>
             </div>
             <div className="right flex space-between">
-            <div><i class='fa fa-share-square-o'></i>share</div>
-            <div><i class='fa fa-heart-o'></i> save</div>
+            <div><i className='fa fa-share-square-o'></i>share</div>
+            <div><i className='fa fa-heart-o'></i> save</div>
             </div>
           </div>
         </div>

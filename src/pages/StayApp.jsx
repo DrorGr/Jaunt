@@ -9,30 +9,37 @@ class _StayApp extends Component {
     componentDidMount() {
         const filterBy = this.getFilterBy();
         this.props.loadStays(filterBy)
+
     }
+
+    componentDidUpdate(prevProps, prevState) {
+        if(prevProps.location.pathname !== this.props.location.pathname){
+            console.log('chnge');
+        }
+    }
+    
 
     getFilterBy = () => {
         let search = this.props.location.search;
         let params = new URLSearchParams(search);
         let location = params.get('loc');
         const filterBy = { location }
-        console.log('filterBy ', filterBy);
+        console.log('loc',location);
         return filterBy
     }
 
-    setUrl = (loc) => {
-        this.props.history.push(`/stay?loc=${loc}`)
+    loadStays = (filterBy) => {
+        this.props.loadStays(filterBy)
     }
 
     render() {
         const { stays } = this.props
-        console.log('in render ', stays);
         if (!stays) return <div>Loading...</div>
         return (
             <section className="stay-app">
                 <section className="search-container flex justify-center">
-                    <StayFilter 
-                    setUrl={this.setUrl} 
+                    <StayFilter
+                        loadStays={this.loadStays}
                     />
                 </section>
                 <section>
