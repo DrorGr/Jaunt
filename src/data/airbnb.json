@@ -25,9 +25,9 @@
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
-        "country": "United Kingdom",
-        "countryCode": "UK",
-        "address": "London, United Kingdom",
+        "country": "Portugal",
+        "countryCode": "PT",
+        "address": "Porto, Portugal",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -77,7 +77,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -94,7 +94,6 @@
         }
       ],
 
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -127,7 +126,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -177,7 +176,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -194,7 +193,6 @@
         }
       ],
 
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -227,7 +225,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -277,7 +275,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -327,7 +325,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -377,7 +375,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -427,7 +425,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -477,7 +475,7 @@
       "loc": {
         "country": "Turky",
         "countryCode": "TR",
-        "address": "Istanbul",
+        "address": "Istanbul,Turky",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -527,7 +525,7 @@
       "loc": {
         "country": "Greece",
         "countryCode": "Athens",
-        "address": "Athens",
+        "address": "Athens ,Greece",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -577,7 +575,7 @@
       "loc": {
         "country": "Greece",
         "countryCode": "Athens",
-        "address": "Athens",
+        "address": "Athens ,Greece",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -627,7 +625,7 @@
       "loc": {
         "country": "Greece",
         "countryCode": "Athens",
-        "address": "Athens",
+        "address": "Athens ,Greece",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -677,7 +675,7 @@
       "loc": {
         "country": "Greece",
         "countryCode": "Athens",
-        "address": "Athens",
+        "address": "Athens ,Greece",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -727,7 +725,7 @@
       "loc": {
         "country": "Greece",
         "countryCode": "Athens",
-        "address": "Athens",
+        "address": "Athens ,Greece",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -777,7 +775,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "Paris",
+        "address": "Paris, France",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -827,7 +825,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "Paris",
+        "address": "Paris, France",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -877,7 +875,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "Paris",
+        "address": "Paris, France",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -927,7 +925,7 @@
       "loc": {
         "country": "Italy",
         "countryCode": "It",
-        "address": "Rome",
+        "address": "Rome, Italy",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -977,7 +975,7 @@
       "loc": {
         "country": "United kingdom",
         "countryCode": "UK",
-        "address": "Scotland",
+        "address": "Scotland, united kingdom",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1027,7 +1025,7 @@
       "loc": {
         "country": "United Kingdom",
         "countryCode": "UK",
-        "address": "London",
+        "address": "London, united kingdom",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1077,7 +1075,7 @@
       "loc": {
         "country": "Germany",
         "countryCode": "GR",
-        "address": "Frankfurt",
+        "address": "Frankfurt, germany",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1127,7 +1125,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "Paris",
+        "address": "Paris, france",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1177,7 +1175,7 @@
       "loc": {
         "country": "Finland",
         "countryCode": "FN",
-        "address": "",
+        "address": "Helsinki, finland",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1227,7 +1225,7 @@
       "loc": {
         "country": "Germany",
         "countryCode": "GR",
-        "address": "Munich",
+        "address": "Munich, germany",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1276,7 +1274,7 @@
       "loc": {
         "country": "Germany",
         "countryCode": "GR",
-        "address": "Berlin",
+        "address": "Berlin, germany",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1326,7 +1324,7 @@
       "loc": {
         "country": "United states",
         "countryCode": "US",
-        "address": "New Jersy ",
+        "address": "New Jersy, united states ",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1377,7 +1375,7 @@
       "loc": {
         "country": "United Stats",
         "countryCode": "US",
-        "address": "New Jersy",
+        "address": "New Jersy, united states",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1430,7 +1428,7 @@
       "loc": {
         "country": "United States",
         "countryCode": "US",
-        "address": "New York",
+        "address": "New York, united states",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1481,7 +1479,7 @@
       "loc": {
         "country": "United Kingdom",
         "countryCode": "UK",
-        "address": "Londom",
+        "address": "London, united kingdom",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1531,7 +1529,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "France",
+        "address": "paris, france",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1581,7 +1579,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "France",
+        "address": "paris, France",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1633,7 +1631,7 @@
       "loc": {
         "country": "Norwey",
         "countryCode": "NR",
-        "address": "Oslo",
+        "address": "Oslo, norwey",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -1732,7 +1730,7 @@
       "loc": {
         "country": "France",
         "countryCode": "FR",
-        "address": "",
+        "address": "paris, france",
         "lat": -8.61308,
         "lng": 41.1413
       },
