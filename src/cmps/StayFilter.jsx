@@ -3,8 +3,8 @@ import { loadStays } from '../store/actions/stayActions.js'
 import { connect } from 'react-redux'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
-import { withRouter } from 'react-router';
-import PropTypes from "prop-types";
+// import { withRouter } from 'react-router';
+// import PropTypes from "prop-types";
 
 
 class _StayFilter extends Component {
@@ -17,11 +17,11 @@ class _StayFilter extends Component {
         guetsAmount: ''
     }
 
-    static propTypes = {
-        match: PropTypes.object.isRequired,
-        location: PropTypes.object.isRequired,
-        history: PropTypes.object.isRequired
-      };
+    // static propTypes = {
+    //     match: PropTypes.object.isRequired,
+    //     location: PropTypes.object.isRequired,
+    //     history: PropTypes.object.isRequired
+    //   };
 
     onSetFilter = (filterBy) => {
         this.props.loadStays(filterBy)
@@ -96,15 +96,12 @@ class _StayFilter extends Component {
 
 const mapStateToProps = state => {
     return {
-        stays: state.stayModule.stays,
-        // users: state.userModule.users,
-        // loggedInUser: state.userModule.loggedInUser
+        stays: state.stayModule.stays
     }
 }
 const mapDispatchToProps = {
-    loadStays,
-    // loadUsers,
+    loadStays
 }
 
-export default withRouter(_StayFilter)
+// export default withRouter(_StayFilter)
 export const StayFilter = connect(mapStateToProps, mapDispatchToProps)(_StayFilter)

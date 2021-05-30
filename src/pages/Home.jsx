@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
-
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-// import { loadUsers } from '../store/actions/userActions.js'
 import { StayFilter } from '../cmps/StayFilter'
-import { StayApp } from './StayApp'
-import { StayList } from '../cmps/StayList'
-import { Route, Switch } from 'react-router'
+
 
 class _Home extends Component {
 
-
   componentDidMount() {
     this.props.loadStays()
-    // this.props.loadUsers()
   }
 
   setUrl = (loc) => {
@@ -21,13 +15,9 @@ class _Home extends Component {
   }
 
   render() {
-    const { stays } = this.props
     return (
-      <section className="search-container">
+      <section className="search-container flex justify-center">
         <StayFilter setUrl={this.setUrl} />
-        {/* <Switch>
-          <Route component={StayFilter} path="/" />
-        </Switch> */}
       </section>
 
     )
@@ -36,14 +26,11 @@ class _Home extends Component {
 
 const mapStateToProps = state => {
   return {
-    stays: state.stayModule.stays,
-    // users: state.userModule.users,
-    // loggedInUser: state.userModule.loggedInUser
+    stays: state.stayModule.stays
   }
 }
 const mapDispatchToProps = {
   loadStays,
-  // loadUsers,
 }
 
 export const Home = connect(mapStateToProps, mapDispatchToProps)(_Home)
