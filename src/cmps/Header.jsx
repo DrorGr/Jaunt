@@ -16,14 +16,12 @@ class _Header extends Component {
                 <div>explore</div>
                 <div>become a host</div>
                 <NavLink to="/login">Login</NavLink>
-            {loggedInUser && <span className="loggedin-user">
-
-                <Link to={`user/${loggedInUser._id}`}>
-                    {loggedInUser.fullname}
-                </Link>
-
-                <span>{loggedInUser.score || 0}</span>
-            </span>}
+                {loggedInUser && <span className="loggedin-user">
+                    <Link to={`user/${loggedInUser._id}`}>
+                        {loggedInUser.fullname}
+                    </Link>
+                    <span>{loggedInUser.score || 0}</span>
+                </span>}
             </section>
         </header>
     }

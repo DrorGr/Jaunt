@@ -34,7 +34,7 @@ class _Home extends Component {
   render() {
     const { stays } = this.props
     return (
-      <section className="search-container">
+      <section className="search-container flex justify-center ">
         <Switch>
           <Route component={StayList} path="/explore/:location" />
           <Route component={StayFilter} path="/" />

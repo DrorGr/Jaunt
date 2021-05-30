@@ -12,8 +12,10 @@ export function App() {
   return (
     <div className="app">
       <Router>
+        <header className="main-container">
         <Header></Header>
-        <main className="flex justify-center">
+        </header>
+        <main className="main-container">
           <Switch>
             <Route path="/stay/:id" component={StayDetails} />
             <Route path="/stay" component={Explore} />
