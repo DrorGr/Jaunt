@@ -50,7 +50,7 @@ class _StayFilter extends Component {
     }
 
     onSubmit = (ev) => {
-        ev.preventDefault()
+        // ev.preventDefault()
         const {location} = this.state
         // this.props.history.push(`/stay`)
         // console.log('href ', window.location.href);

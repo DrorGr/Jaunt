@@ -13,7 +13,7 @@ export function App() {
     <div className="app">
       <Router>
         <header className="main-container">
-        <Header></Header>
+        <Header/>
         </header>
         <main className="main-container">
           <Switch>

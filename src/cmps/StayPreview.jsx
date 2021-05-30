@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 
 export function StayPreview({ stay, onRemoveStay, loggedInUser }) {
+    console.log('in preview ', stay);
+
     return (
         <Link to={`/stay/${stay._id}`} className="primary-btn">
             <article className="stay-preview">
