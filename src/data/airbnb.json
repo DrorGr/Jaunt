@@ -4,17 +4,13 @@
       "_id": "10006546",
       "name": "Ribeira Charming Duplex",
       "imgUrls": [
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
+        "https://source.unsplash.com/random/400X400/?house",
+
         "otherImg.jpg"
       ],
-      "price": 80.00,
+      "price": 100.00,
       "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
-      "capacity": 8,
+      "capacity": 10,
       "amenities": [
         "TV",
         "Wifi",
@@ -24,9 +20,9 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399391",
+        "_id": "51399392",
         "fullname": "Davit Pok",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Profile-720.png"
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
         "country": "United Kingdom",
@@ -43,10 +39,12 @@
           "by": {
             "_id": "u102",
             "fullname": "user2",
-            "imgUrl": "/img/img2.jpg"
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
+
+      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -54,14 +52,15 @@
     },
     {
       "_id": "10006547",
-      "name": "Naama casa",
+      "name": "A bedroom for a night",
       "imgUrls": [
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
+        "https://source.unsplash.com/random/400X400/?house1",
+
         "otherImg.jpg"
       ],
-      "price": 80.00,
-      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
-      "capacity": 8,
+      "price": 50.00,
+      "summary": "one bedroom for a night",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
@@ -71,14 +70,14 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399392",
-        "fullname": "naama Puk",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Profile-720.png"
+        "_id": "51399393",
+        "fullname": "RIva H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
-        "country": "Portugal",
-        "countryCode": "PT",
-        "address": "Porto, Portugal",
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
         "lat": -8.61308,
         "lng": 41.1413
       },
@@ -90,24 +89,327 @@
           "by": {
             "_id": "u102",
             "fullname": "user2",
-            "imgUrl": "/img/img2.jpg"
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
+
+      
       "likedByUserIds": [
         "u101",
         "u102"
       ]
     },
     {
-      "_id": "10006548",
-      "name": "Dror finca",
+      "_id": "10006734",
+      "name": "Basic home",
       "imgUrls": [
-        "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
+        "https://source.unsplash.com/random/400X400/?house2",
+
         "otherImg.jpg"
       ],
-      "price": 80.00,
-      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+      "price": 75.00,
+      "summary": "Home, just home.",
+      "capacity": 6,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399634",
+        "fullname": "RIva T",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "One room for a night",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house3",
+
+        "otherImg.jpg"
+      ],
+      "price": 40.00,
+      "summary": "One room",
+      "capacity": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "RIva H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "Small place",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house4",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Small place",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Nuni A",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 6,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006634",
+      "name": "Big house",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house5",
+
+        "otherImg.jpg"
+      ],
+      "price": 400.00,
+      "summary": "Very big house",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399235",
+        "fullname": "Lulu K",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006552",
+      "name": "Basic house",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house6",
+
+        "otherImg.jpg"
+      ],
+      "price": 75.00,
+      "summary": "Small house",
+      "capacity": 6,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399468",
+        "fullname": "Lora K",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "A Big room for families",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house7",
+
+        "otherImg.jpg"
+      ],
+      "price": 260.00,
+      "summary": "Big Place.",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Niki J",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 6,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006967",
+      "name": "Basic home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house8",
+
+        "otherImg.jpg"
+      ],
+      "price": 100.00,
+      "summary": "Home, just home.",
       "capacity": 8,
       "amenities": [
         "TV",
@@ -118,9 +420,1266 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399391",
-        "fullname": "Dror Puki",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Profile-720.png"
+        "_id": "51399634",
+        "fullname": "Niva M",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006654",
+      "name": "Basic stay",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house9",
+
+        "otherImg.jpg"
+      ],
+      "price": 75.00,
+      "summary": "Small stay",
+      "capacity": 6,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399638",
+        "fullname": "Lulu K",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Turky",
+        "countryCode": "TR",
+        "address": "Istanbul",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006998",
+      "name": "Prime stay",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house10",
+
+        "otherImg.jpg"
+      ],
+      "price": 330.00,
+      "summary": "Primum appartment",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399647",
+        "fullname": "Lica J",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Greece",
+        "countryCode": "Athens",
+        "address": "Athens",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 9,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006846",
+      "name": "Small bedroom",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house11",
+
+        "otherImg.jpg"
+      ],
+      "price": 130.00,
+      "summary": "Romantic place",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399894",
+        "fullname": "RIva Q",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Greece",
+        "countryCode": "Athens",
+        "address": "Athens",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "A big loft",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house12",
+
+        "otherImg.jpg"
+      ],
+      "price": 110.00,
+      "summary": "Nice for kids",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399444",
+        "fullname": "Lory R",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Greece",
+        "countryCode": "Athens",
+        "address": "Athens",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "Basic Stay",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house13",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Home, just home.",
+      "capacity": 6,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Mimi Y",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Greece",
+        "countryCode": "Athens",
+        "address": "Athens",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 6,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006685",
+      "name": "Basic home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house14",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Nice place",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Rody N",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Greece",
+        "countryCode": "Athens",
+        "address": "Athens",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "Small loft",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house15",
+
+        "otherImg.jpg"
+      ],
+      "price": 40.00,
+      "summary": "small loft",
+      "capacity": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399451",
+        "fullname": "Lora H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "Nice home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house16",
+
+        "otherImg.jpg"
+      ],
+      "price": 95.00,
+      "summary": "Home, just home.",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399398",
+        "fullname": "Monica N",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006548",
+      "name": "Small loft",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house17",
+
+        "otherImg.jpg"
+      ],
+      "price": 86.00,
+      "summary": "Small loft.",
+      "capacity": 3,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "RIva N",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "Appartment",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house18",
+
+        "otherImg.jpg"
+      ],
+      "price": 180.00,
+      "summary": "Home, just home.",
+      "capacity": 6,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399398",
+        "fullname": "lee L",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Italy",
+        "countryCode": "It",
+        "address": "Rome",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "A large hut",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house19",
+
+        "otherImg.jpg"
+      ],
+      "price": 100.00,
+      "summary": "Big hut in the woods",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399398",
+        "fullname": "Dani L",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United kingdom",
+        "countryCode": "UK",
+        "address": "Scotland",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006547",
+      "name": "loft on the Bridge",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house20",
+
+        "otherImg.jpg"
+      ],
+      "price": 95.00,
+      "summary": "Prime location.",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399398",
+        "fullname": "John S",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United Kingdom",
+        "countryCode": "UK",
+        "address": "London",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006552",
+      "name": "Large room",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house21",
+
+        "otherImg.jpg"
+      ],
+      "price": 85.00,
+      "summary": "Large Room.",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399394",
+        "fullname": "Alexi S",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Germany",
+        "countryCode": "GR",
+        "address": "Frankfurt",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006548",
+      "name": "Basic home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house22",
+
+        "otherImg.jpg"
+      ],
+      "price": 300.00,
+      "summary": "Home, just home.",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "RIva H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 9,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006561",
+      "name": "Small house",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house23",
+
+        "otherImg.jpg"
+      ],
+      "price": 85.00,
+      "summary": "Small house",
+      "capacity": 5,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399396",
+        "fullname": "Alexi L",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Finland",
+        "countryCode": "FN",
+        "address": "",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 7,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006548",
+      "name": "Small condo",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house24",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Small condo",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399394",
+        "fullname": "Adolph M",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Germany",
+        "countryCode": "GR",
+        "address": "Munich",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006598",
+      "name": "Large room in the center of Berlin",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house25",
+
+        "otherImg.jpg"
+      ],
+      "price": 90.00,
+      "summary": "A large room",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399394",
+        "fullname": "Frank H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Germany",
+        "countryCode": "GR",
+        "address": "Berlin",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 8,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006552",
+      "name": "Basic home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house26",
+
+        "otherImg.jpg"
+      ],
+      "price": 45.00,
+      "summary": "Home, just home.",
+      "capacity": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399396",
+        "fullname": "Mike J",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United states",
+        "countryCode": "US",
+        "address": "New Jersy ",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006549",
+      "name": "Wooden hut",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house27",
+
+        "otherImg.jpg"
+      ],
+      "price": 90.00,
+      "summary": "Wooden hut.",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Nature",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "RIva H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United Stats",
+        "countryCode": "US",
+        "address": "New Jersy",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102",
+        "u103"
+      ]
+    },
+    {
+      "_id": "10006556",
+      "name": "New york apartment",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house28",
+
+        "otherImg.jpg"
+      ],
+      "price": 230.0,
+      "summary": "The center of New York.",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Prime location",
+        "Transportation",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399398",
+        "fullname": "Amy S",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United States",
+        "countryCode": "US",
+        "address": "New York",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006512",
+      "name": "London Prime location",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house29",
+
+        "otherImg.jpg"
+      ],
+      "price": 200.00,
+      "summary": "Prime location.",
+      "capacity": 3,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets are not allowed",
+        "Taxi services",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399397",
+        "fullname": "John K",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United Kingdom",
+        "countryCode": "UK",
+        "address": "Londom",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Magical place",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006548",
+      "name": "Large room",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house30",
+
+        "otherImg.jpg"
+      ],
+      "price": 110.00,
+      "summary": "Large room",
+      "capacity": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Natalie",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "France",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006549",
+      "name": "Basic home",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house31",
+
+        "otherImg.jpg"
+      ],
+      "price": 75.00,
+      "summary": "Nice home",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "Dan G",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "France",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 6,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101"
+       
+      ]
+    },
+    {
+      "_id": "10006548",
+      "name": "Loft",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house32",
+
+        "otherImg.jpg"
+      ],
+      "price": 140.00,
+      "summary": "High end loft.",
+      "capacity": 5,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Doorman",
+        "Parking",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399393",
+        "fullname": "RIva H",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Norwey",
+        "countryCode": "NR",
+        "address": "Oslo",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very high end",
+          "rate": 9,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        "u101",
+        "u102",
+        "u103"
+      ]
+    },
+    {
+      "_id": "10006546",
+      "name": "Ribeira Charming Duplex",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house33",
+
+        "otherImg.jpg"
+      ],
+      "price": 100.00,
+      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+      "capacity": 10,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399392",
+        "fullname": "Davit Pok",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
         "country": "Portugal",
@@ -133,61 +1692,70 @@
         {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 2,
+          "rate": 4,
           "by": {
             "_id": "u102",
             "fullname": "user2",
-            "imgUrl": "/img/img2.jpg"
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
+
+      
       "likedByUserIds": [
         "u101",
         "u102"
       ]
-    }
-  ],
-  "orders": [
-    {
-      "_id": "o1225",
-      "createdAt": 9898989,
-      "buyer": {
-        "_id": "u101",
-        "fullname": "User 1"
-      },
-      "totalPrice": 160,
-      "startDate": "2025/10/15",
-      "endDate": "2025/10/17",
-      "guests": {
-        "adults": 2,
-        "kids": 1
-      },
-      "stay": {
-        "_id": "h102",
-        "name": "House Of Uncle My",
-        "price": 80.00
-      },
-      "status": "pending"
-    }
-  ],
-  "users": [
-    {
-      "_id": "u101",
-      "fullname": "User 1",
-      "imgUrl": "/img/img1.jpg",
-      "isHost": false,
-      "username": "user1",
-      "password": "secret",
-      "orders": []
     },
     {
-      "_id": "u102",
-      "fullname": "User 2",
-      "imgUrl": "/img/img2.jpg",
-      "isHost": false,
-      "username": "user2",
-      "password": "secret",
-      "orders": []
+      "_id": "10006547",
+      "name": "Hut in the woods",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house34",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Magical hut.",
+      "capacity": 10,
+      "amenities": [
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399395",
+        "fullname": "Jhon S",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
+        
+        "u102"
+      ]
     }
+    
   ]
+  
 }
