@@ -1,44 +1,23 @@
 import React, { Component } from 'react'
-
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-// import { loadUsers } from '../store/actions/userActions.js'
 import { StayFilter } from '../cmps/StayFilter'
-import { StayList } from '../cmps/StayList'
-import { Route, Switch } from 'react-router'
+
 
 class _Home extends Component {
 
-
   componentDidMount() {
     this.props.loadStays()
-    // this.props.loadUsers()
   }
 
-  // handleChange = ev => {
-  //   const { name, value } = ev.target
-  //   this.setState(prevState => ({
-  //     reviewToEdit: {
-  //       ...prevState.reviewToEdit,
-  //       [name]: value
-  //     }
-  //   }))
-  // }
-
-  // canRemove = review =>
-  //   (review.byUser._id === this.props.loggedInUser?._id || this.props.loggedInUser?.isAdmin)
-
-
-
+  setUrl = (loc) => {
+    this.props.history.push(`/stay?loc=${loc}`)
+  }
 
   render() {
-    const { stays } = this.props
     return (
-      <section className="search-container flex justify-center ">
-        <Switch>
-          <Route component={StayList} path="/explore/:location" />
-          <Route component={StayFilter} path="/" />
-        </Switch>
+      <section className="search-container flex justify-center">
+        <StayFilter setUrl={this.setUrl} />
       </section>
 
     )
@@ -47,14 +26,11 @@ class _Home extends Component {
 
 const mapStateToProps = state => {
   return {
-    stays: state.stayModule.stays,
-    // users: state.userModule.users,
-    // loggedInUser: state.userModule.loggedInUser
+    stays: state.stayModule.stays
   }
 }
 const mapDispatchToProps = {
   loadStays,
-  // loadUsers,
 }
 
 export const Home = connect(mapStateToProps, mapDispatchToProps)(_Home)

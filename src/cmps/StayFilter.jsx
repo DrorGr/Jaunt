@@ -3,6 +3,9 @@ import { loadStays } from '../store/actions/stayActions.js'
 import { connect } from 'react-redux'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
+// import { withRouter } from 'react-router';
+// import PropTypes from "prop-types";
+
 
 class _StayFilter extends Component {
 
@@ -13,9 +16,17 @@ class _StayFilter extends Component {
         endDate: '',
         guetsAmount: ''
     }
+
+    // static propTypes = {
+    //     match: PropTypes.object.isRequired,
+    //     location: PropTypes.object.isRequired,
+    //     history: PropTypes.object.isRequired
+    //   };
+
     onSetFilter = (filterBy) => {
         this.props.loadStays(filterBy)
     }
+
 
     handleChange = ({ target }) => {
         const { name, value } = target
@@ -41,7 +52,12 @@ class _StayFilter extends Component {
     onSubmit = (ev) => {
         ev.preventDefault()
         const {location} = this.state
-        this.props.history.push(`/explore/${location}`)
+        // this.props.history.push(`/stay`)
+        // console.log('href ', window.location.href);
+        this.props.setUrl(location)
+        console.log(this.props);
+        // this.props.history.push(`/stay?loc=${location}`)
+
     }
 
     render() {
@@ -50,7 +66,7 @@ class _StayFilter extends Component {
             <form className="stay-filter flex justify-center align-center" >
                 <div>
                 <label htmlFor="location">Location</label>
-                <input type="text" name="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} />
+                <input type="text" name="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} required />
                 </div>
                 <div>
                     Dates
@@ -70,7 +86,7 @@ class _StayFilter extends Component {
                 </div>
                 <div>
                     <label htmlFor="guetsAmount">Guests</label>
-                    <input type="number" name="guetsAmount" min="0" placeholder="guests" value={guetsAmount} onChange={this.handleChange} />
+                    <input type="number" name="guetsAmount" min="0" placeholder="guests" value={guetsAmount} onChange={this.handleChange} required/>
                 </div>
                 <button className="search-btn" onClick={this.onSubmit}><i className="fas fa-search search-icon"></i></button>
             </form>
@@ -80,14 +96,12 @@ class _StayFilter extends Component {
 
 const mapStateToProps = state => {
     return {
-        stays: state.stayModule.stays,
-        // users: state.userModule.users,
-        // loggedInUser: state.userModule.loggedInUser
+        stays: state.stayModule.stays
     }
 }
 const mapDispatchToProps = {
-    loadStays,
-    // loadUsers,
+    loadStays
 }
 
+// export default withRouter(_StayFilter)
 export const StayFilter = connect(mapStateToProps, mapDispatchToProps)(_StayFilter)
