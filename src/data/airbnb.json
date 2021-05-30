@@ -1,13 +1,9 @@
 {
   "stays": [
     {
-      "_id": "10006546",
+      "_id": "10006111",
       "name": "Ribeira Charming Duplex",
       "imgUrls": [
-        "https://source.unsplash.com/random/400X400/?house",
-        "https://source.unsplash.com/random/400X400/?house",
-        "https://source.unsplash.com/random/400X400/?house",
-        "https://source.unsplash.com/random/400X400/?house",
         "https://source.unsplash.com/random/400X400/?house",
 
         "otherImg.jpg"
@@ -24,7 +20,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399392",
+        "_id": "51399112",
         "fullname": "Davit Pok",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -55,7 +51,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006113",
       "name": "A bedroom for a night",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house1",
@@ -65,7 +61,7 @@
       "price": 50.00,
       "summary": "one bedroom for a night",
       "capacity": 2,
-      "amenities": [
+      "amenities": [                           
         "TV",
         "Wifi",
         "Kitchen",
@@ -74,7 +70,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399114",
         "fullname": "RIva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -104,7 +100,7 @@
       ]
     },
     {
-      "_id": "10006734",
+      "_id": "10006115",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house2",
@@ -123,7 +119,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399634",
+        "_id": "51399116",
         "fullname": "RIva T",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -154,7 +150,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "1000117",
       "name": "One room for a night",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house3",
@@ -173,7 +169,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399118",
         "fullname": "RIva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -203,7 +199,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006119",
       "name": "Small place",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house4",
@@ -222,7 +218,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399120",
         "fullname": "Nuni A",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -253,7 +249,7 @@
       ]
     },
     {
-      "_id": "10006634",
+      "_id": "10006121",
       "name": "Big house",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house5",
@@ -272,7 +268,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399235",
+        "_id": "51399122",
         "fullname": "Lulu K",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -303,7 +299,7 @@
       ]
     },
     {
-      "_id": "10006552",
+      "_id": "10006123",
       "name": "Basic house",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house6",
@@ -322,7 +318,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399468",
+        "_id": "51399124",
         "fullname": "Lora K",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -353,7 +349,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006125",
       "name": "A Big room for families",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house7",
@@ -372,7 +368,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399126",
         "fullname": "Niki J",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -403,7 +399,7 @@
       ]
     },
     {
-      "_id": "10006967",
+      "_id": "10006127",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house8",
@@ -422,7 +418,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399634",
+        "_id": "51399128",
         "fullname": "Niva M",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -453,7 +449,7 @@
       ]
     },
     {
-      "_id": "10006654",
+      "_id": "10006129",
       "name": "Basic stay",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house9",
@@ -472,7 +468,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399638",
+        "_id": "51399130",
         "fullname": "Lulu K",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -503,7 +499,7 @@
       ]
     },
     {
-      "_id": "10006998",
+      "_id": "10006131",
       "name": "Prime stay",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house10",
@@ -522,7 +518,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399647",
+        "_id": "51399132",
         "fullname": "Lica J",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -553,7 +549,7 @@
       ]
     },
     {
-      "_id": "10006846",
+      "_id": "10006133",
       "name": "Small bedroom",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house11",
@@ -572,7 +568,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399894",
+        "_id": "51399134",
         "fullname": "RIva Q",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -603,7 +599,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006135",
       "name": "A big loft",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house12",
@@ -622,7 +618,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399444",
+        "_id": "51399136",
         "fullname": "Lory R",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -653,7 +649,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006137",
       "name": "Basic Stay",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house13",
@@ -672,7 +668,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399138",
         "fullname": "Mimi Y",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -703,7 +699,7 @@
       ]
     },
     {
-      "_id": "10006685",
+      "_id": "10006139",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house14",
@@ -722,7 +718,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399140",
         "fullname": "Rody N",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -753,7 +749,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006141",
       "name": "Small loft",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house15",
@@ -772,7 +768,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399451",
+        "_id": "51399142",
         "fullname": "Lora H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -803,7 +799,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006143",
       "name": "Nice home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house16",
@@ -822,7 +818,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399398",
+        "_id": "51399144",
         "fullname": "Monica N",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -853,7 +849,7 @@
       ]
     },
     {
-      "_id": "10006548",
+      "_id": "10006145",
       "name": "Small loft",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house17",
@@ -872,7 +868,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399146",
         "fullname": "RIva N",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -903,7 +899,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006147",
       "name": "Appartment",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house18",
@@ -922,7 +918,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399398",
+        "_id": "51399148",
         "fullname": "lee L",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -953,7 +949,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006149",
       "name": "A large hut",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house19",
@@ -972,7 +968,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399398",
+        "_id": "51399150",
         "fullname": "Dani L",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1003,7 +999,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006151",
       "name": "loft on the Bridge",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house20",
@@ -1022,7 +1018,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399398",
+        "_id": "51399152",
         "fullname": "John S",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1053,7 +1049,7 @@
       ]
     },
     {
-      "_id": "10006552",
+      "_id": "10006153",
       "name": "Large room",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house21",
@@ -1072,7 +1068,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399394",
+        "_id": "51399154",
         "fullname": "Alexi S",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1103,7 +1099,7 @@
       ]
     },
     {
-      "_id": "10006548",
+      "_id": "10006155",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house22",
@@ -1122,7 +1118,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399156",
         "fullname": "RIva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1153,7 +1149,7 @@
       ]
     },
     {
-      "_id": "10006561",
+      "_id": "10006157",
       "name": "Small house",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house23",
@@ -1172,7 +1168,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399396",
+        "_id": "51399158",
         "fullname": "Alexi L",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1203,7 +1199,7 @@
       ]
     },
     {
-      "_id": "10006548",
+      "_id": "10006159",
       "name": "Small condo",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house24",
@@ -1222,7 +1218,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399394",
+        "_id": "51399160",
         "fullname": "Adolph M",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1253,7 +1249,7 @@
       ]
     },
     {
-      "_id": "10006598",
+      "_id": "10006161",
       "name": "Large room in the center of Berlin",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house25",
@@ -1271,7 +1267,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399394",
+        "_id": "51399162",
         "fullname": "Frank H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1302,7 +1298,7 @@
       ]
     },
     {
-      "_id": "10006552",
+      "_id": "10006163",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house26",
@@ -1321,7 +1317,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399396",
+        "_id": "51399164",
         "fullname": "Mike J",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1352,7 +1348,7 @@
       ]
     },
     {
-      "_id": "10006549",
+      "_id": "10006165",
       "name": "Wooden hut",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house27",
@@ -1372,7 +1368,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399166",
         "fullname": "RIva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1404,7 +1400,7 @@
       ]
     },
     {
-      "_id": "10006556",
+      "_id": "10006167",
       "name": "New york apartment",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house28",
@@ -1425,7 +1421,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399398",
+        "_id": "51399168",
         "fullname": "Amy S",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1456,7 +1452,7 @@
       ]
     },
     {
-      "_id": "10006512",
+      "_id": "10006169",
       "name": "London Prime location",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house29",
@@ -1476,7 +1472,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399397",
+        "_id": "51399170",
         "fullname": "John K",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1507,7 +1503,7 @@
       ]
     },
     {
-      "_id": "10006548",
+      "_id": "10006171",
       "name": "Large room",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house30",
@@ -1526,7 +1522,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399172",
         "fullname": "Natalie",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1557,7 +1553,7 @@
       ]
     },
     {
-      "_id": "10006549",
+      "_id": "10006173",
       "name": "Basic home",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house31",
@@ -1576,7 +1572,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399174",
         "fullname": "Dan G",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1607,7 +1603,7 @@
       ]
     },
     {
-      "_id": "10006548",
+      "_id": "10006175",
       "name": "Loft",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house32",
@@ -1628,7 +1624,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399393",
+        "_id": "51399176",
         "fullname": "RIva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1660,7 +1656,7 @@
       ]
     },
     {
-      "_id": "10006546",
+      "_id": "10006177",
       "name": "Ribeira Charming Duplex",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house33",
@@ -1679,7 +1675,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399392",
+        "_id": "51399178",
         "fullname": "Davit Pok",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
@@ -1710,7 +1706,7 @@
       ]
     },
     {
-      "_id": "10006547",
+      "_id": "10006179",
       "name": "Hut in the woods",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house34",
@@ -1727,7 +1723,7 @@
         "Cooking basics"
       ],
       "host": {
-        "_id": "51399395",
+        "_id": "51399180",
         "fullname": "Jhon S",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
