@@ -9,10 +9,13 @@ export function userReducer(state = initialState, action = {}) {
   switch (action.type) {
     case 'SET_USER':
       return { ...state, loggedInUser: action.user }
+   case 'ADD_USER':
+        return { ...state, user: action.user }
     case 'REMOVE_USER':
       return {
         ...state,
         users: state.users.filter(user => user._id !== action.userId)
+        
       }
 
     default:
