@@ -32,7 +32,6 @@ export const stayService = {
 // }
 
 function query(filterBy) {
-  // console.log('filterBy', filterBy)
   let stays = gStays.stays
   if (filterBy) {
     const filterRegex = new RegExp(filterBy.location, 'i')

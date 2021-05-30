@@ -6,6 +6,8 @@ import { Chat } from './pages/Chat'
 import { StayDetails } from './pages/StayDetails'
 import { Explore } from './pages/Explore'
 import { Header } from './cmps/Header'
+import { StayList } from './cmps/StayList'
+import { StayApp } from './pages/StayApp'
 
 
 export function App() {
@@ -15,8 +17,11 @@ export function App() {
         <Header></Header>
         <main className="flex justify-center">
           <Switch>
+
+            {/* <Route path="/explore" component={Explore} /> */}
+            {/* <Route component={StayApp} path="/explore/:location" /> */}
             <Route path="/stay/:id" component={StayDetails} />
-            <Route path="/stay" component={Explore} />
+            <Route path="/stay" component={StayApp} />
             <Route path="/login" component={LoginSignup} />
             <Route path="/chat" component={Chat} />
             <Route path="/" component={Home} />

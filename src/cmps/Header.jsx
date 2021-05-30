@@ -13,8 +13,8 @@ class _Header extends Component {
                 experience
             </nav> */}
             <section className="header-nav flex ">
-                <div>explore</div>
-                <div>become a host</div>
+                <NavLink to="/stay">Explore</NavLink>
+                <div>Become a Host</div>
                 <NavLink to="/login">Login</NavLink>
             {loggedInUser && <span className="loggedin-user">
 

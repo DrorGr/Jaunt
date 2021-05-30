@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
 // import { loadUsers } from '../store/actions/userActions.js'
 import { StayFilter } from '../cmps/StayFilter'
+import { StayApp } from './StayApp'
 import { StayList } from '../cmps/StayList'
 import { Route, Switch } from 'react-router'
 
@@ -15,30 +16,18 @@ class _Home extends Component {
     // this.props.loadUsers()
   }
 
-  // handleChange = ev => {
-  //   const { name, value } = ev.target
-  //   this.setState(prevState => ({
-  //     reviewToEdit: {
-  //       ...prevState.reviewToEdit,
-  //       [name]: value
-  //     }
-  //   }))
-  // }
-
-  // canRemove = review =>
-  //   (review.byUser._id === this.props.loggedInUser?._id || this.props.loggedInUser?.isAdmin)
-
-
-
+  setUrl = (loc) => {
+    this.props.history.push(`/stay?loc=${loc}`)
+  }
 
   render() {
     const { stays } = this.props
     return (
       <section className="search-container">
-        <Switch>
-          <Route component={StayList} path="/explore/:location" />
+        <StayFilter setUrl={this.setUrl} />
+        {/* <Switch>
           <Route component={StayFilter} path="/" />
-        </Switch>
+        </Switch> */}
       </section>
 
     )
