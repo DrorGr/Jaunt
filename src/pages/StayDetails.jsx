@@ -44,11 +44,26 @@ export class StayDetails extends Component {
               <div className="host-img"><img src={stay.host.imgUrl} alt="profile" /></div>
             </div>
             <hr />
+            {/* Temporary */}
+            <div className="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur recusandae accusantium quo fugit suscipit. Placeat architecto necessitatibus quo molestias nesciunt quisquam recusandae, in illo consequatur dignissimos fugiat neque fuga?</div>
+            <div className="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur recusandae accusantium quo fugit suscipit. Placeat architecto necessitatibus quo molestias nesciunt quisquam recusandae, in illo consequatur dignissimos fugiat neque fuga?</div>
             <div className="txt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur recusandae accusantium quo fugit suscipit. Placeat architecto necessitatibus quo molestias nesciunt quisquam recusandae, in illo consequatur dignissimos fugiat neque fuga?</div>
             <hr />
             <div className="amenities">{stay.amenities.map((txt, idx) => <p key={idx}>{txt}</p>)}</div>
           </div>
-          <div className="availability">Add Search here!!!</div>
+          <div className="availability flex column">
+          <form className="check-availability flex column center">
+            <div className="value-rate flex space-between">
+          <p className="price">{`$${stay.price} / night`}</p>
+          <span><i class='fa fa-star'></i>{stay.reviews[0].rate} (reviews)</span>
+            </div>
+            <div className="order-details flex column align-center">
+              <div className="date-picker">
+                <input type="date" />
+              </div>
+            </div>
+          </form>
+          </div>
         </section>
 
         <section className="reviews">

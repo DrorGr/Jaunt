@@ -29,7 +29,7 @@
 }
 
 .description-availability{
-    gap: 20px;
+    gap: 40px;
     
     .stay-description{
         flex: 2;
@@ -41,5 +41,27 @@
     img{
         max-width: 30px;
         border-radius: 50%;
+    }
+}
+
+.availability{
+    position: sticky!important;
+    top: 300px;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow:  0 6px 8px rgb(216, 216, 216);
+
+
+    
+    .value-rate{
+     align-items: baseline;   
+    }
+
+    .order-details{
+        border: 1px solid #dddddd;
+        border-radius: 3px;
     }
 }
