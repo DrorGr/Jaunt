@@ -1,45 +1,57 @@
 import React, { Component } from 'react'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
+import { NavBar } from '../cmps/NavBar'
+
 
 export class StayDetails extends Component {
   state = {
     stay: null,
-      startDate: '',
-      endDate: '',
-      guetsAmount: ''
+    startDate: '',
+    endDate: '',
+    guetsAmount: ''
   }
-  
+
   async componentDidMount() {
     const stay = await stayService.getById(this.props.match.params.id)
     console.log(this.props.match.params.id);
     this.setState({ stay })
   }
+  handleChange = ({ target }) => {
+    const { name, value } = target
+    const { filterBy } = this.state
+    this.setState({
+        filterBy: { ...filterBy, [name]: value },
+        [name]: value,
+        [name]: value
+    }
+    )
+}
 
   amenitiesIcon = (txt) => {
     switch (txt) {
-      case 'TV': return 'fa fa-tv' 
-      break;
-      case 'Wifi': return 'fa fa-wifi' 
-      break;
+      case 'TV': return 'fa fa-tv'
+        break;
+      case 'Wifi': return 'fa fa-wifi'
+        break;
       case 'Kitchen': return 'fa fa-cutlery'
-      break;
+        break;
       case 'Smoking allowed': return 'fas fa-smoking'
-      break;
+        break;
       case 'Pets allowed': return 'fas fa-paw'
-      break;
+        break;
       case 'Air conditioning': return 'fa fa-snowflake-o'
-      break;
+        break;
     }
   }
 
   setDates = (dates) => {
     const [start, end] = dates;
     this.setState({
-        startDate: start,
-        endDate: end
+      startDate: start,
+      endDate: end
     })
-}
+  }
 
   render() {
     const { stay, location, startDate, endDate, guetsAmount } = this.state
@@ -47,6 +59,7 @@ export class StayDetails extends Component {
     console.log(stay);
     return (
       <section className="stay-details-container ">
+        <NavBar />
         <div className="details-title">
           <div className="title-primary"><h3>{stay.name}</h3></div>
           <div className="title-secondery flex space-between">
@@ -77,7 +90,7 @@ export class StayDetails extends Component {
             <div className="txt-description">
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-              
+
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
 
@@ -91,30 +104,48 @@ export class StayDetails extends Component {
           <div className="availability flex column">
             <form className="check-availability flex column align-center">
               <div className="value-rate flex space-between">
-                <p className="price">{`$${stay.price} / night`}</p>
-                <span><i class='fa fa-star'></i>{stay.reviews[0].rate} (reviews)</span>
+                <span><b className="fs22">${stay.price}</b> / night</span>
+                <span className="stay-rate flex">
+                  <i className='fa fa-star'></i>
+                  <span>{stay.reviews[0].rate}</span>
+                  {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
+                  {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
+                </span>
+                {/* <span><i class='fa fa-star'></i>{stay.reviews[0].rate} (reviews)</span> */}
               </div>
+
               <div className="order-details flex column align-center">
-                <div className="date-picker flex">
+                {/* <div className="date-picker flex space-evenly">
                   <div className="check-in"><p>check in</p></div>
                   <div className="check-out"> <p>check out</p></div>
-                  </div>
+                </div> */}
                 <DatePicker
-                        className="date-picker"
-                        // placeholderText="Choose dates"
-                        onChange={date => this.setDates(date)}
-                        selected={startDate}
-                        startDate={startDate}
-                        endDate={endDate}
-                        monthsShown={2}
-                        dateFormat="dd/MM/yyyy"
-                        minDate={new Date()}
-                        selectsRange
-                        shouldCloseOnSelect={true}
-                    />
+                  className="date-picker"
+                  placeholderText="Choose dates"
+                  onChange={date => this.setDates(date)}
+                  selected={startDate}
+                  startDate={startDate}
+                  endDate={endDate}
+                  monthsShown={2}
+                  dateFormat="dd/MM/yyyy"
+                  minDate={new Date()}
+                  selectsRange
+                  shouldCloseOnSelect={true}
+                />
+                <div>Guests</div>
               </div>
             </form>
           </div>
+        </section>
+        <section>
+          <DatePicker
+            selected={startDate}
+            onChange={date => this.setDates(date)}
+            startDate={startDate}
+            endDate={endDate}
+            selectsRange
+            inline
+          />
         </section>
 
         <section className="reviews">

@@ -1,6 +1,6 @@
-.main-header{
-    // height: 100%;
-    
+.main-header,
+.home{
+    height: 90vh;
 }
 .explore-nearby{
     background-color: #fff;
@@ -10,17 +10,16 @@
     }
 }
 .home {
-    height: 80vh;
-    width: 100vw;
     grid-column: 1/-1;
     background-image: url(../../img/hero.jpg);
     background-position: center;
     background-size:cover ;
     background-repeat: no-repeat;
+
 }
 
 .app-desc{
-    padding-bottom: 200px;
+    padding-bottom: 275px;
     div span:nth-child(2){
         background-color: #000;
         color: #fff;
