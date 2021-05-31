@@ -7,9 +7,9 @@ export function NavBar() {
             {/* <section className="main-container header-container"> */}
             <section className="navbar-container header-container">
                 <Header />
-            </section>
-            <section className="search-container hero flex justify-center align-center">
-                <StayFilter />
+                <section className="search-container hero flex justify-center align-center">
+                    <StayFilter />
+                </section>
             </section>
         </section>
     )

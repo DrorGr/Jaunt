@@ -13,18 +13,18 @@ class _Home extends Component {
         <section>
         <Hero/>
         </section>
-        <section className="explore-nearby">
+        <section className="explore-nearby  main-container">
           <h2>Explore nearby</h2>
           <section className="grid">
             <div className="flex">
-              <img src="../assets/img/temp/1.jpg" alt="tel-aviv-yafo" />
+              <img src="../assets/img/1.jpg" alt="tel-aviv-yafo" />
               <div>
                 <span>Tel Aviv-Yafo</span>
                 <span>15 minute drive</span>
               </div>
             </div>
             <div className="flex">
-              <img src="" alt="" />
+              <img src="../assets/img/2.jpg" alt="netanya" />
               <div>
                 <span>Netanya</span>
                 <span>45 minute drive</span>
