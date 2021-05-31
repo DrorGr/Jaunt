@@ -15,7 +15,7 @@ export function App() {
         <header className="main-container">
         <Header/>
         </header>
-        <main>
+        <main className="main-container">
           <Switch>
             <Route path="/stay/:id" component={StayDetails} />
             <Route path="/stay" component={StayApp} />

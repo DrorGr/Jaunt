@@ -30,7 +30,7 @@
 }
 
 .description-availability{
-    gap: 40px;
+    // gap: 40px;
     
     .stay-description{
         flex: 2;
@@ -40,14 +40,15 @@
         text-align: center;
     }
     img{
-        max-width: 30px;
+        max-width: 50px;
         border-radius: 50%;
     }
 }
 
 .availability{
+    margin-left: 10%;
     position: sticky!important;
-    top: 300px;
+    top:500px;
     height: fit-content;
     padding: 20px;
     border: 1px solid #dddddd;
@@ -55,8 +56,6 @@
     padding: 24px;
     box-shadow:  0 6px 8px rgb(216, 216, 216);
 
-
-    
     .value-rate{
      align-items: baseline;   
     }

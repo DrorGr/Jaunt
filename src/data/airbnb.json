@@ -1,9 +1,13 @@
-{
+{ 
   "stays": [
     {
       "_id": "10006111",
       "name": "Ribeira Charming Duplex",
       "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house",
+        "https://source.unsplash.com/random/400X400/?house",
+        "https://source.unsplash.com/random/400X400/?house",
+        "https://source.unsplash.com/random/400X400/?house",
         "https://source.unsplash.com/random/400X400/?house",
 
         "otherImg.jpg"
@@ -17,7 +21,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399112",
@@ -67,7 +71,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399114",
@@ -116,7 +120,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399116",
@@ -166,7 +170,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399118",
@@ -215,7 +219,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399120",
@@ -265,7 +269,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399122",
@@ -315,7 +319,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399124",
@@ -365,7 +369,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399126",
@@ -415,7 +419,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399128",
@@ -465,7 +469,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399130",
@@ -515,7 +519,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399132",
@@ -565,7 +569,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399134",
@@ -615,7 +619,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399136",
@@ -665,7 +669,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399138",
@@ -715,7 +719,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399140",
@@ -765,7 +769,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399142",
@@ -815,7 +819,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399144",
@@ -865,7 +869,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399146",
@@ -915,7 +919,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399148",
@@ -965,7 +969,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399150",
@@ -1015,7 +1019,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399152",
@@ -1065,7 +1069,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399154",
@@ -1115,7 +1119,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399156",
@@ -1165,7 +1169,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399158",
@@ -1215,7 +1219,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399160",
@@ -1264,7 +1268,7 @@
         "Wifi",
         "Kitchen",
         "Smoking allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399162",
@@ -1314,7 +1318,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399164",
@@ -1365,7 +1369,7 @@
         "Smoking allowed",
         "Pets allowed",
         "Nature",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399166",
@@ -1418,7 +1422,7 @@
         "Pets allowed",
         "Prime location",
         "Transportation",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399168",
@@ -1469,7 +1473,7 @@
         "Smoking allowed",
         "Pets are not allowed",
         "Taxi services",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399170",
@@ -1519,7 +1523,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399172",
@@ -1569,7 +1573,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399174",
@@ -1621,7 +1625,7 @@
         "Pets allowed",
         "Doorman",
         "Parking",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399176",
@@ -1672,7 +1676,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399178",
@@ -1720,7 +1724,7 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Cooking basics"
+        "Air conditioning"
       ],
       "host": {
         "_id": "51399180",
@@ -1757,3 +1761,5 @@
   ]
   
 }
+
+

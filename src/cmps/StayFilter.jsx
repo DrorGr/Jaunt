@@ -27,6 +27,7 @@ class _StayFilter extends Component {
         }
         )
     }
+    
     setDates = (dates) => {
         const [start, end] = dates;
         this.setState({
