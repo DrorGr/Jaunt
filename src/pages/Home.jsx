@@ -2,17 +2,16 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
 import { StayFilter } from '../cmps/StayFilter'
+import { Hero } from '../cmps/Hero.jsx'
 
 
 class _Home extends Component {
 
   render() {
     return (
-      <div>
-        <section className="search-container main-container hero flex justify-center">
-          <div>
-          <StayFilter />
-          </div>
+      <div className="home">
+        <section>
+        <Hero/>
         </section>
         <section className="explore-nearby">
           <h2>Explore nearby</h2>

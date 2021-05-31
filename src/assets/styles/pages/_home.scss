@@ -1,16 +1,17 @@
-
-.hero{
-    height: 80vh;
-    background-image: url(../../img/hero.jpg);
-    // background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.main-header{
+    height: 90vh;
 }
-    .explore-nearby{
-        background-color: #fff;
-        :nth-child(2){
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
+.explore-nearby{
+    background-color: #fff;
+    :nth-child(2){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
+}
+.home{
+    grid-column: 1/-1;
+    background-image: url(../../img/hero.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
