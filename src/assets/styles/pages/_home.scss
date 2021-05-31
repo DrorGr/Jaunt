@@ -1,14 +1,13 @@
 .main-header,
 .home{
-    height: 90vh;
+    height: 100vh;
 }
-.explore-nearby{
-    background-color: #fff;
-    :nth-child(2){
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
+// .explore-nearby{
+//     background-color: #fff;
+//     // :nth-child(2){
+//         // grid-template-rows: repeat(2, 1fr);
+//     // }
+// }
 .home {
     grid-column: 1/-1;
     background-image: url(../../img/hero.jpg);
