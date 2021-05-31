@@ -6,8 +6,11 @@ class _Header extends Component {
     render() {
         const { loggedInUser } = this.props;
         return <header className="main-header flex align-center">
-            <div>
-                <NavLink exact to="/"><span className="fs30" role="img" aria-label="logo">Jaunt</span></NavLink>
+            <div className="logo-container flex space-between">
+                <NavLink exact to="/">
+                    <i className="fab fa-airbnb fs34"></i>
+                    <span className="fs30" role="img" aria-label="logo">jaunt</span>
+                </NavLink>
             </div>
             {/* <nav>
                 experience
@@ -15,12 +18,16 @@ class _Header extends Component {
             <section className="header-nav flex ">
                 <NavLink to="/stay" >Explore</NavLink>
                 <div>Become a Host</div>
-                <NavLink to="/login">Login</NavLink>
+                <NavLink to="/login">
+                    <button className="login-btn flex space-between align-center">
+                        <i className="fas fa-bars fs18"></i>
+                        <i className="fas fa-user-circle fs28"></i>
+                    </button>
+                </NavLink>
                 {loggedInUser && <span className="loggedin-user">
                     <Link to={`user/${loggedInUser._id}`}>
                         {loggedInUser.fullname}
                     </Link>
-                    <span>{loggedInUser.score || 0}</span>
                 </span>}
             </section>
         </header>

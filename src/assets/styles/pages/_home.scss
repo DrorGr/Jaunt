@@ -1,0 +1,16 @@
+
+.hero{
+    height: 80vh;
+    background-image: url(../../img/hero.jpg);
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+    .explore-nearby{
+        background-color: #fff;
+        :nth-child(2){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }

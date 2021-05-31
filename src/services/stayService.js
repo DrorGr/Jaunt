@@ -33,14 +33,12 @@ export const stayService = {
 
 function query(filterBy) {
   let { stays } = gStays
-  console.log('filter',filterBy);
   if (filterBy.location) {
     const filterRegex = new RegExp(filterBy.location, 'i')
     stays = stays.filter(stay => filterRegex.test(stay.loc.address))
   } else {
     stays = gStays.stays
   }
-  // console.log(gStays.stays);
   return Promise.resolve(stays)
 }
 function getById(stayId) {

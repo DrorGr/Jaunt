@@ -1,13 +1,28 @@
 .stay-preview{
-    font-size: 0.7rem;
+    // font-size: 0.7rem;
     margin-bottom: 15px;
-
+    i{
+        color: $clr1;
+    }
     img{
     width: 100%;
     height: 120px;
     border-radius: 10px;
     position: relative;
     object-fit: cover;
+    }
+    .stay-rate{
+        :not(:last-child){
+            margin-right: 4px;
+        }
+        .reviews-amount{
+            color: $clr3
+        }
+    }
+    .stay-price{
+        :first-child{
+            font-family: circular-bold;
+        }
     }
 }
 
@@ -19,3 +34,4 @@
     right: -195px;
 
 }
+

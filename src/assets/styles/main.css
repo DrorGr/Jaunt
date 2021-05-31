@@ -1,6 +1,16 @@
 /* Breakpoint mixins */
 /* Media  Mixins */
-@font-face {}@font-face {}.fs12 {
+@font-face {
+  font-family: circular;
+  src: url(../../fonts/Circular/CircularStd-Medium.ttf);
+}
+
+@font-face {
+  font-family: circular-bold;
+  src: url(../../fonts/Circular/CircularStd-Bold.ttf);
+}
+
+.fs12 {
   font-size: 0.75rem;
 }
 
@@ -198,7 +208,7 @@
 }
 
 html {
-  font-family: montserrat;
+  font-family: circular;
   line-height: 1.6;
   color: #4f3a65;
 }
@@ -214,12 +224,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 section, main, footer {
   padding: 5px;
 }
 
 img {
-  width: 100%;
+  width: 20%;
 }
 
 p {
@@ -229,10 +245,19 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
 }
 
 button {
@@ -252,9 +277,6 @@ form > * {
 header {
   background-color: #dff0ea;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -276,19 +298,46 @@ header .loggedin-user span {
   border-radius: 50%;
 }
 
-header nav {
-  background-color: #95adbe;
-  padding: 5px 0;
+header .header-nav > *:not(:last-child) {
+  margin-right: 20px;
 }
 
-header nav a:not(:first-child) {
-  border-top: 1px solid #ce2e6c;
-  padding: 0 5px;
-  margin: 10px;
+.stay-filter {
+  -webkit-box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 20px;
+  padding: 0px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 32px;
 }
 
-header nav .active {
-  color: #ce2e6c;
+.stay-filter > * {
+  border-radius: 32px;
+  line-height: 20px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.stay-filter > *:hover:not(:last-child),
+.stay-filter:nth-child(2) > input:hover {
+  background-color: #EBEBEB;
+}
+
+.stay-filter .search-btn {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .review-list {

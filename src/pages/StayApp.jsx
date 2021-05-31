@@ -13,18 +13,22 @@ class _StayApp extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if(prevProps.location.pathname !== this.props.location.pathname){
-            console.log('chnge');
+        const currLocation = this.getFilterBy().location
+        let search = prevProps.location.search;
+        let params = new URLSearchParams(search);
+        let prevLocation = params.get('loc');
+        if (currLocation !== prevLocation) {
+            this.props.loadStays(this.getFilterBy())
         }
+
     }
-    
+
 
     getFilterBy = () => {
         let search = this.props.location.search;
         let params = new URLSearchParams(search);
         let location = params.get('loc');
         const filterBy = { location }
-        console.log('loc',location);
         return filterBy
     }
 
@@ -36,11 +40,9 @@ class _StayApp extends Component {
         const { stays } = this.props
         if (!stays) return <div>Loading...</div>
         return (
-            <section className="stay-app">
+            <section className="stay-app main-container">
                 <section className="search-container flex justify-center">
-                    <StayFilter
-                        loadStays={this.loadStays}
-                    />
+                    <StayFilter />
                 </section>
                 <section>
                     <StayList stays={stays} />

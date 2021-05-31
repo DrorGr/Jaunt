@@ -4,13 +4,21 @@ export function StayPreview({ stay }) {
 
     return (
         <Link to={`/stay/${stay._id}`} className="primary-btn">
-            <article className="stay-preview">
+            <article className="stay-preview fs16">
                 <img src={stay.imgUrls[0]} alt="" />
-                <span className="stay-rate"><i className='fa fa-star'></i> {stay.reviews[0].rate} (rate)</span>
+                <span className="stay-rate flex">
+                    <i className='fa fa-star'></i> 
+                    <span>{stay.reviews[0].rate}</span>
+                    {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
+                    {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span> }
+                </span>
                 <p className="stay-name">{stay.name} </p>
                 <p className="stay-summery">{`${stay.capacity} guests`} </p>
                 {/* <p className="stay-amenities">{`${stay.amenities.join(' • ')} `} </p> */}
-                <p className="stay-price">{`$${stay.price} / night`}</p>
+                <p className="stay-price">
+                    <span><b>${stay.price}</b></span>
+                    <span> / night</span> 
+                    </p>
                 <span className="save-btn"><i className='fa fa-heart-o'></i></span>
                 {/* {(loggedInUser && loggedInUser.isHost) &&
                 <div className="admin-actions">

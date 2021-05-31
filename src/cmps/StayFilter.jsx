@@ -17,11 +17,6 @@ class _StayFilter extends Component {
         guetsAmount: ''
     }
 
-    onSetFilter = (filterBy) => {
-        this.props.loadStays(filterBy)
-    }
-
-
     handleChange = ({ target }) => {
         const { name, value } = target
         const { filterBy } = this.state
@@ -30,10 +25,6 @@ class _StayFilter extends Component {
             [name]: value,
             [name]: value
         }
-            // , () => {
-            //     const { filterBy } = this.state
-            //     this.onSetFilter(filterBy)
-            // }
         )
     }
     setDates = (dates) => {
@@ -47,14 +38,7 @@ class _StayFilter extends Component {
     onSubmit = (ev) => {
         ev.preventDefault()
         const { location } = this.state
-        // this.props.history.push(`/stay`)
-        // console.log('href ', window.location.href);
-        // this.props.setUrl(location)
-        const { filterBy } = this.state
-        // this.onSetFilter(filterBy)
         this.props.history.push(`/stay?loc=${location}`)
-        this.props.loadStays(filterBy)
-
     }
 
     render() {
