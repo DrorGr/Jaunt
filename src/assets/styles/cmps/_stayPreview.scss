@@ -11,26 +11,25 @@
     position: relative;
     object-fit: cover;
     }
-    .stay-rate{
-        :not(:last-child){
-            margin-right: 4px;
-        }
-        .reviews-amount{
-            color: $clr3
-        }
+}
+
+.stay-rate{
+    :not(:last-child){
+        margin-right: 4px;
     }
-    .stay-price{
-        :first-child{
-            font-family: circular-bold;
-        }
+    .reviews-amount{
+        color: $clr3;
     }
 }
 
 
+
+
+
 .save-btn{
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: -190px;
+    top: -210px;
     right: -195px;
 
 }

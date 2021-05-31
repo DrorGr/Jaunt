@@ -47,7 +47,7 @@ class _StayFilter extends Component {
         const { location, startDate, endDate, guetsAmount } = this.state
         return (
             <form className="stay-filter flex justify-center align-center" >
-                <div>
+                <div className="location">
                     <label htmlFor="location">Location</label>
                     <input type="text" name="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} required />
                 </div>

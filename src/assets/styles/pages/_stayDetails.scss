@@ -57,11 +57,25 @@
     box-shadow:  0 6px 8px rgb(216, 216, 216);
 
     .value-rate{
-     align-items: baseline;   
+     align-items: baseline; 
+     width: 100%;
+     
     }
 
     .order-details{
         border: 1px solid #dddddd;
         border-radius: 3px;
+        >*{
+            width: 100%;
+            border: 1px solid #dddddd;
+
+        }
     }
 }
+
+.stay-rate{
+    i{
+        color: $clr1;
+    }
+}
+
