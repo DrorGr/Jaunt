@@ -18,7 +18,7 @@ class _Home extends Component {
           <h2>Explore nearby</h2>
           <section className="grid">
             <div className="flex">
-              <img src="../assets/img/1.jpg" alt="tel-aviv-yafo" />
+              <img src="/c.jpg" alt="tel-aviv-yafo" />
               <div>
                 <span>Tel Aviv-Yafo</span>
                 <span>15 minute drive</span>

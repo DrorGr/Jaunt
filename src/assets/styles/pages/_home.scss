@@ -1,5 +1,6 @@
 .main-header{
-    height: 90vh;
+    // height: 100%;
+    
 }
 .explore-nearby{
     background-color: #fff;
@@ -8,11 +9,13 @@
         grid-template-rows: repeat(2, 1fr);
     }
 }
-.home{
+.home {
+    height: 80vh;
+    width: 100vw;
     grid-column: 1/-1;
     background-image: url(../../img/hero.jpg);
     background-position: center;
-    background-size: cover ;
+    background-size:cover ;
     background-repeat: no-repeat;
 }
 
