@@ -2,6 +2,12 @@
 .home{
     height: 90vh;
 }
+
+.main-header{
+    height: 50vw;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
 .explore-nearby{
     background-color: #fff;
     :nth-child(2){
@@ -12,19 +18,26 @@
 .home {
     grid-column: 1/-1;
     background-image: url(../../img/hero.jpg);
-    background-position: center;
-    background-size:cover ;
+    background-position: top;
+    background-size:100% ;
     background-repeat: no-repeat;
 
 }
 
 .app-desc{
-    padding-bottom: 275px;
-    div span:nth-child(2){
+    flex: 1;
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 8rem;
+     span,
+     a{
         background-color: #000;
         color: #fff;
         padding: 5px;
         border-radius: 10px;
         width: fit-content;
- }
+    }
+    a{
+        line-height: 5;
+    }
 }

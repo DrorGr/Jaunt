@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
 import { NavBar } from '../cmps/NavBar'
+import {SelectDates} from '../cmps/SelectDates'
+// import {Map} from '../cmps/Map'
 
 
 export class StayDetails extends Component {
@@ -128,16 +130,7 @@ export class StayDetails extends Component {
             </form>
           </div>
         </section>
-        <section>
-          <DatePicker
-            selected={startDate}
-            onChange={date => this.setDates(date)}
-            startDate={startDate}
-            endDate={endDate}
-            selectsRange
-            inline
-          />
-        </section>
+        {/* <SelectDates/> */}
 
         <section className="reviews">
           <div className="review-parameters"></div>
@@ -147,7 +140,9 @@ export class StayDetails extends Component {
             <p className="review-date"></p>
           </div>
         </section>
-        <div className="location-map"></div>
+        <div className="location-map">
+          {/* <Map/> */}
+        </div>
         <div className="host-details"></div>
       </section>
     )

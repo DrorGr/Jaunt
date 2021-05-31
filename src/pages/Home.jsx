@@ -12,9 +12,9 @@ class _Home extends Component {
   render() {
     return (
       <div className="home">
-        <section>
+        {/* <section> */}
         <Hero/>
-        </section>
+        {/* </section> */}
         <section className="explore-nearby  main-container">
           <h2>Explore nearby</h2>
           <section className="grid">
