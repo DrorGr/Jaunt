@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
 import { StayFilter } from '../cmps/StayFilter'
 import { StayList } from '../cmps/StayList'
+import { Header } from '../cmps/Header'
+import { NavBar } from '../cmps/NavBar.jsx'
 
 class _StayApp extends Component {
 
@@ -40,10 +42,12 @@ class _StayApp extends Component {
         const { stays } = this.props
         if (!stays) return <div>Loading...</div>
         return (
-            <section className="stay-app main-container">
-                <section className="search-container flex justify-center">
+            <section className="stay-app">
+                {/* <Header /> */}
+                {/* <section className="search-container flex justify-center">
                     <StayFilter />
-                </section>
+                </section> */}
+                <NavBar/>
                 <section>
                     <StayList stays={stays} />
                 </section>

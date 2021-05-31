@@ -42,6 +42,7 @@ class _StayFilter extends Component {
         this.props.history.push(`/stay?loc=${location}`)
     }
 
+
     render() {
         const { location, startDate, endDate, guetsAmount } = this.state
         return (
@@ -88,3 +89,4 @@ class _StayFilter extends Component {
 // export default withRouter(_StayFilter)
 // export const StayFilter = connect(mapStateToProps, mapDispatchToProps)(_StayFilter)
 export const StayFilter = withRouter(_StayFilter)
+

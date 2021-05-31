@@ -1,17 +1,18 @@
 header {
     background-color: transparent;
     color: #fff;
-    padding: 10px;
-    justify-content: space-between;
-    font-family: circular;
+    // justify-content: space-between;
+    font-family: roboto;
 
-   .logo-container{
-       i{
-           padding-right: 15px;
-
-       }
-   }
-
+    
+    .logo-container{
+        font-family: circular;
+        i{
+            padding-right: 15px;
+            
+        }
+    }
+    
     .loggedin-user {
         background-color: $clr1;
         padding: 2px 8px;
@@ -32,7 +33,7 @@ header {
     .header-nav>*:not(:last-child){
         margin-right: 20px;
     } 
-
+    
     .login-btn{
         background-color: #fff;
         border-radius: 21px;
@@ -47,4 +48,8 @@ header {
             color: gray
         }
     }
+}
+
+.header-container{
+    padding-top: 20px;
 }

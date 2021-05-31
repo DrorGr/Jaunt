@@ -12,9 +12,9 @@ export function App() {
   return (
     <div className="app">
       <Router>
-        <header className="main-container">
+        {/* <header className="main-container">
         <Header/>
-        </header>
+        </header> */}
         <main className="main-container">
           <Switch>
             <Route path="/stay/:id" component={StayDetails} />

@@ -1,15 +1,28 @@
-
-.hero{
-    height: 80vh;
+.main-header{
+    height: 90vh;
+}
+.explore-nearby{
+    background-color: #fff;
+    :nth-child(2){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+.home{
+    grid-column: 1/-1;
     background-image: url(../../img/hero.jpg);
-    // background-position: center;
-    background-size: cover;
+    background-position: center;
+    background-size: cover ;
     background-repeat: no-repeat;
 }
-    .explore-nearby{
-        background-color: #fff;
-        :nth-child(2){
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-    }
+
+.app-desc{
+    padding-bottom: 200px;
+    div span:nth-child(2){
+        background-color: #000;
+        color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        width: fit-content;
+ }
+}
