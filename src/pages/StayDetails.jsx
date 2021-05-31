@@ -86,17 +86,8 @@ export class StayDetails extends Component {
               <div className="host-img"><img src={stay.host.imgUrl} alt="profile" /></div>
             </div>
             <hr />
-            {/* Temporary */}
             <div className="txt-description">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
-
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita corrupti vitae iste id possimus quis eligendi recusandae, dignissimos totam consectetur doloribus veritatis temporibus commodi deserunt, amet exercitationem dolor sint.</p>
+              <p>{stay.summary}</p>
             </div>
             <hr />
             <div className="amenities">{stay.amenities.map((txt, idx) => <p key={idx}><i className={this.amenitiesIcon(txt)}></i> {txt}</p>)}</div>
