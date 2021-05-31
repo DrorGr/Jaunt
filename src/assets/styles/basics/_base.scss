@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
-::selection {
-    background-color: $clr1;
-    color: $clr6;
-}
+// ::selection {
+//     background-color: $clr1;
+//     color: $clr6;
+// }
 
 html {
     font-family: roboto;
@@ -56,7 +56,8 @@ a {
 //     text-decoration: underline;
 // }
 
-button{
+button,
+label{
     cursor: pointer;
 }
 

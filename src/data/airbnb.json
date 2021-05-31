@@ -754,14 +754,14 @@
     },
     {
       "_id": "10006141",
-      "name": "Small loft",
+      "name": "Cozy & Design Studio 2P -in the Heart of le Marais",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house15",
 
         "otherImg.jpg"
       ],
       "price": 40.00,
-      "summary": "small loft",
+      "summary": "Très joli studio Parisien de 25m² récemment rénové idéal pour un séjour Parisien au cœur du fabuleux quartier du MARAIS. Le logement peut accueillir deux personnes dans un lit double. Un service professionnel de grand standing vous attend avec serviettes de bain et draps de qualité hôtelière. L'appartement est entièrement équipé.",
       "capacity": 2,
       "amenities": [
         "TV",
@@ -804,14 +804,14 @@
     },
     {
       "_id": "10006143",
-      "name": "Nice home",
+      "name": "Lovely Apartment 3 mins to Notre-Dame / st-Michel",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house16",
 
         "otherImg.jpg"
       ],
       "price": 95.00,
-      "summary": "Home, just home.",
+      "summary": "Located at the MOST CENTRAL area of Paris, Latin Quarter. 3 min to the Seine, 3 mins to Cathédrale Notre-Dame / St-Michel, 3 mins to Sorbonne U., 10 mins to Jardin du Jardin du Luxembourg. 1 min to Metro: Cluny La Sorbonne (Line 10), St-Michel Notre-Dame (Line 4, RER B). Numerous restaurants, cafes/bars. Responsive host ready to help. Located on the 3nd floor without elevator (ground floor is zero floor). Be prepared to climb three floors of stairs. Price negotiable only before booking.",
       "capacity": 4,
       "amenities": [
         "TV",
@@ -819,7 +819,10 @@
         "Kitchen",
         "Smoking allowed",
         "Pets allowed",
-        "Air conditioning"
+        "Air conditioning",
+        "Hair dryer",
+        "Refrigerator",
+        "Microwave"
       ],
       "host": {
         "_id": "51399144",
@@ -854,15 +857,15 @@
     },
     {
       "_id": "10006145",
-      "name": "Small loft",
+      "name": "Double/Twin Room, close to Opera and the Louvre with breakfast included",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house17",
 
         "otherImg.jpg"
       ],
       "price": 86.00,
-      "summary": "Small loft.",
-      "capacity": 3,
+      "summary": "The Daunou Opera enjoys a prestigious location in the heart of the right bank of Paris. It offers every imaginable comfort in a quiet and sophisticated setting. The hotel is superbly located between the Opera and Place Vendome, a few minutes from the Louvre, the Grevin Museum, the magnificent Tuileries Gardens, major department stores (Galeries Lafayette, Printemps Haussmann) and Gare Saint Lazare. It is convenient to the Olympia music hall and theatres such as Theatre De La Michodière, Theatre de Paris, Theatre de la Pépinière, Theatre Edouard VII, Theatre Daunou, Theatre des Variétés and Theatre du Gymnase. The Hotel Daunou Opera offers you Paris in all its splendour. Double bed (160 x 200 cm) or Bedroom with 2 single beds (80 x 200 cm)",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
@@ -1004,15 +1007,15 @@
     },
     {
       "_id": "10006151",
-      "name": "loft on the Bridge",
+      "name": "Still Life Clerkenwell Deluxe Apartments",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house20",
 
         "otherImg.jpg"
       ],
       "price": 95.00,
-      "summary": "Prime location.",
-      "capacity": 8,
+      "summary": "Whether you are in London for business or pleasure this apartment offers you the best of both worlds. Spacious and modern, this apartment is situated in the vibrant Clerkenwell, with plenty of cafés, restaurants and bars, and at 7 minutes walk to Old Street station - Barbican station is also at walking distance. We require a refundable damage deposit of £250 prior to arrival.",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
@@ -1036,7 +1039,7 @@
       "reviews": [
         {
           "id": "madeId",
-          "txt": "Very helpful hosts. Cooked traditional...",
+          "txt": "Very nice, had fun! Will recommened",
           "rate": 8,
           "by": {
             "_id": "u102",
@@ -1104,15 +1107,15 @@
     },
     {
       "_id": "10006155",
-      "name": "Basic home",
+      "name": "Designer Studio for 2, close to Louvre Museum!",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house22",
 
         "otherImg.jpg"
       ],
       "price": 300.00,
-      "summary": "Home, just home.",
-      "capacity": 4,
+      "summary": "This studio, in the heart of the 1st arrondissement, is located at 2 steps of the Louvre Museum. Ideally located in the heart of Paris. You will love to relax in its lounge with a fold-away bed, fully equipped and very brightfull which will enable you to have your breakfast comfortably before going to discover the capital.",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
@@ -1123,7 +1126,7 @@
       ],
       "host": {
         "_id": "51399156",
-        "fullname": "RIva H",
+        "fullname": "Riva H",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
@@ -1136,7 +1139,7 @@
       "reviews": [
         {
           "id": "madeId",
-          "txt": "Very helpful hosts. Cooked traditional...",
+          "txt": "Had an awesome stay! Merci!",
           "rate": 9,
           "by": {
             "_id": "u102",
@@ -1457,15 +1460,15 @@
     },
     {
       "_id": "10006169",
-      "name": "London Prime location",
+      "name": "Bohemian London Living - Large Double Balcony Room",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house29",
 
         "otherImg.jpg"
       ],
       "price": 200.00,
-      "summary": "Prime location.",
-      "capacity": 3,
+      "summary": "High end, newly refurbished, 5 Star double room with shared bathroom. Spacious and well designed living and sleeping space complimented by our fully equipped modern kitchen. Décor is exceptional throughout. 10 minutes walk to Swiss Cottage tube station. Swiss Cottage to Bond Street is only 9 minuets, Ideal for exploring all that Central London has to offer.",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
@@ -1508,17 +1511,18 @@
     },
     {
       "_id": "10006171",
-      "name": "Large room",
+      "name": "Superb apartment Montorgueil/Grands Boulevards",
       "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house30",
 
         "otherImg.jpg"
       ],
       "price": 110.00,
-      "summary": "Large room",
-      "capacity": 2,
+      "summary": "This beautiful apartment is located in the heart of the 2nd district of Paris and can accommodate up to 4 people. It is surrounded by many shops, including major brand stores, famous restaurants and local shops. It is the ideal location to discover Paris.",
+      "capacity": 4,
       "amenities": [
         "TV",
+        "Washer",
         "Wifi",
         "Kitchen",
         "Smoking allowed",
@@ -1540,7 +1544,7 @@
       "reviews": [
         {
           "id": "madeId",
-          "txt": "Very helpful hosts. Cooked traditional...",
+          "txt": "TV was broken. Wifi didn't work. Do NOT recommend",
           "rate": 2,
           "by": {
             "_id": "u102",
@@ -1753,7 +1757,53 @@
 
       
       "likedByUserIds": [
-        
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006180",
+      "name": "Sunny room next to Shoreditch",
+      "imgUrls": [
+        "https://source.unsplash.com/random/400X400/?house66",
+
+        "otherImg.jpg"
+      ],
+      "price": 60.00,
+      "summary": "Cosy & sunny double bedroom in the bustling East London. Just minutes walk from Stepney Green & Whitechapel stations, 20min walk from Old Spitalfields Market, just 15min walk from Mile End Park. Flatmates are full time working professionals. Currently we can accept ONLY local guests from UK. You won't be able to quarantine in this flat because of shared common spaces. Please have your ID, email & phone nr confirmed on your profile before requesting.",
+      "capacity": 1,
+      "amenities": [
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Air conditioning"
+      ],
+      "host": {
+        "_id": "21399180",
+        "fullname": "Tom M",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "United Kingdom",
+        "countryCode": "UK",
+        "address": "London, united kingdom",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Big and Spacious room! The house mates were lovely!",
+          "rate": 2,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+
+      
+      "likedByUserIds": [
         "u102"
       ]
     }

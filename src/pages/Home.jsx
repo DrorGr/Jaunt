@@ -11,9 +11,7 @@ class _Home extends Component {
   render() {
     return (
       <div className="home">
-        <section>
           <Hero />
-        </section>
         <section className="explore-nearby main-container">
           <h1>Explore nearby</h1>
           <Nearby />

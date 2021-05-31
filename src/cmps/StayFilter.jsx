@@ -49,12 +49,11 @@ class _StayFilter extends Component {
             <form className="stay-filter flex justify-center align-center" >
                 <div className="location">
                     <label htmlFor="location">Location</label>
-                    <input type="text" name="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} required />
+                    <input type="text" name="location" id="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} required />
                 </div>
-                <div>
+                <div className="date-picker">
                     Dates
                     <DatePicker
-                        className="date-picker"
                         placeholderText="Choose dates"
                         selected={startDate}
                         startDate={startDate}
@@ -69,7 +68,7 @@ class _StayFilter extends Component {
                 </div>
                 <div>
                     <label htmlFor="guetsAmount">Guests</label>
-                    <input type="number" name="guetsAmount" min="1" placeholder="guests" value={guetsAmount} onChange={this.handleChange} required />
+                    <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} required />
                 </div>
                 <button className="search-btn" onClick={this.onSubmit}><i className="fas fa-search search-icon"></i></button>
             </form>
