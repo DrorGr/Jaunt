@@ -7,7 +7,7 @@ import Herzliya from '../assets/img/6.jpg'
 import RamatGan from '../assets/img/7.jpg'
 import Tveria from '../assets/img/8.jpg'
 import { Link, NavLink } from 'react-router-dom'
-export function Nearby({ }) {
+export function Nearby() {
     const places = 
     [
         { name: 'Tel-Aviv', img: telAviv, time: 30 },

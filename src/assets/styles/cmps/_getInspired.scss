@@ -1,0 +1,21 @@
+.getInspired-container{
+    margin-top: 60px;
+    height: 100%;
+    // background-image: url(../../img/get-inspired.jpg);
+    // background-size:100% ;
+    // background-repeat: no-repeat;
+    // border-radius: 15px;
+    // object-fit: cover;
+    // vertical-align: bottom;
+    
+    .inspiration{
+         flex-wrap: wrap;
+
+        .inspire-btn{
+         padding: 20px;
+         background-color: black;
+         color: whitesmoke;
+         font-weight: 600;
+        }
+    }
+}
