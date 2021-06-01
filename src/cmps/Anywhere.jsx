@@ -2,7 +2,7 @@ import paris from '../assets/img/paris.jpg'
 import london from '../assets/img/london.jpg'
 import newYork from '../assets/img/new-york.jpg'
 import istanbul from '../assets/img/istanbul.jpg'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export function Anywhere() {
     const places = 
     [
