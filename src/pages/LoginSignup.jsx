@@ -78,7 +78,6 @@ class _LoginSignup extends Component {
   }
   render() {
     let signupSection = (
-      <div className="form-container">
       <form className="frm" onSubmit={this.doSignup}>
         <h2>Signup</h2>
         <input
@@ -88,7 +87,7 @@ class _LoginSignup extends Component {
           onChange={this.signupHandleChange}
           placeholder="Full name"
           autoComplete="fullname"
-          />
+        />
         <input
           name="password"
           type="password"
@@ -96,7 +95,7 @@ class _LoginSignup extends Component {
           onChange={this.signupHandleChange}
           placeholder="Password"
           autoComplete="current-password"
-          />
+        />
         <input
           type="text"
           name="username"
@@ -104,21 +103,19 @@ class _LoginSignup extends Component {
           onChange={this.signupHandleChange}
           placeholder="Username"
           autoComplete="username"
-          />
+        />
         <br />
         <button>Signup</button>
       </form>
-          </div>
     )
     let loginSection = (
-    <div className="form-container">
       <form className="frm" onSubmit={this.doLogin}>
         <h2>Login</h2>
         <select
           name="username"
           value={this.state.loginCred.username}
           onChange={this.loginHandleChange}
-          >
+        >
           <option value="">Select User</option>
           {this.props.users && this.props.users.map(user => <option key={user._id} value={user.username}>{user.fullname}</option>)}
         </select>
@@ -129,24 +126,22 @@ class _LoginSignup extends Component {
           value={this.state.loginCred.username}
           onChange={this.loginHandleChange}
           placeholder="Username"
-          />
-          <br />
+        />
+        <br />
         <input
-        type="password"
-        name="password"
-        value={this.state.loginCred.password}
+          type="password"
+          name="password"
+          value={this.state.loginCred.password}
           onChange={this.loginHandleChange}
           placeholder="Password"
         />
-      <br /> */}
+        <br /> */}
         <button>Login</button>
       </form>
-      </div>
     )
 
     const { loggedInUser } = this.props
     return (
-      <div className="form-container">
       <div className="login">
         <h1>
           Login / Signup
@@ -178,7 +173,7 @@ class _LoginSignup extends Component {
                     onClick={() => {
                       this.removeUser(user._id)
                     }}
-                    >
+                  >
                     Remove {user.username}
                   </button>
                 </li>
@@ -187,7 +182,6 @@ class _LoginSignup extends Component {
           </details>
         </section>
       </div>
-                    </div>
     )
   }
 }
