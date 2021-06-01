@@ -5,7 +5,7 @@ export function StayPreview({ stay }) {
     return (
         <Link to={`/stay/${stay._id}`} className="primary-btn">
             <article className="stay-preview fs16">
-                <img src={stay.imgUrls[0]} alt="" />
+                <img src={stay.imgUrls[0]} alt="" loading='lazy' />
                 <span className="stay-rate flex">
                     <i className='fa fa-star'></i> 
                     <span>{stay.reviews[0].rate}</span>
