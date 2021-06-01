@@ -16,15 +16,15 @@ class _StayFilter extends Component {
         endDate: '',
         guetsAmount: '',
         x: 0,
-         y: 0
+        y: 0
     }
 
     handleMouseMove = event => {
         this.setState({
-          x: event.clientX,
-          y: event.clientY,
+            x: event.clientX,
+            y: event.clientY,
         })
-      }
+    }
 
     handleChange = ({ target }) => {
         const { name, value } = target
@@ -54,9 +54,8 @@ class _StayFilter extends Component {
 
     render() {
         const { location, startDate, endDate, guetsAmount } = this.state
-        const {x, y} = this.state
-        const style = {backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)`}
-        console.log(style);
+        const { x, y } = this.state
+        const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
         return (
             <form className="stay-filter flex justify-center align-center" >
                 <div className="location">
@@ -82,13 +81,13 @@ class _StayFilter extends Component {
                     <label htmlFor="guetsAmount">Guests</label>
                     <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} required />
                 </div>
-                <button onMouseMove={this.handleMouseMove} 
-                    className="search-btn" 
+                <button onMouseMove={this.handleMouseMove}
+                    className="search-btn"
                     onClick={this.onSubmit}
                     style={style}
-                    >
+                >
                     <i className="fas fa-search search-icon"></i>
-                    </button>
+                </button>
             </form>
         )
     }

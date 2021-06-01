@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-import { StayFilter } from '../cmps/StayFilter'
 import { StayList } from '../cmps/StayList'
-import { Header } from '../cmps/Header'
 import { NavBar } from '../cmps/NavBar.jsx'
 
 class _StayApp extends Component {

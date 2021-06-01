@@ -1,4 +1,17 @@
 
+.details-container{
+    margin: 2.5rem 0;
+  
+}
+
+.desc-page{
+    margin-top: 3rem;
+    a{
+        text-decoration: underline;
+        color: $clr3;
+    }
+}
+
 .title-secondery > *{
     gap: 20px;
     margin-bottom: 5px;
@@ -30,7 +43,6 @@
 }
 
 .description-availability{
-    // gap: 40px;
     
     .stay-description{
         flex: 2;
@@ -39,15 +51,30 @@
         flex: 1;
         text-align: center;
     }
-    img{
-        max-width: 50px;
-        border-radius: 50%;
+}
+.host-img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.summary-container{
+    margin: 50px 0;
+}
+
+.info-container{
+
+    .info{
+        gap: 20px;
+    }
+    div:not(:last-child){
+        margin-bottom: 1.5rem;
     }
 }
 
 .availability{
     margin-left: 10%;
-    position: sticky!important;
+    position: sticky;
     top:500px;
     height: fit-content;
     padding: 20px;
@@ -55,6 +82,26 @@
     border-radius: 10px;
     padding: 24px;
     box-shadow:  0 6px 8px rgb(216, 216, 216);
+    .date-picker{
+        font-size: 20px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .check-btn{
+        background-size: 150% 150%;
+        background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+        border-radius: 16px;
+        padding: 20px;
+        font-family: circular;
+        width: 100%;
+    }
+
+    .react-datepicker{
+        display: flex;
+        width: min-content;
+    }
 
     .value-rate{
      align-items: baseline; 
@@ -63,17 +110,27 @@
     }
 
     .order-details{
-        border: 1px solid #dddddd;
-        border-radius: 3px;
-        >*{
-            width: 100%;
-            border: 1px solid #dddddd;
-
+        border-radius: 16px;
+        border: 1px solid $clr3;
+        width: 100%;
+        .react-datepicker__input-container{
+            border-bottom: 1px solid $clr3;
         }
+        .react-datepicker__input-container,
+        .guests{
+            line-height: 4rem;
+        }
+
+        
+        &>*{
+            width: 100%;
+        }
+        
     }
 }
 
 .stay-rate{
+    margin-bottom: 1.5rem;
     i{
         color: $clr1;
     }
