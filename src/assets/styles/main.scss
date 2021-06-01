@@ -15,7 +15,6 @@
 // Components
 @import "cmps/Header";
 @import "cmps/stayFilter";
-@import "cmps/ReviewList";
 @import "cmps/stayList";
 @import "cmps/stayPreview";
 @import "cmps/navbar";
@@ -23,11 +22,13 @@
 @import "cmps/anywhere";
 @import "cmps/getInspired";
 @import "cmps/becomeHost";
-
 @import "cmps/amenities";
 @import "cmps/selectDates";
 
+
+
 //Pages
 @import "pages/stayDetails";
+@import "pages/LoginSignup";
 @import "pages/home";
 
