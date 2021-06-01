@@ -7,7 +7,7 @@ import {SelectDates} from '../cmps/SelectDates'
 import { StayMap } from '../cmps/StayMap'
 // import { SelectDates } from '../cmps/SelectDates'
 import { Amenities } from '../cmps/Amenities'
-import { Reviews} from '../cmps/Reviews'
+import { Reviews } from '../cmps/Reviews'
 // import {Map} from '../cmps/Map'
 
 
@@ -106,7 +106,7 @@ export class StayDetails extends Component {
                   <h2>{`Entire apartment hosted by ${stay.host.fullname}`}</h2>
                   <p>{`${stay.capacity} guests `}</p>
                 </div>
-                  <img className="host-img" src={stay.host.imgUrl} alt="profile" />
+                <img className="host-img" src={stay.host.imgUrl} alt="profile" />
               </div>
               <hr />
               <section className="info-container details-container">
@@ -144,6 +144,10 @@ export class StayDetails extends Component {
                 <Amenities amenities={stay.amenities} getAmenitiesIcons={this.getAmenitiesIcons} />
               </section>
               <hr />
+              <section className="details-container">
+            <h2>Select dates</h2>
+            <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
+          </section>
             </div>
             <div className="availability flex column">
               <form className="check-availability flex column align-center">
@@ -179,13 +183,11 @@ export class StayDetails extends Component {
               </button>
               </form>
             </div>
+          
           </section>
-          <section className="details-container">
-            <h2>Select dates</h2>
-            <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
-          </section>
+          <hr />
           <Reviews reviews={stay.reviews} />
-    
+
           <div className="location-map">
             {/* <Map/> */}
           </div>
