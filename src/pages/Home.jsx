@@ -7,6 +7,7 @@ import { Hero } from '../cmps/Hero.jsx'
 import { Nearby } from '../cmps/Nearby'
 import { Anywhere } from '../cmps/Anywhere'
 import { GetInspired } from '../cmps/GetInspired'
+import { BecomeHost } from '../cmps/BecomeHost'
 
 class _Home extends Component {
 
@@ -24,6 +25,11 @@ class _Home extends Component {
           <Link to={`/stay`}>
             <section className="getInspired-container">
               <GetInspired />
+            </section>
+          </Link>
+          <Link to={`/host`}>
+            <section className="become-host-container">
+              <BecomeHost/>
             </section>
           </Link>
         </section>

@@ -25,11 +25,11 @@ export function Nearby() {
             {places.map((place) =>
                 <Link to={`stay/?loc=${place.name}`}>
                     <div className="explore-preview flex">
-                        <div className="img">
+                        <div className="img-preview">
                         <img src={place.img} alt={place.name} />
                         </div>
-                        <div className="destination flex column">
-                            <span className="city">{place.name}</span>
+                        <div className="destination flex column justify-center">
+                            <span className="city ">{place.name}</span>
                             <span>{`${place.time} minute drive`}</span>
                         </div>
                     </div>
