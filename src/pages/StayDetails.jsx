@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
 import { NavBar } from '../cmps/NavBar'
+import {SelectDates} from '../cmps/SelectDates'
+import { StayMap } from '../cmps/StayMap'
 import { SelectDates } from '../cmps/SelectDates'
 import { Amenities } from '../cmps/Amenities'
 import { Reviews } from '../cmps/Reviews'
@@ -190,6 +192,10 @@ export class StayDetails extends Component {
             {/* <Map/> */}
           </div>
           <div className="host-details"></div>
+        </section>
+        <div className="host-details"></div>
+        <section className="map-container">
+          <StayMap location={stay.loc}/>
         </section>
       </section>
     )

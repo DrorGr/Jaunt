@@ -1,6 +1,7 @@
-.getInspired-container{
+.become-host-container{
     margin-top: 60px;
     height: 100%;
+    color:rgb(255, 255, 255) ;
 
     .details{
         height: 100%;
@@ -9,10 +10,10 @@
         padding: 0 80px;
         top: 0;
         z-index: 1;
-        max-width: 480px;
+        max-width: 500px;
     }
 
-    .inspiration{
+    .host{
         position: relative;
          flex-wrap: wrap;
          
@@ -34,12 +35,12 @@
              border-radius: 15px;
          }
 
-        .inspire-btn{
+        .more-btn{
          margin: 20px 0 0 0;
          padding: 15px 30px;
-         background-color: #222222;
-         color: rgb(255, 255, 255);
-         font-weight: 500;
+         color: #222222;
+         background-color: rgb(255, 255, 255);
+         font-weight: 600;
          border-radius: 5px;
          font-size: 1rem;
          letter-spacing: 1px;
