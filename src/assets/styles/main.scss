@@ -13,9 +13,8 @@
 
 
 // Components
-@import "cmps/Header";
+@import "cmps/header";
 @import "cmps/stayFilter";
-@import "cmps/ReviewList";
 @import "cmps/stayList";
 @import "cmps/stayPreview";
 @import "cmps/navbar";
@@ -24,6 +23,7 @@
 @import "cmps/getInspired";
 @import "cmps/amenities";
 @import "cmps/selectDates";
+@import "cmps/reviews";
 
 //Pages
 @import "pages/stayDetails";
