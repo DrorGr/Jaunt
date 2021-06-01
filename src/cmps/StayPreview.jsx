@@ -1,11 +1,14 @@
+import { ImgCarousel } from '../cmps/ImgCarousel'
 import { Link } from 'react-router-dom'
 
 export function StayPreview({ stay }) {
-
+    const img = stay.imgUrls[0]
+    console.log(img);
     return (
-        <Link to={`/stay/${stay._id}`} className="primary-btn">
-            <article className="stay-preview fs16">
-                <img src={stay.imgUrls[0]} alt="" />
+
+         <Link to={`/stay/${stay._id}`} className="primary-btn">
+        <article className="stay-preview fs16">
+        <ImgCarousel stay={stay}/>
                 <span className="stay-rate flex">
                     <i className='fa fa-star'></i> 
                     <span>{stay.reviews[0].rate}</span>
@@ -33,7 +36,7 @@ export function StayPreview({ stay }) {
                 </div>
             } */}
             </article>
-        </Link>
+         </Link> 
 
     )
 }
