@@ -1,5 +1,5 @@
 import inspierdImg from '../assets/img/get-inspired.jpg'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export function GetInspired() {
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { StayFilter } from './StayFilter';
 
 class _Header extends Component {
     render() {

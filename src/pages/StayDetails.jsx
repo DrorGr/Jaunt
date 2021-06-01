@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
 import { NavBar } from '../cmps/NavBar'
-import {SelectDates} from '../cmps/SelectDates'
+import { SelectDates } from '../cmps/SelectDates'
+import { Amenities } from '../cmps/Amenities'
+import { Reviews} from '../cmps/Reviews'
 // import {Map} from '../cmps/Map'
 
 
@@ -11,26 +14,34 @@ export class StayDetails extends Component {
     stay: null,
     startDate: '',
     endDate: '',
-    guetsAmount: ''
+    guetsAmount: '',
+    x: 0,
+    y: 0
+  }
+
+  handleMouseMove = event => {
+    this.setState({
+      x: event.clientX,
+      y: event.clientY,
+    })
   }
 
   async componentDidMount() {
     const stay = await stayService.getById(this.props.match.params.id)
-    console.log(this.props.match.params.id);
     this.setState({ stay })
   }
   handleChange = ({ target }) => {
     const { name, value } = target
     const { filterBy } = this.state
     this.setState({
-        filterBy: { ...filterBy, [name]: value },
-        [name]: value,
-        [name]: value
+      filterBy: { ...filterBy, [name]: value },
+      [name]: value,
+      [name]: value
     }
     )
-}
+  }
 
-  amenitiesIcon = (txt) => {
+  getAmenitiesIcons = (txt) => {
     switch (txt) {
       case 'TV': return 'fa fa-tv'
         break;
@@ -44,6 +55,7 @@ export class StayDetails extends Component {
         break;
       case 'Air conditioning': return 'fa fa-snowflake-o'
         break;
+      default:
     }
   }
 
@@ -56,94 +68,127 @@ export class StayDetails extends Component {
   }
 
   render() {
-    const { stay, location, startDate, endDate, guetsAmount } = this.state
+    const { stay, location, startDate, endDate, guetsAmount, x, y } = this.state
+    const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
     if (!stay) return <div>loading</div>
-    console.log(stay);
+
     return (
       <section className="stay-details-container ">
         <NavBar />
-        <div className="details-title">
-          <div className="title-primary"><h3>{stay.name}</h3></div>
-          <div className="title-secondery flex space-between">
-            <div className="left flex space-between">
-              <div><i className='fa fa-star'></i>{stay.reviews[0].rate}</div>
-              <div>{stay.loc.address}</div>
-            </div>
-            <div className="right flex space-between">
-              <div><i className='fa fa-share-square-o'></i>share</div>
-              <div><i className='fa fa-heart-o'></i> save</div>
-            </div>
-          </div>
-        </div>
-        <div className="img-grid-container">
-          {stay.imgUrls.map((img, idx) => <img src={img} alt="" key={idx} />)}
-        </div>
-        <section className="description-availability flex ">
-          <div className="stay-description">
-            <div className="host-desc flex space-between">
-              <div className="titles">
-                <h5>{`Entire apartment hosted by ${stay.host.fullname}`}</h5>
-                <p>{`${stay.capacity} guests `}</p>
-              </div>
-              <div className="host-img"><img src={stay.host.imgUrl} alt="profile" /></div>
-            </div>
-            <hr />
-            <div className="txt-description">
-              <p>{stay.summary}</p>
-            </div>
-            <hr />
-            <div className="amenities">{stay.amenities.map((txt, idx) => <p key={idx}><i className={this.amenitiesIcon(txt)}></i> {txt}</p>)}</div>
-          </div>
-          <div className="availability flex column">
-            <form className="check-availability flex column align-center">
-              <div className="value-rate flex space-between">
-                <span><b className="fs22">${stay.price}</b> / night</span>
-                <span className="stay-rate flex">
-                  <i className='fa fa-star'></i>
-                  <span>{stay.reviews[0].rate}</span>
-                  {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
+        <section className="desc-page">
+
+          <div className="details-title">
+            <div className="title-primary fs24"><h1>{stay.name}</h1></div>
+            <div className="stay-rate title-secondery flex space-between">
+              <div className="left flex space-between">
+                <div>
+                  <i className='fa fa-star'></i>{stay.reviews[0].rate}
+                  {stay.reviews.length === 1 && <span className="reviews-amount"> ({stay.reviews.length} review)</span>}
                   {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
-                </span>
-                {/* <span><i class='fa fa-star'></i>{stay.reviews[0].rate} (reviews)</span> */}
+                </div>
+                <div><Link to={`/stay/?loc=${stay.loc.address}`}>{stay.loc.address}</Link></div>
               </div>
-
-              <div className="order-details flex column align-center">
-                {/* <div className="date-picker flex space-evenly">
-                  <div className="check-in"><p>check in</p></div>
-                  <div className="check-out"> <p>check out</p></div>
-                </div> */}
-                <DatePicker
-                  className="date-picker"
-                  placeholderText="Choose dates"
-                  onChange={date => this.setDates(date)}
-                  selected={startDate}
-                  startDate={startDate}
-                  endDate={endDate}
-                  monthsShown={2}
-                  dateFormat="dd/MM/yyyy"
-                  minDate={new Date()}
-                  selectsRange
-                  shouldCloseOnSelect={true}
-                />
-                <div>Guests</div>
+              <div className="right flex space-between">
+                <div><i className='fa fa-share-square-o'></i>share</div>
+                <div><i className='fa fa-heart-o'></i> save</div>
               </div>
-            </form>
+            </div>
           </div>
-        </section>
-        {/* <SelectDates/> */}
-
-        <section className="reviews">
-          <div className="review-parameters"></div>
-          <div className="review-users">
-            <div className="review-img"></div>
-            <p className="review-name">{stay.render}</p>
-            <p className="review-date"></p>
+          <div className="img-grid-container">
+            {stay.imgUrls.map((img, idx) => <img src={img} alt="" key={idx} />)}
           </div>
+          <section className="description-availability flex ">
+            <div className="stay-description">
+              <div className="details-container flex space-between">
+                <div className="titles">
+                  <h2>{`Entire apartment hosted by ${stay.host.fullname}`}</h2>
+                  <p>{`${stay.capacity} guests `}</p>
+                </div>
+                  <img className="host-img" src={stay.host.imgUrl} alt="profile" />
+              </div>
+              <hr />
+              <section className="info-container details-container">
+                <div className="info flex">
+                  <i className="fas fa-home"></i>
+                  <span>
+                    <h4>Entire home</h4>
+                    <p>You’ll have the apartment to yourself.</p>
+                  </span>
+                </div>
+                <div className="info flex">
+                  <i className="fas fa-hand-sparkles"></i>
+                  <span>
+                    <h4>Enhanced Clean</h4>
+                    <p>This host committed to Airbnb's 5-step enhanced cleaning process.</p>
+                  </span>
+                </div>
+                {!stay.amenities.includes('Smoking allowed' || 'Pets allowed') &&
+                  <div className="info flex">
+                    <i className="fas fa-scroll"></i>
+                    <span>
+                      <h4>House rules</h4>
+                      <p>The host doesn’t allow pets, parties, or smoking.</p>
+                    </span>
+                  </div>
+                }
+              </section>
+              <hr />
+              <div className="details-container">
+                <p>{stay.summary}</p>
+              </div>
+              <hr />
+              <section className="details-container">
+                <h2>Amenities</h2>
+                <Amenities amenities={stay.amenities} getAmenitiesIcons={this.getAmenitiesIcons} />
+              </section>
+              <hr />
+            </div>
+            <div className="availability flex column">
+              <form className="check-availability flex column align-center">
+                <div className="value-rate flex space-between">
+                  <span><b className="fs22">${stay.price}</b> / night</span>
+                  <span className="stay-rate flex">
+                    <i className='fa fa-star'></i>
+                    <span>{stay.reviews[0].rate}</span>
+                    {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
+                    {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
+                  </span>
+                </div>
+                <div className="order-details details-container fs20 flex column align-center">
+                  <DatePicker
+                    className="date-picker"
+                    placeholderText="Choose dates"
+                    onChange={date => this.setDates(date)}
+                    selected={startDate}
+                    startDate={startDate}
+                    endDate={endDate}
+                    monthsShown={2}
+                    dateFormat="dd/MM/yyyy"
+                    minDate={new Date()}
+                    selectsRange
+                    shouldCloseOnSelect={true}
+                  />
+                  <div className="guests">Guests</div>
+                </div>
+                <button className="check-btn fs18"
+                  onMouseMove={this.handleMouseMove}
+                  style={style}>
+                  Check Availability
+              </button>
+              </form>
+            </div>
+          </section>
+          <section className="details-container">
+            <h2>Select dates</h2>
+            <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
+          </section>
+          <Reviews reviews={stay.reviews} />
+    
+          <div className="location-map">
+            {/* <Map/> */}
+          </div>
+          <div className="host-details"></div>
         </section>
-        <div className="location-map">
-          {/* <Map/> */}
-        </div>
-        <div className="host-details"></div>
       </section>
     )
   }
