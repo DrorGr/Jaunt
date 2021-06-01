@@ -3,7 +3,7 @@
     
     .stay-filter{
         box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
+        background-color: #f7f7f7;
         color: $clr2;
         margin: 20px;  
         width: fit-content;
@@ -36,10 +36,11 @@
             border-radius: 50%;
             height: 50px;
             width: 50px;
-            background-color: $clr1;
-            &:hover{
-                background-color: $clr4;
-            }
+            background-size: 150% 150%;
+            background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+            // &:hover{
+            //     background-color: $clr4;
+            // }
         }
 
         input{
