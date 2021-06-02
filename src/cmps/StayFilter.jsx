@@ -14,9 +14,10 @@ class _StayFilter extends Component {
         filterBy: {
             location: '',
         },
+        isModalShown: false,
         startDate: '',
         endDate: '',
-        guetsAmount: '',
+        guetsAmount: { adults: 0, children: 0, infants: 0 },
         x: 0,
         y: 0
     }
@@ -47,6 +48,25 @@ class _StayFilter extends Component {
         })
     }
 
+    toggleModal = () => {
+        const { isModalShown } = this.state
+        this.setState({ isModalShown: !isModalShown })
+    }
+
+    updateGuestsAmount = (key, num) => {
+        // need to handle case when num is < 0
+
+            switch (key) {
+                case 'adults': this.setState({ key: num })
+                break
+                case 'children': this.setState({ key: num })
+                break
+                case 'infants': this.setState({ key: num })
+                break
+                default:
+              }    
+    }
+
     onSubmit = (ev) => {
         ev.preventDefault()
         const { location } = this.state
@@ -55,14 +75,14 @@ class _StayFilter extends Component {
 
 
     render() {
-        const { location, startDate, endDate, guetsAmount } = this.state
+        const { location, isModalShown, startDate, endDate, guetsAmount } = this.state
         const { x, y } = this.state
         const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
         return (
             <form className="stay-filter flex justify-center align-center" >
                 <div className="location">
                     <label htmlFor="location">Location</label>
-                    <input type="text" name="location" id="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} required />
+                    <input type="text" name="location" id="location" placeholder="Where are you going?" value={location} onChange={this.handleChange} />
                 </div>
                 <div className="date-picker">
                     Dates
@@ -79,14 +99,16 @@ class _StayFilter extends Component {
                         shouldCloseOnSelect={true}
                     />
                 </div>
-               
-                <div className="guests">
-                    <label htmlFor="guetsAmount">Guests</label>
-                    <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} required />
-                    <div >
 
-                    <GuestModal/>
-                </div>
+                <div className="guests flex column" onClick={this.toggleModal}>
+                    <label htmlFor="guetsAmount">Guests</label>
+                    {/* <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} onClick={this.toggleModal} /> */}
+                    {(guetsAmount.adults || guetsAmount.children || guetsAmount.infants) > 0 &&
+                    <span>{guetsAmount.adults + guetsAmount.children + guetsAmount.infants} guests</span>
+                    }
+                    <div className="guest-modal">
+                        <GuestModal isModalShown={isModalShown} guetsAmount={guetsAmount} updateGuestsAmount={this.updateGuestsAmount} />
+                    </div>
                 </div>
                 <button onMouseMove={this.handleMouseMove}
                     className="search-btn"
