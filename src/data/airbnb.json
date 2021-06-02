@@ -19,7 +19,6 @@
         "TV",
         "Wifi",
         "Kitchen",
-        "Smoking allowed",
         "Pets allowed",
         "Air conditioning"
       ],
@@ -29,8 +28,8 @@
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
-        "country": "Portugal",
-        "countryCode": "PT",
+        "country": "Israel",
+        "countryCode": "IL",
         "address": "Tel-Aviv,Israel",
         "lat": 32.109433,
         "lng": 34.855499
@@ -43,6 +42,16 @@
           "by": {
             "_id": "u102",
             "fullname": "user2",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "madeId",
+          "txt": "I had a wonderful stay in Davit's apartment. They are very attentive and easy to reach. Great business apartment with all the amenities and strong wifi. I look forward to returning!",
+          "rate": 5,
+          "by": {
+            "_id": "u103",
+            "fullname": "Ferima",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }

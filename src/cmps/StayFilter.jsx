@@ -4,6 +4,8 @@ import { Component } from 'react'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import { withRouter } from 'react-router';
+import { GuestModal } from './GuestModal';
+
 
 
 class _StayFilter extends Component {
@@ -77,9 +79,14 @@ class _StayFilter extends Component {
                         shouldCloseOnSelect={true}
                     />
                 </div>
-                <div>
+               
+                <div className="guests">
                     <label htmlFor="guetsAmount">Guests</label>
                     <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} required />
+                    <div >
+
+                    <GuestModal/>
+                </div>
                 </div>
                 <button onMouseMove={this.handleMouseMove}
                     className="search-btn"
