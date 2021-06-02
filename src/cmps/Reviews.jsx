@@ -2,6 +2,8 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 import Rate from 'rc-rate';
 import 'rc-rate/assets/index.css';
+// import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 export function Reviews({ reviews }) {
 
@@ -59,6 +61,7 @@ export function Reviews({ reviews }) {
                 </div>
                 <textarea name="add-review" cols="30" rows="10"></textarea>
             </div>
+            <Button/>
         </section>
 
     )
