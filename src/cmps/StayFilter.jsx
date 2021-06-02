@@ -17,7 +17,7 @@ class _StayFilter extends Component {
         isModalShown: false,
         startDate: '',
         endDate: '',
-        guetsAmount: { adults: 0, children: 0, infants: 0 },
+        guestAmount: { adults: 0, children: 0, infants: 0 },
         x: 0,
         y: 0
     }
@@ -53,9 +53,10 @@ class _StayFilter extends Component {
         this.setState({ isModalShown: !isModalShown })
     }
 
-    updateGuestsAmount = (key, num) => {
+    updateGuestsAmount = (key, num, ev) => {
         // need to handle case when num is < 0
-
+        ev.stopPropagation(); 
+        ev.preventDefault();
             switch (key) {
                 case 'adults': this.setState({ key: num })
                 break
@@ -75,7 +76,7 @@ class _StayFilter extends Component {
 
 
     render() {
-        const { location, isModalShown, startDate, endDate, guetsAmount } = this.state
+        const { location, isModalShown, startDate, endDate, guestAmount } = this.state
         const { x, y } = this.state
         const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
         return (
@@ -100,14 +101,14 @@ class _StayFilter extends Component {
                     />
                 </div>
 
-                <div className="guests flex column" onClick={this.toggleModal}>
-                    <label htmlFor="guetsAmount">Guests</label>
-                    {/* <input type="number" name="guetsAmount" id="guestsAmount" min="1" placeholder="Guests" value={guetsAmount} onChange={this.handleChange} onClick={this.toggleModal} /> */}
-                    {(guetsAmount.adults || guetsAmount.children || guetsAmount.infants) > 0 &&
-                    <span>{guetsAmount.adults + guetsAmount.children + guetsAmount.infants} guests</span>
+                <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
+                    <label htmlFor="guestAmount">Guests</label>
+                    {/* <input type="number" name="guestAmount" id="guestsAmount" min="1" placeholder="Guests" value={guestAmount} onChange={this.handleChange} onClick={this.toggleModal} /> */}
+                    {(guestAmount.adults || guestAmount.children || guestAmount.infants) > 0 &&
+                    <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
                     }
                     <div className="guest-modal">
-                        <GuestModal isModalShown={isModalShown} guetsAmount={guetsAmount} updateGuestsAmount={this.updateGuestsAmount} />
+                        <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />
                     </div>
                 </div>
                 <button onMouseMove={this.handleMouseMove}

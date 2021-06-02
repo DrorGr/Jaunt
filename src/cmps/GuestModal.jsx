@@ -1,7 +1,7 @@
-export function GuestModal({ isModalShown, updateGuestsAmount, guetsAmount }) {
-    // console.log('guetsAmount ', guetsAmount.adults);
-    const data =
-        [{ main: "Adults", sub: "Ages 13 or above", num: 0 }]
+export function GuestModal({ isModalShown, updateGuestsAmount, guestAmount }) {
+    // console.log('guestAmount ', guestAmount.adults);
+    // const data =
+    //     [{ main: "Adults", sub: "Ages 13 or above", num: 0 }]
     return (
         isModalShown &&
         <div className="guests-modal flex column">
@@ -11,9 +11,9 @@ export function GuestModal({ isModalShown, updateGuestsAmount, guetsAmount }) {
                     <p>Ages 13 or above</p>
                 </div>
                 <div className="btns flex space-between align-center">
-                    <button onClick={()=>updateGuestsAmount('adults', --guetsAmount.adults)}><i className="fas fa-minus"></i></button>
-                    <span>{guetsAmount.adults}</span>
-                    <button onClick={()=>updateGuestsAmount('adults', ++guetsAmount.adults)}><i className="fas fa-plus"></i></button>
+                    <button onClick={(ev)=>{ updateGuestsAmount('adults', --guestAmount.adults,ev)}}><i className="fas fa-minus"></i></button>
+                    <span>{guestAmount.adults}</span>
+                    <button onClick={(ev)=>{ updateGuestsAmount('adults', ++guestAmount.adults,ev)}}><i className="fas fa-plus"></i></button>
                 </div>
             </div>
             <div className="children flex space-between">
@@ -22,9 +22,9 @@ export function GuestModal({ isModalShown, updateGuestsAmount, guetsAmount }) {
                     <p>Ages 2–12</p>
                 </div>
                 <div className="btns flex space-between align-center">
-                    <button><i className="fas fa-minus"></i></button>
-                    <span>{guetsAmount.children}</span>
-                    <button><i className="fas fa-plus"></i></button>
+                <button onClick={(ev)=>updateGuestsAmount('children', --guestAmount.children,ev)}><i className="fas fa-minus"></i></button>
+                    <span>{guestAmount.children}</span>
+                    <button onClick={(ev)=>updateGuestsAmount('children', ++guestAmount.children,ev)}><i className="fas fa-plus"></i></button>
                 </div>
             </div>
 
@@ -34,12 +34,12 @@ export function GuestModal({ isModalShown, updateGuestsAmount, guetsAmount }) {
                     <p>Under 2</p>
                 </div>
                 <div className="btns flex space-between align-center">
-                    <button><i className="fas fa-minus"></i></button>
-                    <span>{guetsAmount.infants}</span>
-                    <button><i className="fas fa-plus"></i></button>
+                <button onClick={(ev)=>updateGuestsAmount('infants', --guestAmount.infants,ev)}><i className="fas fa-minus"></i></button>
+                    <span>{guestAmount.infants}</span>
+                    <button onClick={(ev)=>updateGuestsAmount('infants', ++guestAmount.infants,ev)}><i className="fas fa-plus"></i></button>
                 </div>
-            </div>
-            {/* {data.map((section,idx) => <Prev data={data} key={idx}/>)} */}
+                </div>
+            
         </div>
         // }
     )
