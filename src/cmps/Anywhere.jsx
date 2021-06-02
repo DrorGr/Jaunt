@@ -14,8 +14,8 @@ export function Anywhere() {
 
     return (
         <section className="live-anywhere grid">
-            {places.map((place) =>
-                <Link to={`stay/?loc=${place.name}`}>
+            {places.map((place,idx) =>
+                <Link to={`stay/?loc=${place.name}` } key={idx}>
                     <div className="anywhere-preview flex column">
                         <img src={place.img} alt={place.name} />
                         <div className="destination-name">

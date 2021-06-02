@@ -22,8 +22,8 @@ export function Nearby() {
 
     return (
         <section className="explore grid">
-            {places.map((place) =>
-                <Link to={`stay/?loc=${place.name}`}>
+            {places.map((place,idx) =>
+                <Link to={`stay/?loc=${place.name}`} key={idx}>
                     <div className="explore-preview flex">
                         <div className="img-preview">
                         <img src={place.img} alt={place.name} />

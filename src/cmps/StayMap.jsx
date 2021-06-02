@@ -12,6 +12,7 @@ class _GoogleMap extends Component {
 
      componentDidMount(){
         const pos = this.props.location
+        console.log(process.env)
         this.setState({ pos })
     }
 
@@ -44,5 +45,5 @@ class _GoogleMap extends Component {
 }
 
 export const StayMap = GoogleApiWrapper({
-    apiKey: ('AIzaSyBnQ0ebntiaqnKC_liI8ybwWzqTD68V02w')
+    apiKey: (`AIzaSyBnQ0ebntiaqnKC_liI8ybwWzqTD68V02w`)
 })(_GoogleMap)
