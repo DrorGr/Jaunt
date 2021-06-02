@@ -1,4 +1,46 @@
-.review-by{
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+.reviews-container{
+
+    .stay-rate{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: roboto-bold;
+        .reviews-amount{
+            color: $clr2;
+        }
+    }
+    
+    .review-by{
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .user-reviews,
+    .add-review-container{
+        flex-wrap: wrap;
+        article{
+            width: 50%;
+        }
+    }
+    .add-review-container{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        textarea{
+            grid-column: 2;
+            resize: none;
+        }
+        .stars-container{
+            article{
+                height: fit-content;
+                gap: 20px;
+                h4{
+                    margin: 0;
+                    width: 150px;
+                }       
+                
+            }   
+        }
+    }
+
+    
 }

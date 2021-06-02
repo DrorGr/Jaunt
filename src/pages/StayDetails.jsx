@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
 import { NavBar } from '../cmps/NavBar'
-import {SelectDates} from '../cmps/SelectDates'
 import { StayMap } from '../cmps/StayMap'
 import { SelectDates } from '../cmps/SelectDates'
 import { Amenities } from '../cmps/Amenities'
@@ -46,17 +45,11 @@ export class StayDetails extends Component {
   getAmenitiesIcons = (txt) => {
     switch (txt) {
       case 'TV': return 'fa fa-tv'
-        break;
       case 'Wifi': return 'fa fa-wifi'
-        break;
       case 'Kitchen': return 'fa fa-cutlery'
-        break;
       case 'Smoking allowed': return 'fas fa-smoking'
-        break;
       case 'Pets allowed': return 'fas fa-paw'
-        break;
       case 'Air conditioning': return 'fa fa-snowflake-o'
-        break;
       default:
     }
   }
@@ -81,10 +74,13 @@ export class StayDetails extends Component {
 
           <div className="details-title">
             <div className="title-primary fs24"><h1>{stay.name}</h1></div>
-            <div className="stay-rate title-secondery flex space-between">
+            <div className="title-secondery flex space-between">
               <div className="left flex space-between">
-                <div>
-                  <i className='fa fa-star'></i>{stay.reviews[0].rate}
+                <div className="stay-rate">
+                  <i className='fa fa-star'></i>
+                  <span>
+                  {stay.reviews[0].rate}
+                  </span>
                   {stay.reviews.length === 1 && <span className="reviews-amount"> ({stay.reviews.length} review)</span>}
                   {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
                 </div>

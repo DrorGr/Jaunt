@@ -40,6 +40,17 @@
     display: grid
 }
 
+.stay-rate{
+    :not(:last-child){
+        margin-right: 4px;
+    }
+    .reviews-amount{
+        color: $clr3;
+    }
+    i{
+        color: $clr1;
+    }
+}
 
 
 // Media helpers
