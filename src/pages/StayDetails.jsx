@@ -15,6 +15,7 @@ export class StayDetails extends Component {
   state = {
     stay: null,
     isModalShown: false,
+    isChargeShown:false,
     startDate: '',
     endDate: '',
     guestAmount: { adults: 0, children: 0, infants: 0 },
@@ -78,6 +79,18 @@ export class StayDetails extends Component {
     this.setState({ isModalShown: !isModalShown })
 }
 
+toggleCharge = () => {
+  const { isChargeShown } = this.state
+  this.setState({ isChargeShown: !isChargeShown })
+}
+
+getGuestsNum = () => {
+  const {adults,children,infants} = this.state.guestAmount
+  return adults + children + infants
+}
+
+
+
 updateGuestsAmount = (key, num, ev) => {
     // need to handle case when num is < 0
     ev.stopPropagation(); 
@@ -94,10 +107,9 @@ updateGuestsAmount = (key, num, ev) => {
 }
 
   render() {
-    const { stay, location, startDate, endDate, guestAmount,isModalShown, x, y } = this.state
+    const { stay, location, startDate, endDate, guestAmount,isModalShown,isChargeShown, x, y } = this.state
     const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
     if (!stay) return <div>loading</div>
-
     return (
       <section className="stay-details-container ">
         <NavBar />
@@ -206,18 +218,30 @@ updateGuestsAmount = (key, num, ev) => {
                     <label htmlFor="guestAmount">Guests</label>
                     {/* <input type="number" name="guestAmount" id="guestsAmount" min="1" placeholder="Guests" value={guestAmount} onChange={this.handleChange} onClick={this.toggleModal} /> */}
                     {(guestAmount.adults || guestAmount.children || guestAmount.infants) > 0 &&
-                    <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
+                    <span>{this.getGuestsNum()} guests</span>
                     }
                     <div className="guest-modal">
                         <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />
                     </div>
                 </div>
                 </div>
+                
                 <button className="check-btn fs18"
                   onMouseMove={this.handleMouseMove}
-                  style={style}>
-                  Check Availability
-              </button>
+                  style={style}
+                  onClick={this.toggleCharge}>
+                  {(!isChargeShown) ? 'Check Availability' : 'Reserve' }             
+              </button> 
+              {isChargeShown && 
+              <div className="trip-reserve flex column">
+                <p className="charge-msg">You won't be charged yet</p>
+                <p>Non-refundable</p>
+                <p>{this.getGuestsNum()} Guests</p>
+                <p>$ {stay.price}</p>
+                <p>Total</p>
+              </div>
+              }
+
               </form>
             </div>
 
