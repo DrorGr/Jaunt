@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import { stayService } from '../services/stayService'
 import DatePicker from 'react-datepicker'
 import { NavBar } from '../cmps/NavBar'
-import {SelectDates} from '../cmps/SelectDates'
 import { StayMap } from '../cmps/StayMap'
-// import { SelectDates } from '../cmps/SelectDates'
+import { SelectDates } from '../cmps/SelectDates'
 import { Amenities } from '../cmps/Amenities'
 import { Reviews } from '../cmps/Reviews'
 // import {Map} from '../cmps/Map'
@@ -17,6 +16,15 @@ export class StayDetails extends Component {
     startDate: '',
     endDate: '',
     guetsAmount: '',
+    review: {
+      cleanliness: 5,
+      accuracy: 5,
+      communication: 5,
+      location: 5,
+      checkin: 5,
+      value: 5,
+      txt: ''
+    },
     x: 0,
     y: 0
   }
@@ -46,17 +54,11 @@ export class StayDetails extends Component {
   getAmenitiesIcons = (txt) => {
     switch (txt) {
       case 'TV': return 'fa fa-tv'
-        break;
       case 'Wifi': return 'fa fa-wifi'
-        break;
       case 'Kitchen': return 'fa fa-cutlery'
-        break;
       case 'Smoking allowed': return 'fas fa-smoking'
-        break;
       case 'Pets allowed': return 'fas fa-paw'
-        break;
       case 'Air conditioning': return 'fa fa-snowflake-o'
-        break;
       default:
     }
   }
@@ -81,10 +83,13 @@ export class StayDetails extends Component {
 
           <div className="details-title">
             <div className="title-primary fs24"><h1>{stay.name}</h1></div>
-            <div className="stay-rate title-secondery flex space-between">
+            <div className="title-secondery flex space-between">
               <div className="left flex space-between">
-                <div>
-                  <i className='fa fa-star'></i>{stay.reviews[0].rate}
+                <div className="stay-rate">
+                  <i className='fa fa-star'></i>
+                  <span>
+                    {stay.reviews[0].rate}
+                  </span>
                   {stay.reviews.length === 1 && <span className="reviews-amount"> ({stay.reviews.length} review)</span>}
                   {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
                 </div>
@@ -145,9 +150,9 @@ export class StayDetails extends Component {
               </section>
               <hr />
               <section className="details-container">
-            <h2>Select dates</h2>
-            <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
-          </section>
+                <h2>Select dates</h2>
+                <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
+              </section>
             </div>
             <div className="availability flex column">
               <form className="check-availability flex column align-center">
@@ -183,7 +188,7 @@ export class StayDetails extends Component {
               </button>
               </form>
             </div>
-          
+
           </section>
           <hr />
           <Reviews reviews={stay.reviews} />
@@ -195,7 +200,7 @@ export class StayDetails extends Component {
         </section>
         <div className="host-details"></div>
         <section className="map-container">
-          <StayMap location={stay.loc}/>
+          <StayMap location={stay.loc} />
         </section>
       </section>
     )
