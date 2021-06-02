@@ -12,7 +12,6 @@ class _GoogleMap extends Component {
 
      componentDidMount(){
         const pos = this.props.location
-        console.log(process.env)
         this.setState({ pos })
     }
 

@@ -13,6 +13,9 @@
         gap: 2rem;
         margin-bottom: 1.5rem;
     }
+    .user-reviews{
+        margin-bottom: 5.5rem;
+    }
 
     
     .user-reviews,
@@ -23,13 +26,20 @@
         }
     }
     .add-review-container{
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(2, 1fr);
+        h3{
+            font-size: 1.5rem;
+        }
+        div.grid{
+
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+        }
         textarea{
             grid-column: 2;
             resize: none;
         }
         .stars-container{
+            flex-wrap: wrap;
             article{
                 height: fit-content;
                 gap: 20px;

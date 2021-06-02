@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 export function StayPreview({ stay }) {
     const img = stay.imgUrls[0]
-    console.log(img);
     return (
         <div>
             <Link to={`/stay/${stay._id}`} className="primary-btn">

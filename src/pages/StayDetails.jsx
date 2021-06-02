@@ -16,6 +16,15 @@ export class StayDetails extends Component {
     startDate: '',
     endDate: '',
     guetsAmount: '',
+    review: {
+      cleanliness: 5,
+      accuracy: 5,
+      communication: 5,
+      location: 5,
+      checkin: 5,
+      value: 5,
+      txt: ''
+    },
     x: 0,
     y: 0
   }
@@ -79,7 +88,7 @@ export class StayDetails extends Component {
                 <div className="stay-rate">
                   <i className='fa fa-star'></i>
                   <span>
-                  {stay.reviews[0].rate}
+                    {stay.reviews[0].rate}
                   </span>
                   {stay.reviews.length === 1 && <span className="reviews-amount"> ({stay.reviews.length} review)</span>}
                   {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
@@ -141,9 +150,9 @@ export class StayDetails extends Component {
               </section>
               <hr />
               <section className="details-container">
-            <h2>Select dates</h2>
-            <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
-          </section>
+                <h2>Select dates</h2>
+                <SelectDates startDate={this.state.startDate} endDate={this.state.endDate} setDates={this.setDates} />
+              </section>
             </div>
             <div className="availability flex column">
               <form className="check-availability flex column align-center">
@@ -179,7 +188,7 @@ export class StayDetails extends Component {
               </button>
               </form>
             </div>
-          
+
           </section>
           <hr />
           <Reviews reviews={stay.reviews} />
@@ -191,7 +200,7 @@ export class StayDetails extends Component {
         </section>
         <div className="host-details"></div>
         <section className="map-container">
-          <StayMap location={stay.loc}/>
+          <StayMap location={stay.loc} />
         </section>
       </section>
     )
