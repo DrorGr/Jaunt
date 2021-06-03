@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { NavBar } from '../cmps/NavBar.jsx'
 
 import {
   loadUsers,
@@ -77,6 +78,7 @@ class _LoginSignup extends Component {
     this.props.removeUser(userId)
   }
   render() {
+    
     let signupSection = (
       <div className="form-container">
         <form className="frm" onSubmit={this.doSignup}>
@@ -131,9 +133,8 @@ class _LoginSignup extends Component {
     return (
       <div className="form-container">
         <div className="login">
-          <h1>
-            Login / Signup
-        </h1>
+        <NavBar/>
+
           <p>{this.state.msg}</p>
           {loggedInUser && (
             <div>
