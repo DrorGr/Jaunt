@@ -9,12 +9,12 @@
         }
     }
     
-    .review-by{
-        gap: 2rem;
-        margin-bottom: 1.5rem;
-    }
     .user-reviews{
         margin-bottom: 5.5rem;
+        .review-by{
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     

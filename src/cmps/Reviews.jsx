@@ -1,8 +1,6 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import Rate from 'rc-rate';
 import 'rc-rate/assets/index.css';
-// import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 export function Reviews({ reviews }) {
@@ -69,13 +67,3 @@ export function Reviews({ reviews }) {
 
     )
 }
-
-
-{/* <section className="reviews">
-        <div className="review-parameters"></div>
-        <div className="review-users">
-          <div className="review-img"></div> */}
-{/* <p className="review-name">{reviews.by.fullname}</p> */ }
-{/* <p className="review-date"></p>
-        </div>
-      </section> */}
