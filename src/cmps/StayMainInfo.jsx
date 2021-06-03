@@ -19,7 +19,7 @@ export function StayMainInfo({stay}) {
                         <div><Link to={`/stay/?loc=${stay.loc.address}`}>{stay.loc.address}</Link></div>
                     </div>
                     <div className="right flex space-between">
-                        <div><i className='fa fa-share-square-o'></i>share</div>
+                        <div><i className='fa fa-share-square-o'></i> share</div>
                         <div><i className='fa fa-heart-o'></i> save</div>
                     </div>
                 </div>

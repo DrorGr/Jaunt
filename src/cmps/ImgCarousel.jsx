@@ -1,6 +1,7 @@
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import { Height } from '@material-ui/icons'
 
 export function ImgCarousel({ stay }) {
 
@@ -15,7 +16,9 @@ export function ImgCarousel({ stay }) {
                 style: {
                     // position:'absolute',
                     backgroundColor: 'white',
-                    color: 'black'
+                    color: 'black',
+                    width:'15px',
+                    height:'15px'
                     //  bottom:'20px',
                 }
             }}
@@ -37,9 +40,9 @@ export function ImgCarousel({ stay }) {
             }} >
 
             {
-                stay.imgUrls.map((img, i) =>
-                    <Link to={`/stay/${stay._id}`} className="primary-btn">
-                        <img src={img} key={i} />
+                stay.imgUrls.map((img, idx) =>
+                    <Link to={`/stay/${stay._id}`} className="primary-btn" >
+                        <img src={img}  key={idx}/>
                     </Link>)
             }
 

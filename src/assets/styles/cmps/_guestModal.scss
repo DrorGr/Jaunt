@@ -4,9 +4,9 @@
     width: 350px;
     left: 0;
     z-index: 2;
-    background-color: #f7f7f7;
+    background-color: rgb(255, 255, 255);
     border-radius: 30px;
-    box-shadow: 0 6px 12px #bababa;
+    box-shadow: 0 6px 20px #00000033;
     overflow: hidden auto;
     padding: 15px 30px;
     cursor: auto;
@@ -17,7 +17,7 @@
       }
       
       & > *:not(:last-child){
-      border-bottom: 1px solid #bababa;
+      border-bottom: 1px solid rgb(235, 235, 235);
     }
 
     .txt{

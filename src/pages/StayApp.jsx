@@ -44,13 +44,15 @@ class _StayApp extends Component {
 
     render() {
         const { stays, order, setDates, setGuestAmount } = this.props
+        const loc = this.getFilterBy().location
+        console.log(loc);
         if (!stays) return <div>Loading...</div>
         return (
             <section className="stay-app">
                 <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} />
-                {/* <section> */}
+                {/* {filterBy.location && */}
+                 <h1 className="headline-explore">Stays in {loc}</h1>
                 <StayList stays={stays} />
-                {/* </section> */}
             </section>
 
         )

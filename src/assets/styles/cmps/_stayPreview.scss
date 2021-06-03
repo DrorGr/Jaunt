@@ -1,3 +1,7 @@
+.headline-explore{
+    padding-top: 20px;
+}
+
 .stay-preview{
     // font-size: 0.7rem;
     margin-bottom: 15px;
@@ -10,13 +14,26 @@
     height: 200px;
     border-radius: 10px;
     position: relative;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     // object-fit: cover;
     }
     .preview-text-container>*{
         &:not(:last-child){
             margin-bottom: 0.5rem ;
         }
+    }
+    .stay-rate{
+        margin-bottom: 4px;
+        :not(:last-child){
+        margin-right: 4px;
+    }
+        .reviews-amount{
+        color: $clr3;
+        }
+    }
+
+    .stay-price{
+        margin-top: 4px;
     }
 }
 
@@ -27,16 +44,8 @@
     right: 20px;
     i{
         color: #fff;
+        
     }
 }
 
 // need to move to helpers and create new class
-.stay-rate{
-    :not(:last-child){
-    margin-right: 4px;
-}
-    .reviews-amount{
-    color: $clr3;
-    }
-
-}

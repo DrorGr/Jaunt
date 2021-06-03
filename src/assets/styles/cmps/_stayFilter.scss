@@ -1,7 +1,8 @@
 .search-container{
 
+    
     .stay-filter{
-        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1);
         background-color: #f7f7f7;
         color: $clr2;
         margin: 20px;  
@@ -41,6 +42,7 @@
                 // &:hover{
                     //     background-color: $clr4;
                     // }
+                    font-weight: 100;
         }
 
         input{
@@ -54,5 +56,6 @@
         .guests{
             position: relative;
         }
+
     }
 }
