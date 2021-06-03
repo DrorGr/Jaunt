@@ -10,15 +10,14 @@
     height: 200px;
     border-radius: 10px;
     position: relative;
-    object-fit: cover;
+    margin-bottom: 0.5rem;
+    // object-fit: cover;
     }
     .preview-text-container>*{
         &:not(:last-child){
             margin-bottom: 0.5rem ;
         }
     }
-    
-    
 }
 
 .save-btn{

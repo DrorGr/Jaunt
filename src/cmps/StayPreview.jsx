@@ -5,9 +5,9 @@ export function StayPreview({ stay }) {
     const img = stay.imgUrls[0]
     return (
         <div>
-            <Link to={`/stay/${stay._id}`} className="primary-btn">
                 <article className="stay-preview fs16">
                     <ImgCarousel stay={stay} />
+            <Link to={`/stay/${stay._id}`} className="primary-btn">
                     <span className="stay-rate flex">
                         <i className='fa fa-star'></i>
                         <span>{stay.reviews[0].rate}</span>
@@ -22,6 +22,7 @@ export function StayPreview({ stay }) {
                         <span> / night</span>
                     </p>
                     <span className="save-btn"><i className='fa fa-heart-o'></i></span>
+                    </Link>
                     {/* {(loggedInUser && loggedInUser.isHost) &&
                 <div className="admin-actions">
                 <Fab size="small" color="primary" aria-label="delete" onClick={() => onRemoveStay(stay._id)}>
@@ -35,7 +36,6 @@ export function StayPreview({ stay }) {
                 </div>
             } */}
                 </article>
-            </Link>
         </div>
     )
 }
