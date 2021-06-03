@@ -7,12 +7,11 @@ export function Reviews({ reviews }) {
 
     return (
         <section className="reviews-container details-container flex column">
-            <div className="value-rate flex space-between">
-                <span className="stay-rate flex">
-                    <i className='fa fa-star'></i>
-                    <span>{reviews[0].rate}</span>
-                    {reviews.length === 1 && <span className="reviews-amount">({reviews.length} review)</span>}
-                    {reviews.length > 1 && <span className="reviews-amount">({reviews.length} reviews)</span>}
+            <div className="value-rate flex space-between ">
+                <span className="stay-rate flex align-center">
+                    <i className='fa fa-star fs14'></i>
+                    {reviews.length === 1 && <span className="reviews-amount fs22">{reviews.length} review</span>}
+                    {reviews.length > 1 && <span className="reviews-amount fs22">{reviews.length} reviews</span>}
                 </span>
             </div>
             <div className="user-reviews flex">

@@ -49,10 +49,16 @@
             outline: none;
             width: 100%;
             min-width: 100px;
+            font-family: cereal-light;
+            font-size: 0.8rem;
         }
-
+        
         .guests{
             position: relative;
+            span{
+                font-size: 0.8rem;
+                color: #757575
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ class _Header extends Component {
                 {/* <nav>
                 experience
             </nav> */}
-                <section className="header-nav flex ">
+                <section className="header-nav flex fs14">
                     <NavLink to="/stay" >Explore</NavLink>
                     <div>Become a Host</div>
                     <NavLink to="/login">
