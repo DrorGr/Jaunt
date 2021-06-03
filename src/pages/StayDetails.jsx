@@ -8,14 +8,17 @@ import { SelectDates } from '../cmps/SelectDates'
 import { Amenities } from '../cmps/Amenities'
 import { Reviews } from '../cmps/Reviews'
 // import {Map} from '../cmps/Map'
+import { GuestModal } from '../cmps/GuestModal';
 
 
 export class StayDetails extends Component {
   state = {
     stay: null,
+    isModalShown: false,
+    isChargeShown:false,
     startDate: '',
     endDate: '',
-    guetsAmount: '',
+    guestAmount: { adults: 0, children: 0, infants: 0 },
     review: {
       cleanliness: 5,
       accuracy: 5,
@@ -71,11 +74,42 @@ export class StayDetails extends Component {
     })
   }
 
+  toggleModal = () => {
+    const { isModalShown } = this.state
+    this.setState({ isModalShown: !isModalShown })
+}
+
+toggleCharge = () => {
+  const { isChargeShown } = this.state
+  this.setState({ isChargeShown: !isChargeShown })
+}
+
+getGuestsNum = () => {
+  const {adults,children,infants} = this.state.guestAmount
+  return adults + children + infants
+}
+
+
+
+updateGuestsAmount = (key, num, ev) => {
+    // need to handle case when num is < 0
+    ev.stopPropagation(); 
+    ev.preventDefault();
+        switch (key) {
+            case 'adults': this.setState({ key: num })
+            break
+            case 'children': this.setState({ key: num })
+            break
+            case 'infants': this.setState({ key: num })
+            break
+            default:
+          }    
+}
+
   render() {
-    const { stay, location, startDate, endDate, guetsAmount, x, y } = this.state
+    const { stay, location, startDate, endDate, guestAmount,isModalShown,isChargeShown, x, y } = this.state
     const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
     if (!stay) return <div>loading</div>
-
     return (
       <section className="stay-details-container ">
         <NavBar />
@@ -179,13 +213,35 @@ export class StayDetails extends Component {
                     selectsRange
                     shouldCloseOnSelect={true}
                   />
-                  <div className="guests">Guests</div>
+                  {/* <div className="guests">Guests</div> */}
+                  <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
+                    <label htmlFor="guestAmount">Guests</label>
+                    {/* <input type="number" name="guestAmount" id="guestsAmount" min="1" placeholder="Guests" value={guestAmount} onChange={this.handleChange} onClick={this.toggleModal} /> */}
+                    {(guestAmount.adults || guestAmount.children || guestAmount.infants) > 0 &&
+                    <span>{this.getGuestsNum()} guests</span>
+                    }
+                    <div className="guest-modal">
+                        <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />
+                    </div>
                 </div>
+                </div>
+                
                 <button className="check-btn fs18"
                   onMouseMove={this.handleMouseMove}
-                  style={style}>
-                  Check Availability
-              </button>
+                  style={style}
+                  onClick={this.toggleCharge}>
+                  {(!isChargeShown) ? 'Check Availability' : 'Reserve' }             
+              </button> 
+              {isChargeShown && 
+              <div className="trip-reserve flex column">
+                <p className="charge-msg">You won't be charged yet</p>
+                <p>Non-refundable</p>
+                <p>{this.getGuestsNum()} Guests</p>
+                <p>$ {stay.price}</p>
+                <p>Total</p>
+              </div>
+              }
+
               </form>
             </div>
 
