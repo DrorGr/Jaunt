@@ -1,5 +1,14 @@
 const initialState = {
   reviews: [],
+  review: {
+      cleanliness: 5,
+      accuracy: 5,
+      communication: 5,
+      location: 5,
+      checkin: 5,
+      value: 5,
+      txt: ''
+    }
 }
 
 export function reviewReducer(state = initialState, action = {}) {

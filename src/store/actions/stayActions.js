@@ -30,6 +30,16 @@ export function addStay(stay) {
     }
   }
 }
+export function setStay(stayId) {
+  return async dispatch => {
+    try {
+      const currStay = await stayService.getById(stayId)
+      dispatch({ type: 'SET_STAY', currStay })
+    } catch (err) {
+      console.log('stayActions: err in currStay', err)
+    }
+  }
+}
 
 export function removeStay(stayId) {
   return async dispatch => {

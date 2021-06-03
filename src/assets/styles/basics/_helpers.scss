@@ -51,6 +51,14 @@
         color: $clr1;
     }
 }
+.details-container{
+    margin: 2.5rem 0; 
+}
+.host-img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
 
 
 // Media helpers

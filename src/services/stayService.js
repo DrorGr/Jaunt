@@ -41,6 +41,7 @@ function query(filterBy) {
   }
   return Promise.resolve(stays)
 }
+
 function getById(stayId) {
   return storageService.get('stay', stayId)
 }

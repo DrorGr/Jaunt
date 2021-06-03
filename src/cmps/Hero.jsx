@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { StayFilter } from './StayFilter'
 import { Header } from './Header'
 
-export function Hero() {
+export function Hero({order, setDates, setGuestAmount}) {
     return (
         <section className="hero flex column full main-header main-container space-between">
             <section>
@@ -11,7 +11,7 @@ export function Hero() {
                     <Header />
                 </section>
                 <section className="search-container hero flex justify-center align-center">
-                    <StayFilter />
+                    <StayFilter order={order} setDates={setDates} setGuestAmount={setGuestAmount}/>
                 </section>
             </section>
             <div className="app-desc main-container flex column fs30">

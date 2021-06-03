@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
+import { setDates, setGuestAmount } from '../store/actions/orderActions.js'
 import { StayList } from '../cmps/StayList'
 import { NavBar } from '../cmps/NavBar.jsx'
 
 class _StayApp extends Component {
-
+    state = {
+        filterBy: {
+            location: '',
+        },
+        isModalShown: false,
+        x: 0,
+        y: 0
+    }
     componentDidMount() {
         const filterBy = this.getFilterBy();
         this.props.loadStays(filterBy)
-
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -22,7 +29,6 @@ class _StayApp extends Component {
         }
 
     }
-
 
     getFilterBy = () => {
         let search = this.props.location.search;
@@ -37,18 +43,14 @@ class _StayApp extends Component {
     }
 
     render() {
-        const { stays } = this.props
+        const { stays, order, setDates, setGuestAmount } = this.props
         if (!stays) return <div>Loading...</div>
         return (
             <section className="stay-app">
-                {/* <Header /> */}
-                {/* <section className="search-container flex justify-center">
-                    <StayFilter />
-                </section> */}
-                <NavBar/>
-                <section>
-                    <StayList stays={stays} />
-                </section>
+                <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} />
+                {/* <section> */}
+                <StayList stays={stays} />
+                {/* </section> */}
             </section>
 
         )
@@ -57,11 +59,15 @@ class _StayApp extends Component {
 
 const mapStateToProps = state => {
     return {
-        stays: state.stayModule.stays
+        stays: state.stayModule.stays,
+        order: state.orderModule.currOrder
+
     }
 }
 const mapDispatchToProps = {
-    loadStays
+    loadStays,
+    setDates,
+    setGuestAmount
 }
 
 export const StayApp = connect(mapStateToProps, mapDispatchToProps)(_StayApp)

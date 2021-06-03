@@ -1,13 +1,13 @@
 import DatePicker from 'react-datepicker'
 
-export function SelectDates({startDate, endDate, setDates}) {
+export function SelectDates({setDates, startDate, endDate}) {
   return (
     <section className="select-dates-container">
       <DatePicker
-        selected={startDate}
         minDate={new Date()}
-        onChange={date => setDates(date)}
+        onChange={dates => setDates(dates)}
         monthsShown={2}
+        selected={startDate}
         startDate={startDate}
         endDate={endDate}
         selectsRange
