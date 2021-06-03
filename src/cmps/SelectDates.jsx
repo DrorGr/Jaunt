@@ -12,6 +12,7 @@ export function SelectDates({setDates, startDate, endDate}) {
         endDate={endDate}
         selectsRange
         inline
+        style={{ color: "red" }}
       />
     </section>
   )

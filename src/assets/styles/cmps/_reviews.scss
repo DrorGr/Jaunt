@@ -3,9 +3,12 @@
     .stay-rate{
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
-        font-family: roboto-bold;
+        font-family: cereal-medium;
         .reviews-amount{
             color: $clr2;
+        }
+        i{
+            margin-right: 8px
         }
     }
     

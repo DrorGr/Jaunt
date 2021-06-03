@@ -12,7 +12,7 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
             <form className="check-availability flex column align-center">
                 <div className="value-rate flex space-between">
                     <span><b className="fs22">${stay.price}</b> / night</span>
-                    <span className="stay-rate flex">
+                    <span className="stay-rate flex align-center">
                         <i className='fa fa-star'></i>
                         <span>{stay.reviews[0].rate}</span>
                         {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
@@ -42,7 +42,7 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                         </div>
                     </div>
                 </div>
-                <button className="check-btn fs18"
+                <button className="check-btn fs16"
                     onMouseMove={handleMouseMove}
                     style={style}
                     onClick={toggleCharge}>
