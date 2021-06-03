@@ -6,9 +6,6 @@ import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import { withRouter } from 'react-router';
 import { GuestModal } from './GuestModal';
-
-
-
 class _StayFilter extends Component {
 
     state = {
@@ -99,10 +96,13 @@ class _StayFilter extends Component {
 
         return (
             <form className="stay-filter flex justify-center align-center" >
+                <div>
+
             <div className="location">
                 <label htmlFor="location">Location</label>
                 <input type="text" name="location" id="location" placeholder="Where are you going?" value={filterBy.location} onChange={this.handleChange} />
             </div>
+                </div>
             <div className="date-picker">
                 Dates
                     <DatePicker
@@ -121,8 +121,9 @@ class _StayFilter extends Component {
 
             <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
                 <label htmlFor="guestAmount">Guests</label>
-                {(guestAmount.adults || guestAmount.children || guestAmount.infants) > 0 &&
-                    <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
+                {(guestAmount.adults + guestAmount.children + guestAmount.infants) <= 0  ? 
+                <span>Add guests</span> :
+                <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
                 }
                 <div className="guest-modal">
                     <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />

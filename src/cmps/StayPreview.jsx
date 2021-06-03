@@ -14,7 +14,7 @@ export function StayPreview({ stay }) {
                         {stay.reviews.length === 1 && <span className="reviews-amount">({stay.reviews.length} review)</span>}
                         {stay.reviews.length > 1 && <span className="reviews-amount">({stay.reviews.length} reviews)</span>}
                     </span>
-                    <p className="stay-name">{stay.name} </p>
+                    <p className="stay-name">{stay.name.length > 10 ? stay.name + ' ...': stay.name  } </p>
                     <p className="stay-summery">{`${stay.capacity} guests`} </p>
                     {/* <p className="stay-amenities">{`${stay.amenities.join(' • ')} `} </p> */}
                     <p className="stay-price">
