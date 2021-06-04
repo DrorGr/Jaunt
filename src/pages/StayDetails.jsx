@@ -50,6 +50,13 @@ class _StayDetails extends Component {
       case 'Kitchen': return 'fa fa-cutlery'
       case 'Smoking allowed': return 'fas fa-smoking'
       case 'Pets allowed': return 'fas fa-paw'
+      case 'Parking': return 'fas fa-parking'
+      case 'Room service': return 'fas fa-concierge-bell'
+      case 'Transportation': return 'fas fa-bus'
+      case 'Refrigerator': return 'fas fa-refrigerator'
+      case 'Coffee': return 'fas fa-coffee'
+      case 'Air conditioning': return 'fa fa-snowflake-o'
+      case 'Air conditioning': return 'fa fa-snowflake-o'
       case 'Air conditioning': return 'fa fa-snowflake-o'
       default:
     }
@@ -96,7 +103,6 @@ class _StayDetails extends Component {
         <NavBar order={order} setGuestAmount={this.props.setGuestAmount} setDates={this.props.setDates} startDate={startDate} endDate={endDate} />
         <section className="desc-page">
           <StayMainInfo stay={stay} />
-          <hr />
           <section className="description flex">
             <div className="stay-description">
               <StayDesc stay={stay} />

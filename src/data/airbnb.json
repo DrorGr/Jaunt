@@ -8,10 +8,10 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622729745/jaunt%20img/ah/jr2_kemjaj.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/ah/jr3_umdpxy.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/ah/jr4_wby2il.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/ah/jr5_physwd.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/ah/jr5_physwd.jpg"
         
 
-        "otherImg.jpg"
+        
       ],
       "price": 100.00,
       "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
@@ -20,10 +20,13 @@
         "TV",
         "Wifi",
         "Kitchen",
+        "Smoking allowed",
         "Pets allowed",
         "Air conditioning",
         "Parking",
-        "room service"
+        "Transportation",
+        "Coffee",
+        "Room service"
       ],
       "host": {
         "_id": "51399112",
@@ -75,9 +78,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622644106/jaunt%20img/an1/an2_agy3gk.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644108/jaunt%20img/an1/an3_dzm95q.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644109/jaunt%20img/an1/an4_qxvnd4.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644107/jaunt%20img/an1/an5_oycqhm.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622644107/jaunt%20img/an1/an5_oycqhm.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 50.00,
       "summary": "one bedroom for a night",
@@ -128,9 +131,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/an/mr2_xtfy30.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr3_x5gdd4.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr4_ecqc5t.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr5_of45o9.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr5_of45o9.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 75.00,
       "summary": "Home, just home.",
@@ -182,10 +185,10 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br2_okvr7f.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br3_fcdxkr.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br4_waewim.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br5_gah3br.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br5_gah3br.jpg"
       
 
-        "otherImg.jpg"
+        
       ],
       "price": 40.00,
       "summary": "One room",
@@ -197,7 +200,7 @@
         "Smoking allowed",
         "Pets allowed",
         "Air conditioning",
-        "par"
+        "parking"
       ],
       "host": {
         "_id": "51399118",
@@ -259,9 +262,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622644110/jaunt%20img/an1%20%282%29/lr2_hpj3ou.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr3_u243vg.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr4_mpamo3.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr5_vkuzua.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr5_vkuzua.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 60.00,
       "summary": "Small place",
@@ -270,7 +273,7 @@
         "TV",
         "Kitchen",
         "Air conditioning",
-        "transportation"
+        "Transportation"
 
       ],
       "host": {
@@ -322,9 +325,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr2_ft1hqy.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr3_xqq0bn.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/an2/sr4_bky1ol.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr5_k5ehsd.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr5_k5ehsd.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 400.00,
       "summary": "Modern, private apartment in a beautiful community",
@@ -337,8 +340,8 @@
         "Pets allowed",
         "Air conditioning",
         "Parking",
-        "transportation",
-        "room service"
+        "Transportation"
+
       ],
       "host": {
         "_id": "51399122",
@@ -400,9 +403,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/av/tl1_foamta.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/av/st2_gp2cue.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/av/st4_rou7fj.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/av/st5_zacvfp.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/av/st5_zacvfp.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 75.00,
       "summary": "Mountain View Yurt Klil",
@@ -451,9 +454,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg1_deq1pu.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg2_glsf4a.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg3_xwtbgv.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg4_ktkxlh.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg4_ktkxlh.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 260.00,
       "summary": "Big Place.",
@@ -466,9 +469,9 @@
         "Pets allowed",
         "Air conditioning",
         "Parking",
-        "transportation",
-        "Hair dryer",
-        "room service"
+        "Transportation",
+        "",
+        "Room service"
       ],
       "host": {
         "_id": "51399126",
@@ -540,8 +543,8 @@
 "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl2_nl0hhh.jpg",
 "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
 "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
-"https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/gl/gl5_cakcce.jpg",
-        "otherImg.jpg"
+"https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/gl/gl5_cakcce.jpg"
+        
       ],
       "price": 100.00,
       "summary": "Home, just home.",
@@ -591,9 +594,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/il/tl2_ouwnxm.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634293/jaunt%20img/il/tl3_rkpecf.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/il/tl4_ibvdj9.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634292/jaunt%20img/il/tl5_onoz0s.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634292/jaunt%20img/il/tl5_onoz0s.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 75.00,
       "summary": "Small stay",
@@ -646,9 +649,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634293/jaunt%20img/it/vl2_j0jazz.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634295/jaunt%20img/it/vl3_peof20.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634296/jaunt%20img/it/vl4_slf8fo.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634297/jaunt%20img/it/vl5_yuwkqh.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634297/jaunt%20img/it/vl5_yuwkqh.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 330.00,
       "summary": "Primum appartment",
@@ -660,9 +663,9 @@
         "Smoking allowed",
         "Pets allowed",
         "Air conditioning",
-        "Refrigerator",
-        "transportation",
-        "room service"
+        "",
+        "Transportation",
+        "Room service"
       ],
       "host": {
         "_id": "51399132",
@@ -702,9 +705,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634299/jaunt%20img/jr/vn2_szs6j9.jpg",
         "https://res.cloudinary.com/drorg/raw/upload/v1622634296/jaunt%20img/jr/vn3_zdl9xp.htm",
         "https://res.cloudinary.com/drorg/image/upload/v1622634300/jaunt%20img/jr/vn4_vza9a2.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634300/jaunt%20img/jr/vn5_b2vbok.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634300/jaunt%20img/jr/vn5_b2vbok.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 130.00,
       "summary": "Romantic place",
@@ -764,9 +767,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah2_bzltlf.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah3_y3sy6p.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah4_jtt3wn.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah5_zbygk0.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah5_zbygk0.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 110.00,
       "summary": "Nice for kids",
@@ -826,10 +829,12 @@
     {
       "_id": "10006137",
       "name": "Basic Stay",
-      "imgUrls": [
-        "https://source.unsplash.com/random/400X400/?house13",
+      "imgUrls": [ 
+        
+        "https://source.unsplash.com/random/400X400/?house13"
 
-        "otherImg.jpg"
+
+        
       ],
       "price": 60.00,
       "summary": "Home, just home.",
@@ -881,9 +886,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634279/jaunt%20img/mr/an2_aiolfm.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634279/jaunt%20img/mr/an3_snoofn.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/mr/an4_xqc6ze.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/mr/an5_v4joxh.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/mr/an5_v4joxh.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 60.00,
       "summary": "Nice place",
@@ -945,9 +950,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/rs/rs2_fjfzhm.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643920/jaunt%20img/rs/rs3_b2gpve.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/rs/rs4_rmlyaz.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/rs/rs5_jhwuax.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/rs/rs5_jhwuax.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 40.00,
       "summary": "Très joli studio Parisien de 25m² récemment rénové idéal pour un séjour Parisien au cœur du fabuleux quartier du MARAIS. Le logement peut accueillir deux personnes dans un lit double. Un service professionnel de grand standing vous attend avec serviettes de bain et draps de qualité hôtelière. L'appartement est entièrement équipé.",
@@ -1031,10 +1036,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/sr/an2_ffbipk.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an3_f274sh.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an4_rdwlub.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an5_vnwnij.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an5_vnwnij.jpg"
 
-
-        "otherImg.jpg"
+        
       ],
       "price": 95.00,
       "summary": "Located at the MOST CENTRAL area of Paris, Latin Quarter. 3 min to the Seine, 3 mins to Cathédrale Notre-Dame / St-Michel, 3 mins to Sorbonne U., 10 mins to Jardin du Jardin du Luxembourg. 1 min to Metro: Cluny La Sorbonne (Line 10), St-Michel Notre-Dame (Line 4, RER B). Numerous restaurants, cafes/bars. Responsive host ready to help. Located on the 3nd floor without elevator (ground floor is zero floor). Be prepared to climb three floors of stairs. Price negotiable only before booking.",
@@ -1046,9 +1050,9 @@
         "Smoking allowed",
         "Pets allowed",
         "Air conditioning",
-        "Hair dryer",
-        "Refrigerator",
-        "Microwave"
+        "",
+        "",
+        ""
       ],
       "host": {
         "_id": "51399144",
@@ -1099,9 +1103,8 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634282/jaunt%20img/st/av2_ecdzkq.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634282/jaunt%20img/st/av1_igy6g1.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634282/jaunt%20img/st/av3_j4jn7i.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/st/av4_kmferm.jpg",
-
-        "otherImg.jpg"
+        "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/st/av4_kmferm.jpg"
+        
       ],
       "price": 86.00,
       "summary": "The Daunou Opera enjoys a prestigious location in the heart of the right bank of Paris. It offers every imaginable comfort in a quiet and sophisticated setting. The hotel is superbly located between the Opera and Place Vendome, a few minutes from the Louvre, the Grevin Museum, the magnificent Tuileries Gardens, major department stores (Galeries Lafayette, Printemps Haussmann) and Gare Saint Lazare. It is convenient to the Olympia music hall and theatres such as Theatre De La Michodière, Theatre de Paris, Theatre de la Pépinière, Theatre Edouard VII, Theatre Daunou, Theatre des Variétés and Theatre du Gymnase. The Hotel Daunou Opera offers you Paris in all its splendour. Double bed (160 x 200 cm) or Bedroom with 2 single beds (80 x 200 cm)",
@@ -1183,9 +1186,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il2_afwerf.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il3_hjwpd1.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il4_t7ibym.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il5_tjp5nl.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il5_tjp5nl.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 180.00,
       "summary": "Home, just home.",
@@ -1258,9 +1261,9 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634286/jaunt%20img/vl/it2_lbrzry.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it3_qegrgj.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it4_udzelj.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it5_nelo1t.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it5_nelo1t.jpg"
 
-        "otherImg.jpg"
+        
       ],
       "price": 100.00,
       "summary": "Big hut in the woods",
