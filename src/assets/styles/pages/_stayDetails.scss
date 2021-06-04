@@ -47,11 +47,13 @@
             padding: 24px;
             box-shadow:0px 6px 16px #0000001f;
             .date-picker{
+                width: 1000px;
                 font-size: 20px;
                 border: none;
                 text-align: center;
                 cursor: pointer;
                 color: #222222 ;
+
             }
             .check-btn{
                 background-size: 150% 150%;
@@ -128,6 +130,7 @@
                 width: 100%;
             }
         }
+
     }
     .value-rate{
         align-items: baseline; 
@@ -136,5 +139,7 @@
 
 }
 
-
+.react-datepicker__header{
+    background-color: white;
+}
 
