@@ -65,6 +65,15 @@
     font-family: cereal-light;
 }
 
+.tiny-border-bottom{
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    width: 0px;
+    padding: 0;
+    flex: 0 0 0px;
+    height: 32px;
+}
+
 
 // Media helpers
 

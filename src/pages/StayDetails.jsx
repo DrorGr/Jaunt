@@ -7,7 +7,8 @@ import { Amenities } from '../cmps/Amenities'
 import { Reviews } from '../cmps/Reviews'
 import { StayMainInfo } from '../cmps/StayMainInfo.jsx'
 import { setStay } from '../store/actions/stayActions'
-import { setDates, setGuestAmount } from '../store/actions/orderActions'
+import { setLocation, setDates, setGuestAmount } from '../store/actions/orderActions'
+import { addOrder } from '../store/actions/userActions'
 import { CheckAvailability } from '../cmps/CheckAvailability'
 import { StayDesc } from '../cmps/StayDesc'
 
@@ -68,6 +69,12 @@ class _StayDetails extends Component {
   }
 
   toggleCharge = () => {
+    const updatedOrder = { ...this.props.order }
+    updatedOrder.location = this.props.stay.loc.address
+    // console.log('updatedOrder ', updatedOrder);
+    this.props.setLocation(updatedOrder)
+    // console.log('loc should be here ', this.props.order);
+    this.props.addOrder(this.props.order)
     const { isChargeShown } = this.state
     this.setState({ isChargeShown: !isChargeShown })
   }
@@ -132,13 +139,16 @@ class _StayDetails extends Component {
 const mapStateToProps = state => {
   return {
     stay: state.stayModule.currStay,
-    order: state.orderModule.currOrder
+    order: state.orderModule.currOrder,
+    user: state.userModule.orders
   }
 }
 const mapDispatchToProps = {
   setStay,
+  setLocation,
   setDates,
-  setGuestAmount
+  setGuestAmount,
+  addOrder
 }
 
 export const StayDetails = connect(mapStateToProps, mapDispatchToProps)(_StayDetails)

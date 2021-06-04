@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { UserModal } from './UserModal';
 
 class _Header extends Component {
     render() {
@@ -25,11 +26,14 @@ class _Header extends Component {
                             <i className="fas fa-user-circle fs28"></i>
                         </button>
                     </NavLink>
+                    <div className="user-container">
                     {loggedInUser && <span className="loggedin-user">
                         <Link to={`user/${loggedInUser._id}`}>
                             {loggedInUser.fullname}
                         </Link>
                     </span>}
+                    <UserModal/>
+                    </div>
                 </section>
             </section>
 

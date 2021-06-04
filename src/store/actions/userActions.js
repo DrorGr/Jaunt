@@ -27,6 +27,16 @@ export function removeUser(userId) {
     }
   }
 }
+export function addOrder(order) {
+  return async dispatch => {
+    try {
+      await userService.add(order)
+      dispatch({ type: 'ADD_ORDER', order })
+    } catch (err) {
+      console.log('UserActions: err in addOrder', err)
+    }
+  }
+}
 
 
 export function login(userCreds) {
