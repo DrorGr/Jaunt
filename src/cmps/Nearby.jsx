@@ -8,25 +8,25 @@ import RamatGan from '../assets/img/7.jpg'
 import Tveria from '../assets/img/8.jpg'
 import { Link } from 'react-router-dom'
 export function Nearby() {
-    const places = 
-    [
-        { name: 'Tel-Aviv', img: telAviv, time: 30 },
-        { name: 'Jerusalem', img: Jerusalem, time: 50 },
-        { name: 'Eilat', img: Eilat, time: 60 },
-        { name: 'Haifa', img: Haifa, time: 40 },
-        { name: 'Netanya', img: Netanya, time: 30 },
-        { name: 'Herzliya', img: Herzliya, time: 50 },
-        { name: 'Ramat Gan', img: RamatGan, time: 40 },
-        { name: 'Tveria', img: Tveria, time: 20 },
-    ]
+    const places =
+        [
+            { name: 'Tel-Aviv', img: telAviv, time: 30 },
+            { name: 'Jerusalem', img: Jerusalem, time: 50 },
+            { name: 'Eilat', img: Eilat, time: 60 },
+            { name: 'Haifa', img: Haifa, time: 40 },
+            { name: 'Netanya', img: Netanya, time: 30 },
+            { name: 'Herzliya', img: Herzliya, time: 50 },
+            { name: 'Ramat Gan', img: RamatGan, time: 40 },
+            { name: 'Tveria', img: Tveria, time: 20 },
+        ]
 
     return (
         <section className="explore grid">
-            {places.map((place,idx) =>
+            {places.map((place, idx) =>
                 <Link to={`stay/?loc=${place.name}`} key={idx}>
                     <div className="explore-preview flex">
                         <div className="img-preview">
-                        <img src={place.img} alt={place.name} />
+                            <img src={place.img} alt={place.name} />
                         </div>
                         <div className="destination flex column justify-center">
                             <span className="city ">{place.name}</span>

@@ -53,17 +53,17 @@ class _StayFilter extends Component {
 
     updateGuestsAmount = (key, num, ev) => {
         // need to handle case when num is < 0
-        ev.stopPropagation(); 
+        ev.stopPropagation();
         ev.preventDefault();
-            switch (key) {
-                case 'adults': this.setState({ key: num })
+        switch (key) {
+            case 'adults': this.setState({ key: num })
                 break
-                case 'children': this.setState({ key: num })
+            case 'children': this.setState({ key: num })
                 break
-                case 'infants': this.setState({ key: num })
+            case 'infants': this.setState({ key: num })
                 break
-                default:
-              }    
+            default:
+        }
     }
 
     updateGuestsAmount = (typeOfGuest, diff, ev) => {
@@ -89,7 +89,7 @@ class _StayFilter extends Component {
         this.props.history.push(`/stay?loc=${location}`)
     }
 
-    render(){
+    render() {
         const { guestAmount } = this.props.order
         const { startDate, endDate, isModalShown, x, y, filterBy } = this.state
         const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
@@ -97,48 +97,48 @@ class _StayFilter extends Component {
         return (
             <form className="stay-filter flex justify-center align-center" >
                 <div>
-
-            <div className="location">
-                <label htmlFor="location">Location</label>
-                <input type="text" name="location" id="location" placeholder="Where are you going?" value={filterBy.location} onChange={this.handleChange} />
-            </div>
+                    <div className="location">
+                        <label htmlFor="location">Location</label>
+                        <input type="text" name="location" id="location" placeholder="Where are you going?" value={filterBy.location} onChange={this.handleChange} />
+                    </div>
                 </div>
-            <div className="date-picker">
-                Dates
+                <div className="tiny-border"></div>
+                <div className="date-picker">
+                    Dates
                     <DatePicker
-                    placeholderText="Choose dates"
-                    selected={startDate}
-                    startDate={startDate}
-                    endDate={endDate}
-                    onChange={date => this.setDates(date)}
-                    monthsShown={2}
-                    dateFormat="dd/MM/yyyy"
-                    minDate={new Date()}
-                    selectsRange
-                    shouldCloseOnSelect={true}
-                />
-            </div>
-
-            <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
-                <label htmlFor="guestAmount">Guests</label>
-                {(guestAmount.adults + guestAmount.children + guestAmount.infants) <= 0  ? 
-                <span>Add guests</span> :
-                <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
-                }
-                <div className="guest-modal">
-                    <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />
+                        placeholderText="Choose dates"
+                        selected={startDate}
+                        startDate={startDate}
+                        endDate={endDate}
+                        onChange={date => this.setDates(date)}
+                        monthsShown={2}
+                        dateFormat="dd/MM/yyyy"
+                        minDate={new Date()}
+                        selectsRange
+                        shouldCloseOnSelect={true}
+                    />
                 </div>
-            </div>
-            <button onMouseMove={this.handleMouseMove}
-                className="search-btn"
-                onClick={this.onSubmit}
-                style={style}
-            >
-                <i className="fas fa-search search-icon"></i>
-            </button>
-        </form>
-    )
-}
+                <div className="tiny-border"></div>
+                <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
+                    <label htmlFor="guestAmount">Guests</label>
+                    {(guestAmount.adults + guestAmount.children + guestAmount.infants) <= 0 ?
+                        <span>Add guests</span> :
+                        <span>{guestAmount.adults + guestAmount.children + guestAmount.infants} guests</span>
+                    }
+                    <div className="guest-modal">
+                        <GuestModal isModalShown={isModalShown} guestAmount={guestAmount} updateGuestsAmount={this.updateGuestsAmount} />
+                    </div>
+                </div>
+                <button onMouseMove={this.handleMouseMove}
+                    className="search-btn"
+                    onClick={this.onSubmit}
+                    style={style}
+                >
+                    <i className="fas fa-search search-icon"></i>
+                </button>
+            </form>
+        )
+    }
 
 }
 export const StayFilter = withRouter(_StayFilter)

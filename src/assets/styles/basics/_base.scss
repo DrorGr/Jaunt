@@ -2,14 +2,8 @@
     box-sizing: border-box;
 }
 
-// ::selection {
-//     background-color: $clr1;
-//     color: $clr6;
-// }
-
 html {
     font-family: cereal-light;
-    // line-height: 1.6;
     color: $clr2;
 }
 html,
@@ -21,7 +15,6 @@ body{
 
 body {
     font-size: rem(16px);
-    // min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,7 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .app{
     flex-grow: 1;
+    min-height: 100%;
 }
+
 
 // section, main, footer {
 //     padding: 5px;
