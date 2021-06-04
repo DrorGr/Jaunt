@@ -18,9 +18,9 @@ export function App() {
             <Route path="/" component={Home} />
           </Switch>
         </main>
-        {/* <footer>
+        <footer>
           &copy; Copy Rights 2021
-        </footer> */}
+        </footer>
       </Router>
     </div>
   )

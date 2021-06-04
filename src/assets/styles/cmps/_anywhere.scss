@@ -1,17 +1,12 @@
 .live-anywhere-constainer{
     margin-top: 60px;
-    //temp
-    margin-bottom: 100px;
-
     .live-anywhere{
         margin-top: 50px;
         grid-template-columns: repeat(4, 1fr);
-        // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 15px;
         line-height: 2;
         font-size: 1.3rem;
         font-weight: 600;
-    
         img {
         border-radius: 10px;
         max-height: 300px;

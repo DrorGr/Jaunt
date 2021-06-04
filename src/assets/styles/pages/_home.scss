@@ -1,35 +1,31 @@
 .home {
-    height: 90vh;
     grid-column: 1/-1;
-    background-image: url(../../img/hero2.jpg);
-    background-position: top;
-    background-size:100% ;
-    background-repeat: no-repeat;
-
-
+    .hero{
+        height: 50vw;
+        background-image: url(../../img/hero2.jpg);
+        background-position: top;
+        background-size:100%;
+        background-repeat: no-repeat;
+        .search-container{
+            margin-bottom: 10vw;
+        }
+    }
     .main-header{
-        height: 90vh;
+        // height: 90vh;
         justify-content: flex-start;
         flex-grow: 1;
     }
-// .explore-nearby{
-//     background-color: #fff;
-//     :nth-child(2){
-//         grid-template-columns: repeat(4, 1fr);
-//         grid-template-rows: repeat(2, 1fr);
-//     }
-// }
-
     .app-desc{
-        flex: 1;
+        // flex: 1;
         display: block;
         align-self: flex-end;
-        margin-bottom: 20rem;
+        margin-bottom: 13vw;
         color: #fff;
         span,
         a{
             background-color: #fff;
-            padding: 5px;
+            line-height: 50px;
+            padding: 10px;
             color: $clr2;
             border-radius: 10px;
             width: fit-content;
