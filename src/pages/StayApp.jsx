@@ -51,7 +51,10 @@ class _StayApp extends Component {
             <section className="stay-app">
                 <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} />
                 {/* {filterBy.location && */}
+                {!loc && <h1>Explore all stays</h1>}
+                {loc &&
                  <h1 className="headline-explore">Stays in {loc}</h1>
+                }
                 <StayList stays={stays} />
             </section>
 
