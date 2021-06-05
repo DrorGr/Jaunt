@@ -135,45 +135,73 @@
     },
     {
       "_id": "10006113",
-      "name": "Newly built home",
+      "name": "Contemporary studio flat near Battersea Park",
       "imgUrls": [
-        "https://res.cloudinary.com/drorg/image/upload/v1622644106/jaunt%20img/an1/an_czzupl.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644106/jaunt%20img/an1/an2_agy3gk.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644108/jaunt%20img/an1/an3_dzm95q.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644109/jaunt%20img/an1/an4_qxvnd4.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644107/jaunt%20img/an1/an5_oycqhm.jpg"
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622904659/Jaunt%20Demo%20Data/london-1-1_morufp.webp",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622904659/Jaunt%20Demo%20Data/london-1-2_dqyir0.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622904659/Jaunt%20Demo%20Data/london-1-3_bjt2mk.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622904659/Jaunt%20Demo%20Data/london-1-4_bleb97.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622904659/Jaunt%20Demo%20Data/london-1-5_f3fb7c.jpg"
       ],
-      "price": 50.00,
-      "summary": "one bedroom for a night",
+      "price": 119.00,
+      "summary": "A lovely contemporary studio apartment just 1 minute walk from Battersea Park. There is a separate mezzanine area with a double bed with a skylight window for nocturnal sky gazing. There is a fully equipped kitchen with everything you could possibly need. It backs onto a quiet residential road so is wonderfully quiet. There is a Santander bike hire station just 20 seconds away, perfect for a cycle to Battersea Park or over the bridge to Chelsea and the King's Road.",
       "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
         "Kitchen",
-        "Smoking allowed",
-        "Pets allowed",
         "Air conditioning"
       ],
       "host": {
-        "_id": "51399114",
-        "fullname": "RIva H",
+        "_id": "89655",
+        "fullname": "Oliver",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
         "country": "United kingdom",
         "countryCode": "UK",
-        "address": "london, united kingdom",
-        "lat": -8.61308,
-        "lng": 41.1413
+        "address": "London, United Kingdom",
+        "lat": 51.509865,
+        "lng": 	-0.118092
       },
       "reviews": [
         {
-          "id": "51399202",
-          "txt": "Very helpful hosts. Cooked traditional...",
+          "id": "6675543432443",
+          "txt": "Really cosy flat is a great location right next to the park. If you’re very tall it may be a bit of a squeeze but it isn’t really too much of an issue. The flat has everything you need and it’s nice and quiet in the evening. Oliver was really helpful the whole time and made my time there very easy.",
           "rate": 5,
           "by": {
-            "_id": "u102",
-            "fullname": "user2",
+            "_id": "u102455",
+            "fullname": "Richard",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5646676856756",
+          "txt": "Great communication and service from Oliver - very responsive and helpful with messages. Location and place were as described, clean and well equipped. Location and being at the back of the building also meant it was very quiet and peaceful. Will definitely stay again.",
+          "rate": 5,
+          "by": {
+            "_id": "u102455",
+            "fullname": "Nicholas",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "23443434",
+          "txt": "Truly superhost. If you are looking for a nice walk and easy location to get to for the best sightseeings of the Central London, you're in the right place. Many extras for the guests. Would like to come back.",
+          "rate": 5,
+          "by": {
+            "_id": "u102455",
+            "fullname": "Olga",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "655766788",
+          "txt": "As a runner I picked this place for a short stay due to its location next to Battersea Park and easy access into Chelsea and the S Kensington Tube station. It's small but very clean, well equipped and Oliver is a fantastic host responding immediately to questions and checking in via email shortly after i moved in to make sure everything was alright. Everything as pictured and described on the site - the loft bedroom is tight but I liked it - added some character! Highly recommend this place for a quick stay in a great part of town.",
+          "rate": 5,
+          "by": {
+            "_id": "u102475",
+            "fullname": "John",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
@@ -1441,6 +1469,343 @@
           "by": {
             "_id": "u167",
             "fullname": "Haruka",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "54667688878787",
+      "name": "Florentine Studio",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622899397/Jaunt%20Demo%20Data/telaviv-1-1_tyghw5.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622899397/Jaunt%20Demo%20Data/telaviv-1-2_x0btvz.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622899397/Jaunt%20Demo%20Data/telaviv-1-3_dw7ak9.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622899397/Jaunt%20Demo%20Data/telaviv-1-4_yxliny.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622899397/Jaunt%20Demo%20Data/telaviv-1-5_ocy615.jpg"
+      ],
+      "price": 44.00,
+      "summary": "In the middle of Florentine the Soho of Tel-Aviv, cool and new(!) designed small Studio -20 sqm-. Great value for money in an old building with young neighbors and awesome nightlife",
+      "capacity": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning",
+        "Pets allowed"
+      ],
+      "host": {
+        "_id": "M10322008710",
+        "fullname": "Dan",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Israel",
+        "countryCode": "IL",
+        "address": "Tel Aviv, Israel",
+        "lat": 32.109333,
+        "lng": 34.855499
+      },
+      "reviews": [
+        {
+          "id": "546733333",
+          "txt": "Its well located if you like Florentin area, its ok for a short stay but it need some renovations (the windows dont close fully, water leaking in the shower). Outside of that it was clean and easy to get check-in / check-out.",
+          "rate": 4,
+          "by": {
+            "_id": "u12",
+            "fullname": "Yoni",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5667788",
+          "txt": "A great apartment and a great neighborhod . Thanks",
+          "rate": 4,
+          "by": {
+            "_id": "u165",
+            "fullname": "Erez",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "87998798",
+          "txt": "Very comfy and greatly located room",
+          "rate": 4,
+          "by": {
+            "_id": "u66",
+            "fullname": "Gal",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399146",
+          "txt": "Das was an excellent host and We loved the place. The apartment is nice and small, exactly like the photos. For us the best thing was the location in our favorite neighborhood in Tel Aviv. Thanks!",
+          "rate": 5,
+          "by": {
+            "_id": "u137",
+            "fullname": "Inbal",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "23233444",
+      "name": "Charming Studio,terrace,Bauhaus,superb location!!!",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622900524/Jaunt%20Demo%20Data/telaviv-2-1_n87qdu.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622900524/Jaunt%20Demo%20Data/telaviv-2-2_xjxxok.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622900525/Jaunt%20Demo%20Data/telaviv-2-4_qoqhbi.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622900525/Jaunt%20Demo%20Data/telaviv-2-3_sfkp0y.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622900524/Jaunt%20Demo%20Data/telaviv-2-5_kkpssd.jpg"
+      ],
+      "price": 125.00,
+      "summary": "My place is located on the corner of Dizzengof and Ben Gurion Boulevard, one of the city´s best location. A beautiful Bauhaus building close to public transport, nightlife, beaches and shops. You’ll love the beautiful decor and amount of amenities; the comfy bed and the coziness; the space and the light. My place is good for couples, solo adventurers, and business travelers. Business traveler (among others) can ask for a small printer/scanner as well as for iron machine and board.",
+      "capacity": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning",
+        "Elevator"
+      ],
+      "host": {
+        "_id": "M1432710",
+        "fullname": "Ariel",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Israel",
+        "countryCode": "IL",
+        "address": "Tel Aviv, Israel",
+        "lat": 32.109333,
+        "lng": 34.855499
+      },
+      "reviews": [
+        {
+          "id": "12121234",
+          "txt": "Ariel's (who is an AMAZING host) place is not only in the perfect location but also but perfect by itself. A true a homie feel in the heart of Tel Aviv...",
+          "rate": 5,
+          "by": {
+            "_id": "u2",
+            "fullname": "Adi",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "43657888",
+          "txt": "If you are looking for the best Tel Aviv location, look no further than Ariel's place. The location is amazing and the apartment is even more amazing. Very cozy, great space for one or two people. Very clean as well. And Ariel is very accommodating and easy to get in touch with. Would highly recommend this for those looking for a weekend getaway or for people who want to get the true Tel Aviv experience.",
+          "rate": 5,
+          "by": {
+            "_id": "u164",
+            "fullname": "Sara",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "8795543437676",
+          "txt": "Great location, very clean and Comfy bed. You can go anywhere by foot. Loved it!",
+          "rate": 5,
+          "by": {
+            "_id": "u26",
+            "fullname": "Mai",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399154567746",
+          "txt": "Fantastic place in beyond perfect location!!",
+          "rate": 5,
+          "by": {
+            "_id": "u147",
+            "fullname": "Jo",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "3567677",
+      "name": "Artsy Florentine Studio ☆ Private Entrance ☆ TV",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622901003/Jaunt%20Demo%20Data/telaviv-3-3_jkqykp.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622901003/Jaunt%20Demo%20Data/telaviv-3-1_hbajrj.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622901003/Jaunt%20Demo%20Data/telaviv-3-2_th1f5k.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622901003/Jaunt%20Demo%20Data/telaviv-3-5_ib2noz.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622901003/Jaunt%20Demo%20Data/telaviv-3-4_phjvge.jpg"
+      ],
+      "price": 101.00,
+      "summary": "BRAND NEW!! Really uniquely designed studio apt with highlighted features located on a quite street in the artsy graffiti quarter of the Florentine neighborhood. Equipped with all the amenities and necessities you may need.",
+      "capacity": 3,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning",
+        "Bathtub"
+      ],
+      "host": {
+        "_id": "M147710",
+        "fullname": "Meir",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Israel",
+        "countryCode": "IL",
+        "address": "Tel Aviv, Israel",
+        "lat": 32.109333,
+        "lng": 34.855499
+      },
+      "reviews": [
+        {
+          "id": "12121234",
+          "txt": "The place is great, stylish, comfortable and in a really cool location. It's located on the ground floor and there's some street noise at times. But that's the nature of this neighborhood and what it's about, going out and enjoying nightlife (when not in a lockdown due to a pandemic, of course).",
+          "rate": 5,
+          "by": {
+            "_id": "u54552",
+            "fullname": "Tal",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "990008",
+          "txt": "Meir's place is perfectly located, we had an amazing time and we would definitely come again!",
+          "rate": 5,
+          "by": {
+            "_id": "u164",
+            "fullname": "Lior",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "654765342432",
+          "txt": "Small stylish and fun place! We really enjoyed the staying at Meir’s apartment! It has everything you need to enjoy your vacation! Highly recommended!!",
+          "rate": 5,
+          "by": {
+            "_id": "u26233",
+            "fullname": "Ido",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399154567746",
+          "txt": "Great place, very stylish apartment",
+          "rate": 5,
+          "by": {
+            "_id": "u347",
+            "fullname": "Ron",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "6754546576",
+      "name": "Dream Bauhaus - Dream from home...",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622903845/Jaunt%20Demo%20Data/telaviv-4-1_hggxfh.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622903846/Jaunt%20Demo%20Data/telaviv-4-2_tctcda.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622903846/Jaunt%20Demo%20Data/telaviv-4-3_dlc6gv.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622903846/Jaunt%20Demo%20Data/telaviv-4-4_qpnafa.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622903846/Jaunt%20Demo%20Data/telaviv-4-5_ljfv3d.jpg"
+      ],
+      "price": 96.00,
+      "summary": "The apartment is in an antique Bauhaus, with high ceiling and Meda floor. Designed by the interior designer Henry Yam, Who is known for her rich luxuries taste. Enlighten rooms and garden access. The location is in the heart of Florentine. A very nice upcoming area, with lots of coffeshops, cafees, streetart, galleries and cool shops. It is close to Rothschild Boulevard, where u can find a lot of nightlife. 10min bike ride to the beach and old Jaffa. You wont regret your time here!",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning",
+        "Bathtub",
+        "Backyard"
+      ],
+      "host": {
+        "_id": "M147734210",
+        "fullname": "Morena",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Israel",
+        "countryCode": "IL",
+        "address": "Tel Aviv, Israel",
+        "lat": 32.109333,
+        "lng": 34.855499
+      },
+      "reviews": [
+        {
+          "id": "43254676788",
+          "txt": "Morena's place is beautiful and looks exactly like the pictures. Perfect for a nice couple getaway or if you want to be close walk from the sea. Also there is an ampm around the corner which is super convenient. I would definitely come again.",
+          "rate": 5,
+          "by": {
+            "_id": "u54556782",
+            "fullname": "Amit",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "990008",
+          "txt": "the house is great, and the area was also great for me. it was very easy to find the house and it was so easy to connect Gabriel. I'm sure I'll come back there again. Thank u",
+          "rate": 5,
+          "by": {
+            "_id": "u1667894",
+            "fullname": "Nurit",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "654765342432",
+          "txt": "The loft was absolutely perfect for my stay. Spacious, clean, well-located. If you are a single traveler or a couple, this is an ideal space and unlike anything else in the neighborhood. Moran was also very attentive and helpful to any question I had. One note: there is construction in the back (during the morning through afternoon) and as the apartment is ground level, there are often people walking by the front door etc. So it may be something to consider if you’re not used to “city noise”. Didn’t bother me at all, but I know others might not be used to noise as much. But highly recommend this beautiful and cozy special find in Florentine!",
+          "rate": 5,
+          "by": {
+            "_id": "u232226233",
+            "fullname": "Orlando",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399154567746",
+          "txt": "This may have been my favorite Airbnb I have ever been in, aside from its obvious beauty, the host was soooo helpful and communicative throughout my stay. I also believe that the value of this Airbnb is way more than the actual cost so it is an amazing price for the quality of the experience!! Highly recommend",
+          "rate": 5,
+          "by": {
+            "_id": "u3490007",
+            "fullname": "Kayla",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5139999746",
+          "txt": "The uncleaned balcony made me feel very disappointed. The place looks very like the pictures, but there was a leakage of water from the roof all over the balcony so it was very upsetting, and of course we didn't expect to find a dog's poo on the grass in the balcony... But the rest of the apartment was clean and looked great, and the bed and sofa are comfy. The service can be improved",
+          "rate": 5,
+          "by": {
+            "_id": "u30907",
+            "fullname": "Yael",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "577898976",
+          "txt": "Be honored for my wife's birthday. The apartment is on the road. Lots of noise from outside. Non private garden. The apartment stinks of mold. The owner of the apartment argued and gave no solution. We had to sleep in the hotel. We paid twice the price and did not receive proper value. We are currently drafting a letter to the Airbnb system to request a full refund of the trip. Because we didn't stay in the apartment for over an hour. The reactions of the guests before us were misleading. Luckily we continued on a trip we did in Tel Aviv. But with a bad feeling. Feeling distrustful.",
+          "rate": 1,
+          "by": {
+            "_id": "u107",
+            "fullname": "Ziv",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }

@@ -15,8 +15,6 @@ class _Trips extends Component {
 
     render() {
         const { orders } = this.props
-        console.log('orders ', orders);
-        // console.log('orders ', orders);
         return (
             <section className="trips-page">
                 <Header />
@@ -47,13 +45,8 @@ class _Trips extends Component {
 
 const mapStateToProps = state => {
     return {
-        // stays: state.stayModule.stays,
         orders: state.userModule.orders
-
     }
 }
-// const mapDispatchToProps = {
-
-// }
 
 export const Trips = connect(mapStateToProps, null)(_Trips)

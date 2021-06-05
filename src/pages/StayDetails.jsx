@@ -59,6 +59,8 @@ class _StayDetails extends Component {
       case 'Air conditioning': return 'fa fa-snowflake-o'
       case 'Air conditioning': return 'fa fa-snowflake-o'
       case 'Air conditioning': return 'fa fa-snowflake-o'
+      case 'Bathtub': return 'fas fa-bath'
+      case 'Backyard': return 'fas fa-leaf'
       default:
     }
   }
