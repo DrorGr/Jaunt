@@ -10,7 +10,7 @@ export function setLocation(order) {
 export function setDates(order) {
     return async dispatch => {
         try {
-            dispatch({ type: 'SET_ORDER', order })
+            dispatch({ type: 'SET_DATES', order })
         } catch (err) {
             console.log('orderActions: err in setDates', err)
         }

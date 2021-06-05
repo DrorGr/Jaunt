@@ -71,10 +71,13 @@ class _StayDetails extends Component {
   toggleCharge = () => {
     const updatedOrder = { ...this.props.order }
     updatedOrder.location = this.props.stay.loc.address
+    updatedOrder.stay = this.props.stay
     // console.log('updatedOrder ', updatedOrder);
     this.props.setLocation(updatedOrder)
+    console.log('updatedOrder ', updatedOrder);
     // console.log('loc should be here ', this.props.order);
-    this.props.addOrder(this.props.order)
+    // console.log('updatedOrder in toggle charge ', updatedOrder);
+    this.props.addOrder(updatedOrder)
     this.setState({ isChargeShown: true })
   }
 
@@ -84,12 +87,12 @@ class _StayDetails extends Component {
   }
 
   setDates = (dates) => {
-    const [startDate, endDate] = dates;
-    const updatedOrder = { ...this.props.order, startDate, endDate }
-    this.state.startDate = startDate
-    this.state.endDate = endDate
+    const [updatedStartDate, updatedEndDate] = dates;
+    this.setState({startDate: updatedStartDate, endDate: updatedEndDate})
+    const updatedOrder = { ...this.props.order }
+    updatedOrder.startDate = updatedStartDate
+    updatedOrder.endDate = updatedEndDate
     this.props.setDates(updatedOrder)
-    // this.setDates(startDate, endDate) NEED HELP!
 }
 
   updateGuestsAmount = (typeOfGuest, diff, ev) => {
@@ -140,7 +143,7 @@ const mapStateToProps = state => {
   return {
     stay: state.stayModule.currStay,
     order: state.orderModule.currOrder,
-    user: state.userModule.orders
+    orders: state.userModule.orders
   }
 }
 const mapDispatchToProps = {

@@ -9,7 +9,7 @@ const initialState = {
 export function userReducer(state = initialState, action = {}) {
   switch (action.type) {
     case 'ADD_ORDER':
-      return { ...state, orders: [...state.order, action.order] }
+      return { ...state, orders: [...state.orders, action.order] }
     case 'CANCEL_ORDER':
       return { ...state, orders: state.orders.filter(order => order._id !== action.orderId) }
     case 'UPDATE_ORDER':
