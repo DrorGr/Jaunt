@@ -2,8 +2,10 @@ import DatePicker from 'react-datepicker'
 import { GuestModal } from '../cmps/GuestModal';
 
 
-export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates }) {
-    const { startDate, endDate, isModalShown, isChargeShown, x, y } = state
+export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates,changeBtn }) {
+
+
+    const { startDate, endDate, isModalShown, isChargeShown, x, y, isSecondClick } = state
     const { stay, order } = props
     const { guestAmount } = order
     const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
@@ -42,12 +44,13 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                         </div>
                     </div>
                 </div>
-                <button className="check-btn fs16"
+                {/* <button className="check-btn fs16"
                     onMouseMove={handleMouseMove}
                     style={style}
                     onClick={toggleCharge}>
                     {(!isChargeShown) ? 'Check Availability' : 'Reserve'}
-                </button>
+                </button> */}
+                {changeBtn()}
                 {isChargeShown &&
                     <div className="trip-reserve flex column">
                         <p className="charge-msg">You won't be charged yet</p>
