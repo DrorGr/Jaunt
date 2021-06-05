@@ -19,7 +19,7 @@ class _Home extends Component {
         <section className="explore-nearby main-container">
           <h1>Explore nearby</h1>
           <Nearby />
-          <section className="live-anywhere-constainer">
+          <section className="live-anywhere-constainer flex column">
             <h1>Live anywhere</h1>
             <Anywhere />
           </section>

@@ -117,15 +117,27 @@
     }
 
         .order-details{
-            border-radius: 16px;
+            border-radius: 10px;
             border: 1px solid #b0b0b0;
             width: 100%;
+            font-family: cereal-light;
             .react-datepicker__input-container{
                 border-bottom: 1px solid #b0b0b0;
+                &>*{
+
+                    font-family: 'cereal-light';
+                    color: #757575;
+                }
             }
             .react-datepicker__input-container,
             .guests{
                 line-height: 4rem;
+                color: #757575;
+                cursor: pointer;
+            }
+            .date-picker{
+                outline: none;
+                caret-color: transparent;
             }
             
             &>*{

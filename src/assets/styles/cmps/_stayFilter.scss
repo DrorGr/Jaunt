@@ -14,6 +14,10 @@
         border-radius: 32px;
         padding-right: 20px;  
 
+        &>div{
+            height: 100%;
+        }
+
         .location{
             padding-left: 30px;
         }
@@ -55,10 +59,7 @@
             border-radius: 50%;
             height: 50px;
             width: 50px;
-                // &:hover{
-                    //     background-color: $clr4;
-                    // }
-                    font-weight: 100;
+            font-weight: 100;
         }
 
         input{

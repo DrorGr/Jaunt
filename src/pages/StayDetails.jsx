@@ -56,9 +56,6 @@ class _StayDetails extends Component {
       case 'Transportation': return 'fas fa-bus'
       case 'Refrigerator': return 'fas fa-refrigerator'
       case 'Coffee': return 'fas fa-coffee'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
       default:
     }
   }
@@ -73,10 +70,9 @@ class _StayDetails extends Component {
     updatedOrder.location = this.props.stay.loc.address
     // console.log('updatedOrder ', updatedOrder);
     this.props.setLocation(updatedOrder)
-    // console.log('loc should be here ', this.props.order)
-    // this.props.addOrder(this.props.order)
-    const { isChargeShown } = this.state
-    this.setState({ isChargeShown: !isChargeShown })
+    // console.log('loc should be here ', this.props.order);
+    this.props.addOrder(this.props.order)
+    this.setState({ isChargeShown: true })
   }
 
   getGuestsNum = () => {
@@ -86,10 +82,11 @@ class _StayDetails extends Component {
 
   setDates = (dates) => {
     const [startDate, endDate] = dates;
-    const updatedOrder = { ...this.props.order, startDate,endDate }
+    const updatedOrder = { ...this.props.order, startDate, endDate }
     this.state.startDate = startDate
     this.state.endDate = endDate
     this.props.setDates(updatedOrder)
+    // this.setDates(startDate, endDate) NEED HELP!
 }
 
   updateGuestsAmount = (typeOfGuest, diff, ev) => {
@@ -117,7 +114,7 @@ class _StayDetails extends Component {
                 <h2>Amenities</h2>
                 <Amenities amenities={stay.amenities} getAmenitiesIcons={this.getAmenitiesIcons} />
               </section>
-              <hr />
+              <div className="divider"></div>
               <section className="details-container">
                 <h2>Select dates</h2>
                 <SelectDates startDate={startDate} endDate={endDate} setDates={this.setDates} />
@@ -126,7 +123,7 @@ class _StayDetails extends Component {
             <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} />
           </section>
         </section>
-        <hr />
+        <div className="divider"></div>
         <Reviews reviews={stay.reviews} />
         <section className="map-container">
           <StayMap location={stay.loc} />

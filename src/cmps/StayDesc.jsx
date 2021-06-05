@@ -8,9 +8,7 @@ export function StayDesc({ stay }) {
                 </div>
                 <img className="host-img" src={stay.host.imgUrl} alt="profile" />
             </div>
-
-            <hr />
-
+            <div className="divider"></div>
             <section className="info-container details-container">
                 <div className="info flex">
                     <i className="fas fa-home"></i>
@@ -35,9 +33,7 @@ export function StayDesc({ stay }) {
                         </span>
                     </div>}
             </section>
-
-            <hr />
-
+            <div className="divider"></div>
             <div className="details-container">
                 <p>{stay.summary}</p>
             </div>

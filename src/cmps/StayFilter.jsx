@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
 import { Component } from 'react'
+// import { render } from '@testing-library/react';
 // import { loadStays } from '../store/actions/stayActions.js'
 // import { connect } from 'react-redux'
 import DatePicker from 'react-datepicker'

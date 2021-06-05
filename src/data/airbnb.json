@@ -1,69 +1,132 @@
-{ 
+{
   "stays": [
     {
       "_id": "10006111",
-      "name": "Ribeira Charming Duplex",
+      "name": "Super cute apt perfect for couples, Montmartre",
       "imgUrls": [
-        "https://res.cloudinary.com/drorg/image/upload/v1622634286/jaunt%20img/ah/jr1_pwlfsn.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622729745/jaunt%20img/ah/jr2_kemjaj.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/ah/jr3_umdpxy.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/ah/jr4_wby2il.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/ah/jr5_physwd.jpg"
-        
-
-        
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622875972/Jaunt%20Demo%20Data/paris-1-5_lx6kvt.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622875973/Jaunt%20Demo%20Data/paris-1-3_fdqj3j.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622875972/Jaunt%20Demo%20Data/paris-1-2_cvogca.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622875972/Jaunt%20Demo%20Data/paris-1-1_bqu3kk.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622875973/Jaunt%20Demo%20Data/paris-1-4_auhjeg.jpg"
       ],
-      "price": 100.00,
-      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
-      "capacity": 10,
+      "price": 91.00,
+      "summary": "Located in the trendy and charming area of Montmartre (18th arrondissement) the apartment is perfect for couples travelling in Paris. Within walking distance you can enjoy must see touristic attractions such as Moulin Rouge and Montmartre. All other key attractions – Opera, Louvre, Eiffel Tower, Notre Dame, Le Marais – are just 20/25 minutes away by subway. You can also enjoy a more Parisian atmosphere by discovering the charming areas of Abesse, Rue des Martyrs and South Pigalle.",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
         "Kitchen",
-        "Smoking allowed",
-        "Pets allowed",
         "Air conditioning",
-        "Parking",
         "Transportation",
         "Coffee",
         "Room service"
       ],
       "host": {
-        "_id": "51399112",
-        "fullname": "Davit Pok",
+        "_id": "7511804699240",
+        "fullname": "Quentin",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
-        "country": "Israel",
-        "countryCode": "IL",
-        "address": "Tel-Aviv,Israel",
-        "lat": 32.109433,
-        "lng": 34.855499
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris, France",
+        "lat": 48.864716,
+        "lng": 2.349014
       },
       "reviews": [
         {
           "id": "51399211",
-          "txt": "home is a lovely space equipped with everything one might need for a short or longer stay. The small yard is lovely for little kids to play in (not to mention all the toys!) and is almost always in the shade with a nice cool breeze on summer nights. We had all our meals in outside in a relaxing atmosphere. Being able to walk to the beach was awesome. Lina was great to communicate re any issues. Recommended!",
+          "txt": "Toute les indications pour se rendre à l’appartement sont claires et précises, le lieu est aussi charment que sur les photos, l’hôte répond rapidement à chacune de nos questions et la mise à disposition pour se faire des jus de fruits le matin est l’intention qui fait tout. En conclusion, un très bon séjour passé dans cet appartement que je recommande.",
           "rate": 4,
           "by": {
             "_id": "u102",
-            "fullname": "Davina",
-            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
-          }
-        },
-        {
-          "id": "51399212",
-          "txt": "Perfect place to be...any time of the year",
-          "rate": 5,
-          "by": {
-            "_id": "u103",
-            "fullname": "Dimitris",
+            "fullname": "Faustine",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
-
-      
+      "likedByUserIds": [
+        "u101",
+        "u102",
+        "u103"
+      ]
+    },
+    {
+      "_id": "3434434343435555",
+      "name": "Tao express , opéra LAFAYETTE",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-1_ffwqbd.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-2_gdrpl1.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877447/Jaunt%20Demo%20Data/paris-4-3_wlibwn.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-4_bbcff3.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622877448/Jaunt%20Demo%20Data/paris-4-5_cqnj4a.jpg"
+      ],
+      "price": 88.82,
+      "summary": "Cosy, Comfortable and quiet apartment at the heart of Paris! Perfect for 1 to 4 people. Appartement cocooning parisien sublimé par une décoration élégante ,ultra moderne et design ,tout équipé idéal pour les familles, les couples mais aussi pour les voyages d'affaires. Il se situe dans un quartier idéal pour profiter des animations diurnes comme nocturnes entre le quartier Montorgueil /Les Halles /Opéra/Lafayette . L'appartement est au rez-de-chaussée lumineux dans une résidence sécurisée.",
+      "capacity": 4,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning",
+        "Transportation",
+        "Coffee"
+      ],
+      "host": {
+        "_id": "7510204775894",
+        "fullname": "Marie",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris, France",
+        "lat": 48.864716,
+        "lng": 2.349014
+      },
+      "reviews": [
+        {
+          "id": "222223233",
+          "txt": "Marie’s house was very clean and beautifully decorated. The location is perfect and close to many attractions. The metro stops were very close and there were lots of nice cafes and restaurants in the area. The area also felt safe to walk around.",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Elspeth",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "879888678",
+          "txt": "What a great place to stay! Such a nice place tucked away in a great location, very clean and modern - I would absolutely stay here again. The only issue was the Wifi didn't work, we told the host who arranged for someone to fix it the next day but then it stopped working again that night. Thanks for a lovely stay, we thoroughly enjoyed it!",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Megan",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "32345555666",
+          "txt": "The apartment is exactly as pictured, very clean, and in a wonderfully central location! Marie is very responsive and accommodating, so I highly recommend booking with her for your stay.",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Allie",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "3578888",
+          "txt": "Great place, great location and great host! Marie let us check in earlier than expected which was great! It’s a very stylish, Parisian style loft :)",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Paula",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
       "likedByUserIds": [
         "u101",
         "u102",
@@ -79,13 +142,11 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622644108/jaunt%20img/an1/an3_dzm95q.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644109/jaunt%20img/an1/an4_qxvnd4.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644107/jaunt%20img/an1/an5_oycqhm.jpg"
-
-        
       ],
       "price": 50.00,
       "summary": "one bedroom for a night",
       "capacity": 2,
-      "amenities": [                           
+      "amenities": [
         "TV",
         "Wifi",
         "Kitchen",
@@ -117,61 +178,102 @@
           }
         }
       ],
-
       "likedByUserIds": [
-        
         "u102"
       ]
     },
     {
       "_id": "10006115",
-      "name": "Basic home",
+      "name": "Oasis of calm Faubourg St Denis in Mobility Lease",
       "imgUrls": [
-        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr1_xcl7sd.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634287/jaunt%20img/an/mr2_xtfy30.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr3_x5gdd4.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr4_ecqc5t.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634288/jaunt%20img/an/mr5_of45o9.jpg"
-
-        
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876439/Jaunt%20Demo%20Data/paris-2-1_b2pynr.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876439/Jaunt%20Demo%20Data/paris-2-2_qlybep.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876439/Jaunt%20Demo%20Data/paris-2-3_qhuiif.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876439/Jaunt%20Demo%20Data/paris-2-4_jtperh.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876439/Jaunt%20Demo%20Data/paris-2-5_fdklvy.jpg"
       ],
-      "price": 75.00,
+      "price": 36.00,
       "summary": "Home, just home.",
-      "capacity": 6,
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
-        "Kitchen",
-        "Smoking allowed",
-        "Pets allowed",
-        "Air conditioning"
+        "Kitchen"
       ],
       "host": {
-        "_id": "51399116",
-        "fullname": "RIva T",
+        "_id": "7511001385723",
+        "fullname": "Guillaume",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
         "country": "France",
-        "countryCode": "TR",
+        "countryCode": "FR",
         "address": "Paris,france",
-        "lat": -8.61308,
-        "lng": 41.1413
+        "lat": 48.864716,
+        "lng": 2.349014
       },
       "reviews": [
         {
-          "id": "madeId",
-          "txt": "Very helpful hosts. Cooked traditional...",
+          "id": "4534556768767",
+          "txt": "A small but very nice flat. It's located in a lively street full of restaurants and not too far from Paris' main tourist attractions. I thoroughly enjoyed by stay there.",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "Nicolas",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "34354567677",
+          "txt": "This place is the PLACE !! Near everything super trendy neighbourhood, great food , drinks and etc !! Stay here !!",
           "rate": 5,
           "by": {
             "_id": "u102",
-            "fullname": "user2",
+            "fullname": "Luis Enrique",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5656575434343",
+          "txt": "The studio is a stylish place in a great neighborhood. It is very well equipped, the ventilator was our best friend during the heatwave this summer. Even though the place is very cool because it's located on the ground floor. The bed sofa is top quality and we enjoyed the possibility to sit outside for diner. We used the outside table everyday. The neighborhood is very lively with great restaurants and grocery shops. Once you enter from the street, it's so peaceful. We can absolutely recommend this place and Guillaume is a super host!",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Marianne",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5656575434343",
+          "txt": "A small but well thought out space that I really enjoyed my stay in. I would highly recommend for a single person, Guillaume communicates really quickly and well",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "Lucia",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "4545645676544",
+          "txt": "We absolutely adored Guillaume and Justine's sweet little flat. I cannot say enough great things about our experience. First, the location is superb. There are a ton of great bars and restaurants nearby and they thoughtfully prepared a wonderful guide. Also, they are super organized and left instructions for all of the appliances, which we appreciated since we needed them to figure out the coffee machine. Ha! Everything was immaculately clean and smelled really nice. Communication was super easy and Guillaume always replied really quickly. We enjoyed our trip to Paris and would love to stay in their flat again. Thank you for everything!",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Kelly",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "5465443323232323",
+          "txt": "Lovely quiet place in a busy street as Rue du faouburg. The metro station is just 3 Blocks away and the buses all over. Guillaume was not on town but he made sure we had all we needed in the flat. The sofá bed was so confortable. The flat is 20 minutes away from Paris downtown.",
+          "rate": 5,
+          "by": {
+            "_id": "u102",
+            "fullname": "Jonathan",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -186,9 +288,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br3_fcdxkr.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br4_waewim.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643916/jaunt%20img/br/br5_gah3br.jpg"
-      
-
-        
       ],
       "price": 40.00,
       "summary": "One room",
@@ -234,7 +333,6 @@
             "fullname": "Louis",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
-        
         },
         {
           "id": "513992007",
@@ -247,7 +345,6 @@
           }
         }
       ],
-
       "likedByUserIds": [
         "u104",
         "u107",
@@ -263,8 +360,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr3_u243vg.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr4_mpamo3.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/an1%20%282%29/lr5_vkuzua.jpg"
-
-        
       ],
       "price": 60.00,
       "summary": "Small place",
@@ -274,7 +369,6 @@
         "Kitchen",
         "Air conditioning",
         "Transportation"
-
       ],
       "host": {
         "_id": "51399120",
@@ -310,15 +404,13 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u108",
         "u109"
       ]
     },
     {
-      "_id": "10006121",  
+      "_id": "10006121",
       "name": "Big house",
       "imgUrls": [
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/an2/sr1_l9peef.jpg",
@@ -326,8 +418,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr3_xqq0bn.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/an2/sr4_bky1ol.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634289/jaunt%20img/an2/sr5_k5ehsd.jpg"
-
-        
       ],
       "price": 400.00,
       "summary": "Modern, private apartment in a beautiful community",
@@ -341,7 +431,6 @@
         "Air conditioning",
         "Parking",
         "Transportation"
-
       ],
       "host": {
         "_id": "51399122",
@@ -387,8 +476,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u110",
         "u111",
@@ -404,8 +491,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/av/st2_gp2cue.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/av/st4_rou7fj.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634290/jaunt%20img/av/st5_zacvfp.jpg"
-
-        
       ],
       "price": 75.00,
       "summary": "Mountain View Yurt Klil",
@@ -439,11 +524,8 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u113"
-      
       ]
     },
     {
@@ -455,8 +537,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg2_glsf4a.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg3_xwtbgv.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/eg/eg4_ktkxlh.jpg"
-
-        
       ],
       "price": 260.00,
       "summary": "Big Place.",
@@ -527,8 +607,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u121",
         "u123",
@@ -539,12 +617,11 @@
       "_id": "10006127",
       "name": "Randa",
       "imgUrls": [
-"https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/gl/gl1_psseuj.jpg",
-"https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl2_nl0hhh.jpg",
-"https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
-"https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
-"https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/gl/gl5_cakcce.jpg"
-        
+        "https://res.cloudinary.com/drorg/image/upload/v1622643917/jaunt%20img/gl/gl1_psseuj.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl2_nl0hhh.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643918/jaunt%20img/gl/gl4_v72pe3.jpg",
+        "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/gl/gl5_cakcce.jpg"
       ],
       "price": 100.00,
       "summary": "Home, just home.",
@@ -579,11 +656,8 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u121"
-
       ]
     },
     {
@@ -595,8 +669,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634293/jaunt%20img/il/tl3_rkpecf.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634291/jaunt%20img/il/tl4_ibvdj9.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634292/jaunt%20img/il/tl5_onoz0s.jpg"
-
-        
       ],
       "price": 75.00,
       "summary": "Small stay",
@@ -634,10 +706,7 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
-
         "u130"
       ]
     },
@@ -650,8 +719,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634295/jaunt%20img/it/vl3_peof20.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634296/jaunt%20img/it/vl4_slf8fo.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634297/jaunt%20img/it/vl5_yuwkqh.jpg"
-
-        
       ],
       "price": 330.00,
       "summary": "Primum appartment",
@@ -691,8 +758,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u131"
       ]
@@ -706,8 +771,6 @@
         "https://res.cloudinary.com/drorg/raw/upload/v1622634296/jaunt%20img/jr/vn3_zdl9xp.htm",
         "https://res.cloudinary.com/drorg/image/upload/v1622634300/jaunt%20img/jr/vn4_vza9a2.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634300/jaunt%20img/jr/vn5_b2vbok.jpg"
-
-        
       ],
       "price": 130.00,
       "summary": "Romantic place",
@@ -752,8 +815,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u150",
         "u151"
@@ -768,8 +829,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah3_y3sy6p.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah4_jtt3wn.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/jr1/ah5_zbygk0.jpg"
-
-        
       ],
       "price": 110.00,
       "summary": "Nice for kids",
@@ -816,8 +875,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u184",
         "u185",
@@ -829,12 +886,8 @@
     {
       "_id": "10006137",
       "name": "Basic Stay",
-      "imgUrls": [ 
-        
+      "imgUrls": [
         "https://source.unsplash.com/random/400X400/?house13"
-
-
-        
       ],
       "price": 60.00,
       "summary": "Home, just home.",
@@ -871,72 +924,76 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u102"
       ]
     },
-    { 
+    {
       "_id": "10006139",
-      "name": " House with Terrace& plunge pool",
+      "name": " Double/Twin Room, close to Opera and the Louvre with breakfast included",
       "imgUrls": [
-        "https://res.cloudinary.com/drorg/image/upload/v1622634278/jaunt%20img/mr/an1_oi8mnv.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634279/jaunt%20img/mr/an2_aiolfm.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634279/jaunt%20img/mr/an3_snoofn.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/mr/an4_xqc6ze.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622634280/jaunt%20img/mr/an5_v4joxh.jpg"
-
-        
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876932/Jaunt%20Demo%20Data/paris-3-1_ierbpb.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876932/Jaunt%20Demo%20Data/paris-3-2_hpamft.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876932/Jaunt%20Demo%20Data/paris-3-3_ismyjv.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876932/Jaunt%20Demo%20Data/paris-3-4_ux866p.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622876932/Jaunt%20Demo%20Data/paris-3-5_xriljk.jpg"
       ],
-      "price": 60.00,
-      "summary": "Nice place",
-      "capacity": 10,
+      "price": 114.00,
+      "summary": "The Daunou Opera enjoys a prestigious location in the heart of the right bank of Paris. It offers every imaginable comfort in a quiet and sophisticated setting. The hotel is superbly located between the Opera and Place Vendome, a few minutes from the Louvre, the Grevin Museum, the magnificent Tuileries Gardens, major department stores (Galeries Lafayette, Printemps Haussmann) and Gare Saint Lazare. It is convenient to the Olympia music hall and theatres such as Theatre De La Michodière, Theatre de Paris, Theatre de la Pépinière, Theatre Edouard VII, Theatre Daunou, Theatre des Variétés and Theatre du Gymnase. The Hotel Daunou Opera offers you Paris in all its splendour.",
+      "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
-        "Kitchen",
-        "Smoking allowed",
-        "Pets allowed",
-        "Air conditioning"
+        "Air conditioning",
+        "Newspapers",
+        "Breakfast",
+        "Elavator"
       ],
       "host": {
         "_id": "51399140",
-        "fullname": "Rody N",
+        "fullname": "Lionel",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
-        "country": "Greece",
-        "countryCode": "Athens",
-        "address": "Athens ,Greece",
-        "lat": -8.61308,
-        "lng": 41.1413
+        "country": "France",
+        "countryCode": "FR",
+        "address": "Paris ,France",
+        "lat": 48.864716,
+        "lng": 2.349014
       },
       "reviews": [
         {
-          "id": "10006150",
-          "txt": "Anabelle is a wonderful caring host we didnt miss anything. We were a small group with 2 dogs who loved the garden so much. Through it was still quite cold outside we enjoyed the chimney and some relaxing days in the tree house. Merci it was something special!",
-          "rate": 7,
+          "id": "321323231232131",
+          "txt": "Great, modern place with an amazing location!",
+          "rate": 5,
           "by": {
             "_id": "u192",
-            "fullname": "Bianca",
+            "fullname": "Ida Katharina",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         },
         {
           "id": "10006151",
-          "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 8,
+          "txt": "I expected more of this hotel because of the positive feedback I read. But unfortunately, my expectations haven’t met. The neighbours were extremely loud so I could not sleep even with earplugs and the room was very warm as the fan was not working well. Also the water in my sink didn’t run so it fludded.",
+          "rate": 2,
           "by": {
             "_id": "u193",
-            "fullname": "Carol",
+            "fullname": "Jasmine",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "231313233333",
+          "txt": "Was a great surprise, great experience!",
+          "rate": 4,
+          "by": {
+            "_id": "u193",
+            "fullname": "Shibei",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u192",
         "u193"
@@ -944,83 +1001,77 @@
     },
     {
       "_id": "10006141",
-      "name": "Cozy & Design Studio 2P -in the Heart of le Marais",
+      "name": "NEAR EIFFEL TOWER...RUE CLER AREA",
       "imgUrls": [
-        "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/rs/rs1_nytr8w.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622644111/jaunt%20img/rs/rs2_fjfzhm.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643920/jaunt%20img/rs/rs3_b2gpve.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/rs/rs4_rmlyaz.jpg",
-        "https://res.cloudinary.com/drorg/image/upload/v1622643919/jaunt%20img/rs/rs5_jhwuax.jpg"
-
-        
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622878667/Jaunt%20Demo%20Data/paris-5-1_w46lop.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622878667/Jaunt%20Demo%20Data/paris-5-2_xr0fb0.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622878667/Jaunt%20Demo%20Data/paris-5-3_s2kxlo.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622878667/Jaunt%20Demo%20Data/paris-5-4_umj845.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622878667/Jaunt%20Demo%20Data/paris-5-5_tm4guz.jpg"
       ],
-      "price": 40.00,
-      "summary": "Très joli studio Parisien de 25m² récemment rénové idéal pour un séjour Parisien au cœur du fabuleux quartier du MARAIS. Le logement peut accueillir deux personnes dans un lit double. Un service professionnel de grand standing vous attend avec serviettes de bain et draps de qualité hôtelière. L'appartement est entièrement équipé.",
+      "price": 44.00,
+      "summary": "In the heart of the 7Th District... One of the best and typical Quartier parisien... Near The Eiffel Tower, Invalides Dome, Rodin museum, Champs de Mars park and the famous and typical parisian Rue CLER market... Luxury studios for rental...",
       "capacity": 2,
       "amenities": [
         "TV",
         "Wifi",
         "Kitchen",
-        "Smoking allowed",
-        "Pets allowed",
         "Air conditioning"
       ],
       "host": {
-        "_id": "51399142",
-        "fullname": "Lora H",
+        "_id": "343456790999889897897",
+        "fullname": "Sl!M",
         "imgUrl": "https://source.unsplash.com/random/100x100/?face"
       },
       "loc": {
         "country": "France",
         "countryCode": "FR",
         "address": "Paris, France",
-        "lat": -8.61308,
-        "lng": 41.1413
+        "lat": 48.864716,
+        "lng": 2.349014
       },
       "reviews": [
         {
           "id": "51399143",
-          "txt": "Anabelle’s place is very exquisite. It is very relaxing and at the heart of nature. The tree house is absolutely beautiful and adds to how unique this place is. Besides, Anabelle’s hospitality is amazing. Highly enjoyed staying here with a small group of friends.",
-          "rate": 6,
+          "txt": "Excellent location! The studio is located in a quiet building on a quiet street, well suited for remote work. Every grocery chain imaginable within walking distance, and very accessible by public transport. Sl!m is also very communicative and accessible! Very clean, neat, and tidy. I highly recommend. Suited for 1-2 persons maximum.",
+          "rate": 5,
           "by": {
             "_id": "u164",
-            "fullname": "Ramy",
+            "fullname": "Rachael",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         },
         {
           "id": "51399144",
-          "txt": "Great place to rest and relax and lovely hosts! Warmly recommended!",
-          "rate": 8,
+          "txt": "Top",
+          "rate": 5,
           "by": {
             "_id": "u165",
-            "fullname": "Hombeline",
+            "fullname": "Frederic",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         },
         {
           "id": "51399145",
-          "txt": "Great spot. Really enjoyed hiking around the area. Everyone in the village was so friendly. The tree house was a amazing touch. The views where awesome.",
-          "rate": 9,
+          "txt": "Super impeccable",
+          "rate": 4,
           "by": {
             "_id": "u166",
-            "fullname": "Laila",
+            "fullname": "Eva",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         },
         {
           "id": "51399146",
-          "txt": "We had a wonderful stay! So relaxing and amazing views. I highly recommend it.",
-          "rate": 9,
+          "txt": "Very responsive, very clean and great location. The food around the area is great. This Airbnb will not disappoint",
+          "rate": 5,
           "by": {
             "_id": "u167",
-            "fullname": "Virginia",
+            "fullname": "Rob",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u101",
@@ -1037,8 +1088,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an3_f274sh.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an4_rdwlub.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634281/jaunt%20img/sr/an5_vnwnij.jpg"
-
-        
       ],
       "price": 95.00,
       "summary": "Located at the MOST CENTRAL area of Paris, Latin Quarter. 3 min to the Seine, 3 mins to Cathédrale Notre-Dame / St-Michel, 3 mins to Sorbonne U., 10 mins to Jardin du Jardin du Luxembourg. 1 min to Metro: Cluny La Sorbonne (Line 10), St-Michel Notre-Dame (Line 4, RER B). Numerous restaurants, cafes/bars. Responsive host ready to help. Located on the 3nd floor without elevator (ground floor is zero floor). Be prepared to climb three floors of stairs. Price negotiable only before booking.",
@@ -1088,8 +1137,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -1104,7 +1151,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634282/jaunt%20img/st/av1_igy6g1.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634282/jaunt%20img/st/av3_j4jn7i.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/st/av4_kmferm.jpg"
-        
       ],
       "price": 86.00,
       "summary": "The Daunou Opera enjoys a prestigious location in the heart of the right bank of Paris. It offers every imaginable comfort in a quiet and sophisticated setting. The hotel is superbly located between the Opera and Place Vendome, a few minutes from the Louvre, the Grevin Museum, the magnificent Tuileries Gardens, major department stores (Galeries Lafayette, Printemps Haussmann) and Gare Saint Lazare. It is convenient to the Olympia music hall and theatres such as Theatre De La Michodière, Theatre de Paris, Theatre de la Pépinière, Theatre Edouard VII, Theatre Daunou, Theatre des Variétés and Theatre du Gymnase. The Hotel Daunou Opera offers you Paris in all its splendour. Double bed (160 x 200 cm) or Bedroom with 2 single beds (80 x 200 cm)",
@@ -1126,8 +1172,8 @@
         "country": "France",
         "countryCode": "FR",
         "address": "Paris, France",
-        "lat": -8.61308,
-        "lng": 41.1413
+        "lat": 48.864716,
+        "lng": 2.349014
       },
       "reviews": [
         {
@@ -1171,8 +1217,6 @@
           }
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -1187,8 +1231,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il3_hjwpd1.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il4_t7ibym.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634283/jaunt%20img/tl/il5_tjp5nl.jpg"
-
-        
       ],
       "price": 180.00,
       "summary": "Home, just home.",
@@ -1243,11 +1285,8 @@
             "fullname": "Laila",
             "imgUrl": "https://source.unsplash.com/random/100x100/?face"
           }
-        
         }
       ],
-
-      
       "likedByUserIds": [
         "u101",
         "u102"
@@ -1262,8 +1301,6 @@
         "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it3_qegrgj.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it4_udzelj.jpg",
         "https://res.cloudinary.com/drorg/image/upload/v1622634284/jaunt%20img/vl/it5_nelo1t.jpg"
-
-        
       ],
       "price": 100.00,
       "summary": "Big hut in the woods",
@@ -1330,16 +1367,88 @@
           }
         }
       ],
-
-      
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006150",
+      "name": "Near Shinjuku Sta./Simmons#201",
+      "imgUrls": [
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622874947/Jaunt%20Demo%20Data/japan-1-1_fx56mb.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622874946/Jaunt%20Demo%20Data/japan-1-5_rg19sc.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622874946/Jaunt%20Demo%20Data/japan-1-6_fzqdd1.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622874946/Jaunt%20Demo%20Data/japan-1-7_dkiegf.jpg",
+        "https://res.cloudinary.com/dyz2f5gzh/image/upload/v1622874946/Jaunt%20Demo%20Data/japan-1-8_o5oc03.jpg"
+      ],
+      "price": 39.00,
+      "summary": "New apartment. Most convenient area in Tokyo!! To Shinjuku station 9 min walk. To Yoyogi 3min walk. You can access all famous spot in Tokyo. There is only guest in the apartment.",
+      "capacity": 3,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Air conditioning"
+      ],
+      "host": {
+        "_id": "M130008710",
+        "fullname": "Happy",
+        "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+      },
+      "loc": {
+        "country": "Japan",
+        "countryCode": "JP",
+        "address": "Tokyo, Japan",
+        "lat": 35.661777,
+        "lng": 139.704051
+      },
+      "reviews": [
+        {
+          "id": "51399143",
+          "txt": "Happy's place was amazing. Very close to the station, lots of great restaurants, grocery stores, and convenience stores within walking distance. I stayed for a long time (40 days). It was very close to anything I needed. It was very clean.",
+          "rate": 5,
+          "by": {
+            "_id": "u177",
+            "fullname": "Reiichiro",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399144",
+          "txt": "The best thing about Happy's place is the location. It's about a 5 minute walk to Yoyogi station which is conveniently located on the Yamanote Line that can directly get you to Shibuya, Shinjuku, Tokyo station and many more tourist spots. I even walked one day to Harajuku and it maybe took 20 minutes. There's a row of restaurants and several convenience stores nearby. The apartment is located on the second floor, so prepare to haul heavy suitcases up a flight of stairs. The place is the perfect size for a solo traveler or couple- I would not recommend more than 2 people. The apartment was also very clean other than the table, which looked like it may have not been wiped from the previous guest. That being said, I'm a clean freak and would still stay at and recommend this place.",
+          "rate": 5,
+          "by": {
+            "_id": "u165",
+            "fullname": "Vivian",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399145",
+          "txt": "Excellent",
+          "rate": 4,
+          "by": {
+            "_id": "u166",
+            "fullname": "Irismat",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        },
+        {
+          "id": "51399146",
+          "txt": "Happy’s place is amazing. The apartment was perfect for a single female traveler. The neighborhood is convenient as well. Always felt safe even coming back late at night. I extended my stay for a week because I enjoyed it a lot. Highly recommend her place.",
+          "rate": 5,
+          "by": {
+            "_id": "u167",
+            "fullname": "Haruka",
+            "imgUrl": "https://source.unsplash.com/random/100x100/?face"
+          }
+        }
+      ],
       "likedByUserIds": [
         "u101",
         "u102"
       ]
     }
-    
   ]
-  
 }
-
-
