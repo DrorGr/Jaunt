@@ -11,11 +11,13 @@ export function UserModal() {
                     <li>Trips</li>
                 </Link>
                 <li>Wishlist</li>
-                <div className="tiny-border-bottom"></div>
+                {/* <div className="tiny-border-bottom"></div> */}
+                <div className="divider"></div>
                 <li>Host your home</li>
                 <li>Host an experience</li>
                 <li>Account</li>
-                <div className="tiny-border-bottom"></div>
+                <div className="divider"></div>
+                {/* <div className="tiny-border-bottom"></div> */}
                 <li>Help</li>
                 <li>Log out</li>
             </ul>

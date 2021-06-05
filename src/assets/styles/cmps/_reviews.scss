@@ -24,8 +24,13 @@
     .user-reviews,
     .add-review-container{
         flex-wrap: wrap;
+        button{
+            font-family: 'cereal-bold';
+        }
+
         article{
-            width: 50%;
+            width: 47%;
+            margin-bottom: 40px;
         }
     }
     .add-review-container{

@@ -14,7 +14,7 @@ export function Reviews({ reviews }) {
                     {reviews.length > 1 && <span className="reviews-amount fs22">{reviews.length} reviews</span>}
                 </span>
             </div>
-            <div className="user-reviews flex">
+            <div className="user-reviews flex space-between">
 
                 {reviews.map(review =>
                     <article className="flex column" key={review.id}>

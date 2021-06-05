@@ -9,15 +9,20 @@
     border-radius: 30px;
     box-shadow: 0 6px 20px #00000033;
     overflow: hidden auto;
-    padding: 15px 30px;
     cursor: auto;
     list-style-type: none;
-
+    text-align: left;
+    
     ul{
+      width: 240px;
+      padding: 0;
       list-style-type: none;
-      & > *{
-          padding: 15px 0;
+      margin: 0;
+      & > li,
+      & > a li{
+          padding: 15px 30px;
           align-items: center;
+        
         }
     }
     

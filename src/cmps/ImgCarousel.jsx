@@ -1,7 +1,7 @@
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@material-ui/core'
+// import { Paper, Button } from '@material-ui/core'
+// import { Height } from '@material-ui/icons'
 import { Link } from 'react-router-dom'
-import { Height } from '@material-ui/icons'
 
 export function ImgCarousel({ stay }) {
 
