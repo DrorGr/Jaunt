@@ -9,7 +9,7 @@
     border-radius: 30px;
     box-shadow: 0 6px 20px #00000033;
     overflow: hidden auto;
-    cursor: auto;
+    cursor: pointer;
     list-style-type: none;
     text-align: left;
     
@@ -22,7 +22,9 @@
       & > a li{
           padding: 15px 30px;
           align-items: center;
-        
+        &:hover{
+          background-color: #F5F5F5;
+        }
         }
     }
     

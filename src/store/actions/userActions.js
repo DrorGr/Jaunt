@@ -31,6 +31,7 @@ export function addOrder(order) {
   return async dispatch => {
     try {
       await userService.add(order)
+      console.log('order in addOrder ', order);
       dispatch({ type: 'ADD_ORDER', order })
     } catch (err) {
       console.log('UserActions: err in addOrder', err)

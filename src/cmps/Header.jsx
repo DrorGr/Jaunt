@@ -14,7 +14,7 @@ class _Header extends Component {
     }
     
     render() {
-        const { loggedInUser } = this.props;
+        const { loggedInUser, orders } = this.props;
         const {isUserModalShown} = this.state
         return <header className="flex column">
             <section className="flex space-between align-center">
@@ -42,7 +42,7 @@ class _Header extends Component {
                                 {loggedInUser.fullname}
                             </Link>
                         </span>}
-                        {isUserModalShown && <UserModal />}
+                        {isUserModalShown && <UserModal orders={orders} />}
                     </div>
                 </section>
             </section>
@@ -52,7 +52,8 @@ class _Header extends Component {
 }
 const mapStateToProps = state => {
     return {
-        loggedInUser: state.userModule.loggedInUser
+        loggedInUser: state.userModule.loggedInUser,
+        orders: state.userModule.orders
     }
 }
 const mapDispatchToProps = {}
