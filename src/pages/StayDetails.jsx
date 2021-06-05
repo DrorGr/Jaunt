@@ -56,6 +56,7 @@ class _StayDetails extends Component {
       case 'Transportation': return 'fas fa-bus'
       case 'Refrigerator': return 'fas fa-refrigerator'
       case 'Coffee': return 'fas fa-coffee'
+      case 'Air conditioning': return 'fas fa-snowflake'
       default:
     }
   }
@@ -103,7 +104,7 @@ class _StayDetails extends Component {
     const { startDate, endDate } = this.state
     if (!stay) return <div>loading</div>
     return (
-      <section className="stay-details-container ">
+      <section className="stay-details-container main-container">
         <NavBar order={order} setGuestAmount={this.props.setGuestAmount} setDates={this.props.setDates} startDate={startDate} endDate={endDate} />
         <section className="desc-page">
           <StayMainInfo stay={stay} />
@@ -125,8 +126,9 @@ class _StayDetails extends Component {
         </section>
         <div className="divider"></div>
         <Reviews reviews={stay.reviews} />
+        <div className="divider"></div>
         <section className="map-container">
-          <StayMap location={stay.loc} />
+          <StayMap stay={stay} />
         </section>
       </section>
     )
