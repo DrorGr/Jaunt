@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-import { setDates, setGuestAmount } from '../store/actions/orderActions.js'
+import { setDates, setGuestAmount, setLocation } from '../store/actions/orderActions.js'
 import { Link } from 'react-router-dom'
 import { Hero } from '../cmps/Hero.jsx'
 import { Nearby } from '../cmps/Nearby'
@@ -12,10 +12,10 @@ import { BecomeHost } from '../cmps/BecomeHost'
 class _Home extends Component {
  
   render() {
-    const { order, setDates, setGuestAmount } = this.props
+    const { order, setDates, setGuestAmount, setLocation } = this.props
     return (
       <div className="home">
-        <Hero order={order} setDates={setDates} setGuestAmount={setGuestAmount} />
+        <Hero order={order} setDates={setDates} setGuestAmount={setGuestAmount} setLocation={setLocation} />
         <section className="explore-nearby main-container">
           <h1>Explore nearby</h1>
           <Nearby />
@@ -49,7 +49,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
   loadStays,
   setDates,
-  setGuestAmount
+  setGuestAmount,
+  setLocation
 }
 
 export const Home = connect(mapStateToProps, mapDispatchToProps)(_Home)

@@ -15,6 +15,7 @@ import { StayDesc } from '../cmps/StayDesc'
 
 class _StayDetails extends Component {
   state = {
+    isSecondClick: false,
     startDate: '',
     endDate: '',
     isModalShown: false,
@@ -56,9 +57,7 @@ class _StayDetails extends Component {
       case 'Transportation': return 'fas fa-bus'
       case 'Refrigerator': return 'fas fa-refrigerator'
       case 'Coffee': return 'fas fa-coffee'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
-      case 'Air conditioning': return 'fa fa-snowflake-o'
+      case 'Air conditioning': return 'fas fa-snowflake'
       case 'Bathtub': return 'fas fa-bath'
       case 'Backyard': return 'fas fa-leaf'
       default:
@@ -70,17 +69,47 @@ class _StayDetails extends Component {
     this.setState({ isModalShown: !isModalShown })
   }
 
+  changeBtn = () => {
+    const { isChargeShown, isSecondClick, x, y } = this.state
+    const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
+    if (!isChargeShown) {
+      return <button className="check-btn fs16"
+        onMouseMove={this.handleMouseMove}
+        style={style}
+        onClick={this.toggleCharge}>
+        Check Availability
+        </button>
+    } else if (isChargeShown && !isSecondClick) {
+      return (
+        <button className="check-btn fs16"
+          onMouseMove={this.handleMouseMove}
+          style={style}
+          onClick={this.toggleCharge}>
+          Reserve
+        </button>
+      )
+    } else {
+      return (
+        <span className="reserved-btn fs16">
+          Reserved
+        </span>
+      )
+    }
+
+  }
+
   toggleCharge = () => {
+    const { isChargeShown } = this.state
+    if (!isChargeShown) {
+      this.setState({ isChargeShown: true })
+      return
+    }
+    this.setState({ isSecondClick: true })
     const updatedOrder = { ...this.props.order }
     updatedOrder.location = this.props.stay.loc.address
     updatedOrder.stay = this.props.stay
-    // console.log('updatedOrder ', updatedOrder);
     this.props.setLocation(updatedOrder)
-    console.log('updatedOrder ', updatedOrder);
-    // console.log('loc should be here ', this.props.order);
-    // console.log('updatedOrder in toggle charge ', updatedOrder);
     this.props.addOrder(updatedOrder)
-    this.setState({ isChargeShown: true })
   }
 
   getGuestsNum = () => {
@@ -90,12 +119,12 @@ class _StayDetails extends Component {
 
   setDates = (dates) => {
     const [updatedStartDate, updatedEndDate] = dates;
-    this.setState({startDate: updatedStartDate, endDate: updatedEndDate})
+    this.setState({ startDate: updatedStartDate, endDate: updatedEndDate })
     const updatedOrder = { ...this.props.order }
     updatedOrder.startDate = updatedStartDate
     updatedOrder.endDate = updatedEndDate
     this.props.setDates(updatedOrder)
-}
+  }
 
   updateGuestsAmount = (typeOfGuest, diff, ev) => {
     // need to handle case when num is < 0
@@ -111,7 +140,7 @@ class _StayDetails extends Component {
     const { startDate, endDate } = this.state
     if (!stay) return <div>loading</div>
     return (
-      <section className="stay-details-container ">
+      <section className="stay-details-container main-container">
         <NavBar order={order} setGuestAmount={this.props.setGuestAmount} setDates={this.props.setDates} startDate={startDate} endDate={endDate} />
         <section className="desc-page">
           <StayMainInfo stay={stay} />
@@ -128,13 +157,14 @@ class _StayDetails extends Component {
                 <SelectDates startDate={startDate} endDate={endDate} setDates={this.setDates} />
               </section>
             </div>
-            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} />
+            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn} />
           </section>
         </section>
         <div className="divider"></div>
         <Reviews reviews={stay.reviews} />
+        <div className="divider"></div>
         <section className="map-container">
-          <StayMap location={stay.loc} />
+          <StayMap stay={stay} />
         </section>
       </section>
     )

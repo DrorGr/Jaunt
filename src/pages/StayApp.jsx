@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadStays } from '../store/actions/stayActions.js'
-import { setDates, setGuestAmount } from '../store/actions/orderActions.js'
+import { setDates, setGuestAmount,setLocation } from '../store/actions/orderActions.js'
 import { StayList } from '../cmps/StayList'
 import { NavBar } from '../cmps/NavBar.jsx'
 
@@ -43,13 +43,12 @@ class _StayApp extends Component {
     }
 
     render() {
-        const { stays, order, setDates, setGuestAmount } = this.props
+        const { stays, order, setDates, setGuestAmount, setLocation } = this.props
         const loc = this.getFilterBy().location
-        console.log(loc);
         if (!stays) return <div>Loading...</div>
         return (
             <section className="stay-app">
-                <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} />
+                <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} setLocation={setLocation} />
                 {/* {filterBy.location && */}
                 {!loc && <h1 className="headline-explore">Explore all stays</h1>}
                 {loc &&
@@ -57,7 +56,6 @@ class _StayApp extends Component {
                 }
                 <StayList stays={stays} />
             </section>
-
         )
     }
 }
@@ -72,7 +70,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
     loadStays,
     setDates,
-    setGuestAmount
+    setGuestAmount,
+    setLocation
 }
 
 export const StayApp = connect(mapStateToProps, mapDispatchToProps)(_StayApp)

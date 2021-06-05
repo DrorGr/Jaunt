@@ -16,6 +16,7 @@ export function setDates(order) {
         }
     }
 }
+
 export function setGuestAmount(order) {
     return async dispatch => {
         try {

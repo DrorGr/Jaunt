@@ -65,6 +65,15 @@
                 font-family: cereal-medium;
                 width: 100%;
             }
+
+            .reserved-btn{
+                border-radius: 10px;
+                padding: 20px;
+                font-family: cereal-medium;
+                width: 100%;
+                background-color: grey;
+                color: $clr6;
+            }
             
             .react-datepicker{
                 display: flex;

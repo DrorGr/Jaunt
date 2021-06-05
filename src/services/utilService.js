@@ -1,8 +1,8 @@
-
 export const utilService = {
     delay,
     getRandomInt,
-    makeId
+    makeId,
+    formatTime
 }
 
 function delay(ms = 1500) {
@@ -24,4 +24,12 @@ function makeId(length = 5) {
         txt += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return txt;
+}
+
+function formatTime(date) {
+    var dd = String(date.getDate()).padStart(2, '0');
+    var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = date.getFullYear();
+    date = dd + '/' + mm + '/' + yyyy;
+    return date
 }
