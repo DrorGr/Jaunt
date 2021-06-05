@@ -73,8 +73,8 @@ class _StayDetails extends Component {
     updatedOrder.location = this.props.stay.loc.address
     // console.log('updatedOrder ', updatedOrder);
     this.props.setLocation(updatedOrder)
-    // console.log('loc should be here ', this.props.order);
-    this.props.addOrder(this.props.order)
+    // console.log('loc should be here ', this.props.order)
+    // this.props.addOrder(this.props.order)
     const { isChargeShown } = this.state
     this.setState({ isChargeShown: !isChargeShown })
   }

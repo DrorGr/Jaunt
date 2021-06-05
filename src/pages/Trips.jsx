@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { loadStays } from '../store/actions/stayActions.js'
-import { setDates, setGuestAmount } from '../store/actions/orderActions.js'
-import { StayList } from '../cmps/StayList'
-import { NavBar } from '../cmps/NavBar.jsx'
+// import { loadStays } from '../store/actions/stayActions.js'
+// import { setDates, setGuestAmount } from '../store/actions/orderActions.js'
+// import { StayList } from '../cmps/StayList'
+// import { NavBar } from '../cmps/NavBar.jsx'
 import { Header } from '../cmps/Header.jsx'
 
 class _Trips extends Component {
