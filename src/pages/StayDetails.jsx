@@ -138,7 +138,7 @@ class _StayDetails extends Component {
   getTotalDays = (end, start) => {
     if (!end || !start) return
     const diff = end.getTime() - start.getTime()
-    const totalDays = diff/(1000*60*60*24)
+    const totalDays = diff / (1000 * 60 * 60 * 24)
     return totalDays
   }
 
@@ -154,6 +154,7 @@ class _StayDetails extends Component {
           <section className="description flex">
             <div className="stay-description">
               <StayDesc stay={stay} />
+              <div className="divider"></div>
               <section className="details-container">
                 <h2>Amenities</h2>
                 <Amenities amenities={stay.amenities} getAmenitiesIcons={this.getAmenitiesIcons} />

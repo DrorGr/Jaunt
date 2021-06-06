@@ -26,4 +26,13 @@ export function setGuestAmount(order) {
         }
     }
 }
+export function resetOrder(emptyOrder) {
+    return async dispatch => {
+        try {
+            dispatch({ type: 'RESET_ORDER', emptyOrder })
+        } catch (err) {
+            console.log('orderActions: err in setGuestAmount', err)
+        }
+    }
+}
 

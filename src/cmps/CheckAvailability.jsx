@@ -3,13 +3,12 @@ import { GuestModal } from '../cmps/GuestModal';
 import { utilService } from '../services/utilService';
 
 
-export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates, changeBtn, getTotalDays }) {
+export function CheckAvailability({ state, props, getGuestsNum, toggleModal, updateGuestsAmount, setDates, changeBtn, getTotalDays }) {
 
-
-    const { startDate, endDate, isModalShown, isChargeShown, x, y, isSecondClick } = state
+    const { startDate, endDate, isModalShown, isChargeShown } = state
     const { stay, order } = props
     const { guestAmount } = order
-    const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
+
     return (
         <div className="availability flex column">
             <form className="check-availability flex column align-center">
@@ -45,25 +44,18 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                         </div>
                     </div>
                 </div>
-                {/* <button className="check-btn fs16"
-                    onMouseMove={handleMouseMove}
-                    style={style}
-                    onClick={toggleCharge}>
-                    {(!isChargeShown) ? 'Check Availability' : 'Reserve'}
-                </button> */}
                 {changeBtn()}
                 {isChargeShown &&
                     <div className="trip-reserve flex column">
                         <p className="charge-msg">You won't be charged yet</p>
                         <p>Non-refundable • $ {stay.price}</p>
                         <p>{getGuestsNum() >= 1 ? `${getGuestsNum()} Guests` : 'No guests added'} </p>
-                        {/* should add dates to  calculate nights and then calculat total anount */}
                         <p>$ {stay.price} x {getTotalDays(props.order.endDate, props.order.startDate)} nights </p>
                         <section className="total-price flex space-between">
-                        <p>Total</p>
-                        <p>
-                            ${stay.price * getTotalDays(props.order.endDate, props.order.startDate)}
-                        </p>
+                            <p>Total</p>
+                            <p>
+                                ${stay.price * getTotalDays(props.order.endDate, props.order.startDate)}
+                            </p>
                         </section>
                     </div>}
             </form>

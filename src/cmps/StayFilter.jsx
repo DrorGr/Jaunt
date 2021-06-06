@@ -97,14 +97,14 @@ class _StayFilter extends Component {
         const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
         return (
             <form className="stay-filter flex justify-center align-center" >
-                <div>
+                <div className=" flex column justify-center">
                     <div className="location">
                         <label htmlFor="location">Location</label>
                             <input type="text" name="location" id="location" placeholder={location? location : "Where are you going?"} value={filterBy.location}  onChange={this.handleChange} />
                     </div>
                 </div>
                 <div className="tiny-border"></div>
-                <div className="date-picker">
+                <div className="date-picker flex column justify-center">
                     Dates
                     <DatePicker
                         placeholderText={(this.props.order.startDate && this.props.order.endDate)? utilService.formatTime(this.props.order.startDate) + '-' + utilService.formatTime(this.props.order.endDate) : "Choose dates"}
@@ -120,7 +120,7 @@ class _StayFilter extends Component {
                     />
                 </div>
                 <div className="tiny-border"></div>
-                <div className="guests flex column" onClick={(ev) => this.toggleModal()}>
+                <div className="guests flex column justify-center" onClick={(ev) => this.toggleModal()}>
                     <label htmlFor="guestAmount">Guests</label>
                     {(guestAmount.adults + guestAmount.children + guestAmount.infants) <= 0 ?
                         <span>Add guests</span> :
