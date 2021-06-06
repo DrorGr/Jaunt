@@ -1,9 +1,9 @@
 import DatePicker from 'react-datepicker'
 import { GuestModal } from '../cmps/GuestModal';
-import {utilService} from '../services/utilService';
+import { utilService } from '../services/utilService';
 
 
-export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates,changeBtn, getTotalDays }) {
+export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates, changeBtn, getTotalDays }) {
 
 
     const { startDate, endDate, isModalShown, isChargeShown, x, y, isSecondClick } = state
@@ -25,7 +25,7 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                 <div className="order-details details-container fs20 flex column align-center">
                     <DatePicker
                         className="date-picker"
-                        placeholderText={(props.order.startDate && props.order.endDate)? utilService.formatTime(props.order.startDate) + '-' + utilService.formatTime(props.order.endDate) : "Choose dates"}
+                        placeholderText={(props.order.startDate && props.order.endDate) ? utilService.formatTime(props.order.startDate) + '-' + utilService.formatTime(props.order.endDate) : "Choose dates"}
                         onChange={date => setDates(date)}
                         selected={startDate}
                         startDate={startDate}
@@ -59,7 +59,12 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                         <p>{getGuestsNum() >= 1 ? `${getGuestsNum()} Guests` : 'No guests added'} </p>
                         {/* should add dates to  calculate nights and then calculat total anount */}
                         <p>$ {stay.price} x {getTotalDays(props.order.endDate, props.order.startDate)} nights </p>
-                        <p>Total ${stay.price * getTotalDays(props.order.endDate, props.order.startDate)}</p>
+                        <section className="total-price flex space-between">
+                        <p>Total</p>
+                        <p>
+                            ${stay.price * getTotalDays(props.order.endDate, props.order.startDate)}
+                        </p>
+                        </section>
                     </div>}
             </form>
         </div>
