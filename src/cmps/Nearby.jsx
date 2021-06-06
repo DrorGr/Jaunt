@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom'
 export function Nearby() {
     const places =
         [
-            { name: 'Tel-Aviv', img: telAviv, time: 30 },
-            { name: 'Jerusalem', img: Jerusalem, time: 50 },
-            { name: 'Eilat', img: Eilat, time: 60 },
+            { name: 'Tel Aviv', img: telAviv, time: 15 },
+            { name: 'Jerusalem', img: Jerusalem, time: 60 },
+            { name: 'Eilat', img: Eilat, time: 300 },
             { name: 'Haifa', img: Haifa, time: 40 },
             { name: 'Netanya', img: Netanya, time: 30 },
             { name: 'Herzliya', img: Herzliya, time: 50 },

@@ -1,13 +1,13 @@
 import { StayFilter } from './StayFilter'
 import { Header } from './Header'
 
-export function NavBar({order, setDates, setGuestAmount, startDate, endDate}) {
+export function NavBar({order, setDates, setGuestAmount, setLocation, startDate, endDate}) {
     return (
         <section className="full">
             <section className="navbar-container header-container">
                 <Header />
                 <section className="search-container hero flex justify-center align-center">
-                    <StayFilter order={order} setDates={setDates} setGuestAmount={setGuestAmount} startDate={startDate} endDate={endDate} />
+                    <StayFilter order={order} setDates={setDates} setGuestAmount={setGuestAmount} setLocation={setLocation} startDate={startDate} endDate={endDate} />
                 </section>
             </section>
         </section>

@@ -1,6 +1,8 @@
 import DatePicker from 'react-datepicker'
 import { GuestModal } from '../cmps/GuestModal';
 import Alert from './Alert'
+import {utilService} from '../services/utilService';
+
 
 export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates,changeBtn }) {
 
@@ -24,7 +26,7 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                 <div className="order-details details-container fs20 flex column align-center">
                     <DatePicker
                         className="date-picker"
-                        placeholderText="Choose dates"
+                        placeholderText={(props.order.startDate && props.order.endDate)? utilService.formatTime(props.order.startDate) + '-' + utilService.formatTime(props.order.endDate) : "Choose dates"}
                         onChange={date => setDates(date)}
                         selected={startDate}
                         startDate={startDate}

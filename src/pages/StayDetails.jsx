@@ -58,6 +58,8 @@ class _StayDetails extends Component {
       case 'Refrigerator': return 'fas fa-refrigerator'
       case 'Coffee': return 'fas fa-coffee'
       case 'Air conditioning': return 'fas fa-snowflake'
+      case 'Bathtub': return 'fas fa-bath'
+      case 'Backyard': return 'fas fa-leaf'
       default:
     }
   }
@@ -68,26 +70,25 @@ class _StayDetails extends Component {
   }
 
   changeBtn = () => {
-    console.log('changebtn');
-    const {isChargeShown,isSecondClick,x,y} = this.state
+    const { isChargeShown, isSecondClick, x, y } = this.state
     const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
     if (!isChargeShown) {
       return <button className="check-btn fs16"
-          onMouseMove={this.handleMouseMove}
-          style={style}
-          onClick={this.toggleCharge}>
-          Check Availability
-        </button>
-    }else if(isChargeShown && !isSecondClick){
-      return (
-        <button className="check-btn fs16"
         onMouseMove={this.handleMouseMove}
         style={style}
         onClick={this.toggleCharge}>
+        Check Availability
+        </button>
+    } else if (isChargeShown && !isSecondClick) {
+      return (
+        <button className="check-btn fs16"
+          onMouseMove={this.handleMouseMove}
+          style={style}
+          onClick={this.toggleCharge}>
           Reserve
         </button>
       )
-    }else {
+    } else {
       return (
         <span className="reserved-btn fs16">
           Reserved
@@ -98,9 +99,9 @@ class _StayDetails extends Component {
   }
 
   toggleCharge = () => {
-    const {isChargeShown} = this.state
-    if(!isChargeShown){
-      this.setState({isChargeShown:true})
+    const { isChargeShown } = this.state
+    if (!isChargeShown) {
+      this.setState({ isChargeShown: true })
       return
     }
     this.setState({ isSecondClick: true })
@@ -156,7 +157,7 @@ class _StayDetails extends Component {
                 <SelectDates startDate={startDate} endDate={endDate} setDates={this.setDates} />
               </section>
             </div>
-            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn}/>
+            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn} />
           </section>
         </section>
         <div className="divider"></div>

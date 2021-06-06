@@ -42,7 +42,7 @@ export function ImgCarousel({ stay }) {
             {
                 stay.imgUrls.map((img, idx) =>
                     <Link to={`/stay/${stay._id}`} className="primary-btn" >
-                        <img src={img}  key={idx}/>
+                        <img src={img}  key={idx} alt="rooms"/>
                     </Link>)
             }
 

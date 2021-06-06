@@ -6,6 +6,7 @@ import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
 import { withRouter } from 'react-router';
 import { GuestModal } from './GuestModal';
+import {utilService} from '../services/utilService'
 class _StayFilter extends Component {
 
     state = {
@@ -34,15 +35,6 @@ class _StayFilter extends Component {
             filterBy: { ...filterBy, [name]: value },
             [name]: value,
             [name]: value
-        }
-        )
-    }
-
-    setDates = (dates) => {
-        const [start, end] = dates;
-        this.setState({
-            startDate: start,
-            endDate: end
         })
     }
 
@@ -50,21 +42,23 @@ class _StayFilter extends Component {
         const { isModalShown } = this.state
         this.setState({ isModalShown: !isModalShown })
     }
+  
 
-    updateGuestsAmount = (key, num, ev) => {
-        // need to handle case when num is < 0
-        ev.stopPropagation();
-        ev.preventDefault();
-        switch (key) {
-            case 'adults': this.setState({ key: num })
-                break
-            case 'children': this.setState({ key: num })
-                break
-            case 'infants': this.setState({ key: num })
-                break
-            default:
-        }
-    }
+
+    // updateGuestsAmount = (key, num, ev) => {
+    //     // need to handle case when num is < 0
+    //     ev.stopPropagation();
+    //     ev.preventDefault();
+    //     switch (key) {
+    //         case 'adults': this.setState({ key: num })
+    //             break
+    //         case 'children': this.setState({ key: num })
+    //             break
+    //         case 'infants': this.setState({ key: num })
+    //             break
+    //         default:
+    //     }
+    // }
 
     updateGuestsAmount = (typeOfGuest, diff, ev) => {
         // need to handle case when num is < 0
@@ -76,37 +70,44 @@ class _StayFilter extends Component {
     }
 
     setDates = (dates) => {
-        const [startDate, endDate] = dates;
+        const [updatedStartDate, updatedEndDate] = dates;
+        this.setState({ startDate: updatedStartDate, endDate: updatedEndDate })
         const updatedOrder = { ...this.props.order }
-        this.state.startDate = startDate
-        this.state.endDate = endDate
+        updatedOrder.startDate = updatedStartDate
+        updatedOrder.endDate = updatedEndDate
         this.props.setDates(updatedOrder)
+    }
+    
+    setLocation = (loc) => {
+        const updatedOrder = { ...this.props.order }
+        updatedOrder.location = loc
+        this.props.setLocation(updatedOrder)
     }
 
     onSubmit = (ev) => {
         ev.preventDefault()
-        const { location } = this.state
+        const { location } = this.state.filterBy
+        this.setLocation(location)
         this.props.history.push(`/stay?loc=${location}`)
     }
 
     render() {
-        const { guestAmount } = this.props.order
+        const { guestAmount, location } = this.props.order
         const { startDate, endDate, isModalShown, x, y, filterBy } = this.state
         const style = { backgroundPosition: `calc((100 - ${x}) * 1%) calc((100 - ${y}) * 1%)` }
-
         return (
             <form className="stay-filter flex justify-center align-center" >
                 <div>
                     <div className="location">
                         <label htmlFor="location">Location</label>
-                        <input type="text" name="location" id="location" placeholder="Where are you going?" value={filterBy.location} onChange={this.handleChange} />
+                            <input type="text" name="location" id="location" placeholder={location? location : "Where are you going?"} value={filterBy.location}  onChange={this.handleChange} />
                     </div>
                 </div>
                 <div className="tiny-border"></div>
                 <div className="date-picker">
                     Dates
                     <DatePicker
-                        placeholderText="Choose dates"
+                        placeholderText={(this.props.order.startDate && this.props.order.endDate)? utilService.formatTime(this.props.order.startDate) + '-' + utilService.formatTime(this.props.order.endDate) : "Choose dates"}
                         selected={startDate}
                         startDate={startDate}
                         endDate={endDate}
