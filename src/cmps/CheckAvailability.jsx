@@ -1,6 +1,5 @@
 import DatePicker from 'react-datepicker'
 import { GuestModal } from '../cmps/GuestModal';
-import Alert from './Alert'
 import {utilService} from '../services/utilService';
 
 
@@ -55,12 +54,12 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                 {changeBtn()}
                 {isChargeShown &&
                     <div className="trip-reserve flex column">
-                        <Alert/>
                         <p className="charge-msg">You won't be charged yet</p>
                         <p>Non-refundable • $ {stay.price}</p>
                         <p>{getGuestsNum() >= 1 ? `${getGuestsNum()} Guests` : 'No guests added'} </p>
                         {/* should add dates to  calculate nights and then calculat total anount */}
                         <p>$ {stay.price} x</p>
+                        <div className="divider"></div>
                         <p>Total</p>
                     </div>}
             </form>

@@ -1,22 +1,20 @@
 import React from 'react';
 import Alert from '@material-ui/lab/Alert';
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     width: '100%',
-//     '& > * + *': {
-//       marginTop: theme.spacing(2),
-//     },
-//   },
-// }));
+const style = {
+    backgroundColor:"white",
+    position:"fixed",
+    right: "50px",
+     bottom: "50px",
+}
+
 
 export default function ColorAlerts() {
-//   const classes = useStyles();
-
   return (
-    <div className="alert">
-      <Alert severity="success" color="info">
-        This is a success alert — check it out!
+    <div className="alert" style={style}>
+        
+      <Alert severity="success"  variant="outlined" >
+        Order has booked successfully, check it on trips page!
       </Alert>
     </div>
   );

@@ -11,7 +11,7 @@ import { setLocation, setDates, setGuestAmount } from '../store/actions/orderAct
 import { addOrder } from '../store/actions/userActions'
 import { CheckAvailability } from '../cmps/CheckAvailability'
 import { StayDesc } from '../cmps/StayDesc'
-
+import Alert from '../cmps/Alert'
 
 class _StayDetails extends Component {
   state = {
@@ -137,7 +137,7 @@ class _StayDetails extends Component {
 
   render() {
     const { stay, order } = this.props
-    const { startDate, endDate } = this.state
+    const { startDate, endDate,isSecondClick } = this.state
     if (!stay) return <div>loading</div>
     return (
       <section className="stay-details-container main-container">
@@ -157,6 +157,8 @@ class _StayDetails extends Component {
                 <SelectDates startDate={startDate} endDate={endDate} setDates={this.setDates} />
               </section>
             </div>
+            {isSecondClick && 
+            <Alert/>}
             <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn} />
           </section>
         </section>
