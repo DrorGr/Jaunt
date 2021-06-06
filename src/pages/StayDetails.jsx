@@ -135,6 +135,13 @@ class _StayDetails extends Component {
     this.props.setGuestAmount(updatedOrder)
   }
 
+  getTotalDays = (end, start) => {
+    if (!end || !start) return
+    const diff = end.getTime() - start.getTime()
+    const totalDays = diff / (1000 * 60 * 60 * 24)
+    return totalDays
+  }
+
   render() {
     const { stay, order } = this.props
     const { startDate, endDate,isSecondClick } = this.state
@@ -147,6 +154,7 @@ class _StayDetails extends Component {
           <section className="description flex">
             <div className="stay-description">
               <StayDesc stay={stay} />
+              <div className="divider"></div>
               <section className="details-container">
                 <h2>Amenities</h2>
                 <Amenities amenities={stay.amenities} getAmenitiesIcons={this.getAmenitiesIcons} />

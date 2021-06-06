@@ -27,7 +27,6 @@ class _StayApp extends Component {
         if (currLocation !== prevLocation) {
             this.props.loadStays(this.getFilterBy())
         }
-
     }
 
     getFilterBy = () => {
@@ -49,7 +48,6 @@ class _StayApp extends Component {
         return (
             <section className="stay-app">
                 <NavBar order={order} setDates={setDates} setGuestAmount={setGuestAmount} setLocation={setLocation} />
-                {/* {filterBy.location && */}
                 {!loc && <h1 className="headline-explore">Explore all stays</h1>}
                 {loc &&
                  <h1 className="headline-explore">Stays in {loc}</h1>

@@ -83,6 +83,12 @@
         .trip-reserve {
 
             width: 100%;
+        .total-price{
+            padding-bottom: 0;
+            p{
+                margin: 0;
+            }
+        }
         & > *{
             padding-bottom: 1rem;
             text-align: left;   

@@ -1,4 +1,4 @@
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { Component } from 'react';
 // import '../assets/css/pages/about-page.css'
 class _GoogleMap extends Component {
@@ -13,7 +13,6 @@ class _GoogleMap extends Component {
 
     componentDidMount() {
         const pos = this.props.stay.loc
-        // console.log(pos);
         this.setState({ pos })
     }
 
