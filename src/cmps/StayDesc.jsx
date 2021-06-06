@@ -24,7 +24,7 @@ export function StayDesc({ stay }) {
                         <p>This host committed to Airbnb's 5-step enhanced cleaning process.</p>
                     </span>
                 </div>
-                {!stay.amenities.includes('Smoking allowed' || 'Pets allowed') &&
+                {!stay.amenities.includes('Smoking allowed' && 'Pets allowed') &&
                     <div className="info flex">
                         <i className="fas fa-scroll"></i>
                         <span>

@@ -3,7 +3,7 @@ import { GuestModal } from '../cmps/GuestModal';
 import {utilService} from '../services/utilService';
 
 
-export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates,changeBtn }) {
+export function CheckAvailability({ state, props, getGuestsNum, toggleModal, toggleCharge, updateGuestsAmount, handleMouseMove, setDates,changeBtn, getTotalDays }) {
 
 
     const { startDate, endDate, isModalShown, isChargeShown, x, y, isSecondClick } = state
@@ -58,8 +58,8 @@ export function CheckAvailability({ state, props, getGuestsNum, toggleModal, tog
                         <p>Non-refundable • $ {stay.price}</p>
                         <p>{getGuestsNum() >= 1 ? `${getGuestsNum()} Guests` : 'No guests added'} </p>
                         {/* should add dates to  calculate nights and then calculat total anount */}
-                        <p>$ {stay.price} x</p>
-                        <p>Total</p>
+                        <p>$ {stay.price} x {getTotalDays(props.order.endDate, props.order.startDate)} nights </p>
+                        <p>Total ${stay.price * getTotalDays(props.order.endDate, props.order.startDate)}</p>
                     </div>}
             </form>
         </div>

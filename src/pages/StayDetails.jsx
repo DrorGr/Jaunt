@@ -135,6 +135,13 @@ class _StayDetails extends Component {
     this.props.setGuestAmount(updatedOrder)
   }
 
+  getTotalDays = (end, start) => {
+    if (!end || !start) return
+    const diff = end.getTime() - start.getTime()
+    const totalDays = diff/(1000*60*60*24)
+    return totalDays
+  }
+
   render() {
     const { stay, order } = this.props
     const { startDate, endDate } = this.state
@@ -157,7 +164,7 @@ class _StayDetails extends Component {
                 <SelectDates startDate={startDate} endDate={endDate} setDates={this.setDates} />
               </section>
             </div>
-            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn} />
+            <CheckAvailability state={this.state} props={this.props} getGuestsNum={this.getGuestsNum} toggleModal={this.toggleModal} toggleCharge={this.toggleCharge} updateGuestsAmount={this.updateGuestsAmount} handleMouseMove={this.handleMouseMove} setDates={this.setDates} changeBtn={this.changeBtn} getTotalDays={this.getTotalDays} />
           </section>
         </section>
         <div className="divider"></div>
