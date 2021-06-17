@@ -1,0 +1,53 @@
+.headline-explore{
+    padding: 20px 0 30px 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ddd;
+}
+
+.stay-preview{
+    // font-size: 0.7rem;
+    margin-bottom: 15px;
+    position: relative;
+    i{
+        color: $clr1;
+    }
+    img{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    object-fit: cover;
+    }
+    .preview-text-container>*{
+        &:not(:last-child){
+            margin-bottom: 0.5rem ;
+        }
+    }
+    .stay-rate{
+        margin-bottom: 4px;
+        :not(:last-child){
+        margin-right: 4px;
+    }
+        .reviews-amount{
+        color: $clr3;
+        }
+    }
+
+    .stay-price{
+        margin-top: 4px;
+    }
+}
+
+.save-btn{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    i{
+        color: #fff;
+        
+    }
+}
+
+// need to move to helpers and create new class
